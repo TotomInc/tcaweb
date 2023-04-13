@@ -11,9 +11,9 @@ import {
 
 export function Hero() {
   return (
-    <main className="relative bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500">
+    <main className="relative mb-12 bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500">
       <div className="relative mx-auto max-w-7xl pb-32 pt-24 lg:pb-56 lg:pt-32">
-        <div className="flex flex-col items-start px-8 sm:max-w-lg md:max-w-2xl lg:max-w-2xl xl:max-w-3xl">
+        <div className="flex flex-col items-start px-8 sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl">
           <h1 className="font-spline text-3xl font-bold text-white lg:text-5xl 2xl:text-6xl">
             <Balancer>
               <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
@@ -52,7 +52,7 @@ export function Hero() {
           alt=""
           width={384}
           height={328}
-          className="absolute bottom-0 right-0 z-10 -mb-8 mr-4 block h-auto w-48 sm:w-72 md:w-96 lg:w-full lg:max-w-xl 2xl:max-w-2xl"
+          className="absolute bottom-0 right-0 z-10 -mb-8 mr-4 block h-auto w-48 sm:w-72 md:w-full md:max-w-md lg:max-w-xl 2xl:max-w-2xl"
         />
       </div>
 
