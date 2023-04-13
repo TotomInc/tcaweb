@@ -45,7 +45,7 @@ export function Navbar() {
 
       <nav
         className={cx(
-          "flex flex-col space-y-2 border-b border-b-gray-200 py-6 transition duration-300 ease-out lg:hidden",
+          "absolute left-0 right-0 top-0 mt-16 flex flex-col space-y-2 border-b border-b-gray-200 px-8 py-4 transition duration-300 ease-out lg:hidden",
           isOpen
             ? "translate-y-0 opacity-100"
             : "pointer-events-none -translate-y-2 opacity-0"
