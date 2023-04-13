@@ -1,6 +1,11 @@
 import Image from "next/image";
+import cx from "classnames";
 
-export function Logo() {
+export type LogoProps = {
+  textColorVariant: "white" | "blue-gradient";
+};
+
+export function Logo({ textColorVariant }: LogoProps) {
   return (
     <>
       <Image
@@ -10,7 +15,13 @@ export function Logo() {
         height={32}
       />
 
-      <span className="ml-1.5 bg-gradient-to-br from-blue-900 to-blue-500 bg-clip-text font-heading text-2xl font-bold text-transparent">
+      <span
+        className={cx("ml-1.5 font-heading text-2xl font-bold", {
+          "bg-gradient-to-br from-blue-900 to-blue-500 bg-clip-text text-transparent":
+            textColorVariant === "blue-gradient",
+          "text-white": textColorVariant === "white",
+        })}
+      >
         LLW
       </span>
 
