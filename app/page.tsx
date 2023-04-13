@@ -75,7 +75,7 @@ export default function Home() {
           {
             title: "Des sites web performants",
             description:
-              "Nous n'utilisons ni WordPress, ni des page-builder comme Wix, afin de garantir une performance maximale de votre site web. C'est un élément clé pour le référencement naturel (organique) de votre site web.",
+              "Nous n'utilisons ni WordPress, ni des page-builder comme Wix, afin de garantir une performance maximale de votre site web. Ces solutions sont des pièges, elles sont lentes et très peu sécurisées.",
           },
           {
             title: "Un design sur-mesure",
@@ -90,7 +90,7 @@ export default function Home() {
           {
             title: "Respect des normes RGPD",
             description:
-              "Nous protégons la confidentialité de vos utilisateurs grâce à un site web protégé et utilisant peu de tracking.",
+              "Nous protégons la confidentialité de vos utilisateurs grâce à un site web sécurisé et grâce à des solutions de statistiques anonymes, respectant la vie privée des utilisateurs.",
           },
         ]}
       />
