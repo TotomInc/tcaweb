@@ -28,11 +28,11 @@ export function Navbar() {
   return (
     <header
       className={cx(
-        "fixed left-0 right-0 top-0 z-50 bg-white px-8 py-6 ",
+        "fixed left-0 right-0 top-0 z-50 bg-white py-6 lg:transition lg:duration-300 lg:ease-out",
         hasScrolled || isOpen ? "bg-opacity-100" : "bg-opacity-0"
       )}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-8">
         <Link href="/" className="flex">
           <Logo
             textColorVariant={hasScrolled || isOpen ? "blue-gradient" : "white"}
@@ -44,7 +44,10 @@ export function Navbar() {
             <Link
               key={`desktop-${href}`}
               href={href}
-              className="font-spline text-base font-medium text-blue-950"
+              className={cx(
+                "font-spline text-base font-medium",
+                hasScrolled ? "text-blue-950" : "text-white"
+              )}
             >
               {label}
             </Link>
