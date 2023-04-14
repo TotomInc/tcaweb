@@ -10,6 +10,7 @@ import {
 import { Hero } from "../components/sections/Hero";
 import { Features } from "../components/sections/Features";
 import { SideFeaturesChecks } from "../components/sections/SideFeaturesChecks";
+import { LinkBanner } from "../components/sections/LinkBanner";
 
 export default function Home() {
   return (
@@ -93,6 +94,14 @@ export default function Home() {
               "Nous protégons la confidentialité de vos utilisateurs grâce à un site web sécurisé et grâce à des solutions de statistiques anonymes, respectant la vie privée des utilisateurs.",
           },
         ]}
+      />
+
+      <LinkBanner
+        className="mb-24"
+        title="Découvrez la création de sites e-commerces"
+        description="Développez votre activité grâce à la vente en ligne. Gestion des produits et commandes via une interface simple."
+        ctaTitle="En savoir plus"
+        link="/sites-ecommerce"
       />
     </>
   );
