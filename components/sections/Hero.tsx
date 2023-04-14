@@ -1,13 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
-
+import { CheckBadgeIcon } from "@heroicons/react/24/outline";
 import cx from "classnames";
 
 import {
   AnimatedStarsIcon,
   styles as animatedStarsIconStyles,
 } from "../icons/AnimatedStarsIcon";
+
+const checks = [
+  "Estimation gratuite en ligne en 5 min.",
+  "Premier contact facile (email, téléphone)",
+];
 
 export function Hero() {
   return (
@@ -36,7 +41,7 @@ export function Hero() {
           <Link
             href="/contact"
             className={cx(
-              "group mt-12 inline-flex items-center justify-center rounded-md bg-white px-6 py-3 font-spline font-medium transition-shadow duration-300 ease-out hover:bg-blue-50 hover:shadow-lg hover:shadow-blue-800",
+              "group mt-6 inline-flex items-center justify-center rounded-md bg-white px-6 py-3 font-spline font-medium transition-shadow duration-300 ease-out hover:bg-blue-50 hover:shadow-lg hover:shadow-blue-800",
               animatedStarsIconStyles["button-hover-animate-stars"]
             )}
           >
@@ -45,6 +50,15 @@ export function Hero() {
               <AnimatedStarsIcon className="ml-2 h-auto w-6 text-blue-700" />
             </span>
           </Link>
+
+          <div className="my-6 flex flex-col space-y-2">
+            {checks.map((check) => (
+              <div className="flex items-center justify-start">
+                <CheckBadgeIcon className="mr-1.5 h-auto w-5 fill-blue-600 text-blue-200" />
+                <p className="text-sm font-medium text-blue-100">{check}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <Image
