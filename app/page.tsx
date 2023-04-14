@@ -103,6 +103,45 @@ export default function Home() {
         ctaTitle="En savoir plus"
         link="/sites-ecommerce"
       />
+
+      <SideFeaturesChecks
+        className="pb-24"
+        invert
+        image={{
+          src: "/_static/images/services.svg",
+          alt: "Accompagnement personnalisé",
+          height: 182,
+          width: 347,
+          className: "max-w-md mx-auto lg:max-w-lg",
+        }}
+        title="Un accompagnement personnalisé"
+        description="Nous vous accompagnons de bout-en-bout dans la réalisation de votre projet web."
+        features={[
+          {
+            title: "Tarif annoncé",
+            description:
+              "Vous pouvez nous demander une estimation budgétaire plus précise pour votre projet web, lors du premier contact.",
+          },
+          {
+            title: "Expertise du web",
+            description:
+              "Notre expertise du web permet de vous accompagner tout au long de la réalisation de votre projet web.",
+          },
+          {
+            title: "Un projet flexible",
+            description:
+              "Nous adaptons le projet selon vos besoins : intégration d'un CMS, gestion noms de domaine, hébergement, ...",
+          },
+        ]}
+      />
+
+      <LinkBanner
+        className="mb-24"
+        title="Découvrez la création de sites vitrines"
+        description="Grâce à un site vitrine, démarrez votre présence numérique. Cela vous donne l'opportunité d'être visible sur le web et de renforcer votre image de marque, auprès de vos (futurs) clients."
+        ctaTitle="En savoir plus"
+        link="/sites-vitrines"
+      />
     </>
   );
 }

@@ -5,6 +5,7 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 
 export type SideFeaturesChecksProps = {
   className?: string;
+  invert?: boolean;
   image: {
     src: string;
     alt: string;
@@ -22,6 +23,7 @@ export type SideFeaturesChecksProps = {
 
 export function SideFeaturesChecks({
   className,
+  invert,
   image,
   title,
   description,
@@ -35,10 +37,19 @@ export function SideFeaturesChecks({
           alt={image.alt}
           width={image.width}
           height={image.height}
-          className={cx("block h-auto w-full", image.className)}
+          className={cx(
+            "block h-auto w-full",
+            invert ? "order-2" : "",
+            image.className
+          )}
         />
 
-        <div className="mt-12 flex w-full flex-col lg:pl-16">
+        <div
+          className={cx(
+            "mt-12 flex w-full flex-col",
+            invert ? "order-1" : "lg:pl-16"
+          )}
+        >
           <h2 className="text-3xl font-bold text-gray-950">
             <Balancer>{title}</Balancer>
           </h2>
