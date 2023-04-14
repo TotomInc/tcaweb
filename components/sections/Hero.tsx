@@ -66,7 +66,7 @@ export function Hero() {
           alt=""
           width={384}
           height={328}
-          className="absolute bottom-0 right-0 z-10 -mb-8 mr-4 block h-auto w-48 sm:w-72 md:w-full md:max-w-md lg:max-w-xl 2xl:max-w-2xl"
+          className="absolute bottom-0 right-0 z-10 -mb-8 mr-4 block h-auto w-48 sm:w-72 md:w-full md:max-w-md lg:max-w-2xl 2xl:max-w-3xl"
         />
       </div>
 
