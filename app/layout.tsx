@@ -4,6 +4,7 @@ import { Inter, Spline_Sans, Space_Grotesk } from "next/font/google";
 import type { Metadata } from "next";
 
 import { Navbar } from "../components/layout/Navbar";
+import { Footer } from "../components/layout/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lelaboweb.fr"),
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body className="min-h-screen bg-white">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
