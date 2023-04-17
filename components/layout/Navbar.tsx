@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Bars3Icon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import cx from "classnames";
 
 import { Logo } from "../ui/Logo";
@@ -61,7 +61,11 @@ export function Navbar() {
           className="flex h-8 w-8 items-center justify-center rounded-md bg-white lg:hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <Bars3Icon className="h-auto w-6 text-black" /> : null}
+          {!isOpen ? (
+            <Bars3Icon className="h-auto w-6 text-black" />
+          ) : (
+            <XMarkIcon className="h-auto w-6 text-black" />
+          )}
         </button>
       </div>
 
