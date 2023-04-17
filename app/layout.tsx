@@ -8,7 +8,8 @@ import { Footer } from "../components/layout/Footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://lelaboweb.fr"),
-  title: "LeLaboWeb — l'agence web des petites entreprises",
+  title:
+    "LeLaboWeb — l'agence web sur-mesure des petites & moyennes entreprises",
   description:
     "LeLaboWeb est une agence web spécialisée dans le développement numérique de votre activité. Estimez votre projet en ligne gratuitement, en 5 minutes et sans engagement.",
 };

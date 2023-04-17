@@ -24,7 +24,8 @@ export function Hero() {
               <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
                 Le Labo Web
               </span>
-              , l&apos;agence web pensée pour les petites entreprises.
+              , l&apos;agence web pensée pour les petites & moyennes
+              entreprises.
             </Balancer>
           </h1>
 
