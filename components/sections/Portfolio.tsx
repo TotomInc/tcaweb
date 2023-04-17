@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import cx from "classnames";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 
 const ITEMS = [
   {
@@ -59,6 +60,7 @@ export function Portfolio({ className }: PortfolioProps) {
                 target="_blank"
                 className="mx-auto mt-8 flex items-center justify-center rounded-lg bg-blue-50 px-6 py-3 font-spline font-medium text-blue-700 hover:bg-blue-100"
               >
+                <ArrowTopRightOnSquareIcon className="mr-1.5 h-auto w-4 text-blue-500" />{" "}
                 Visiter le site
               </Link>
             </div>
