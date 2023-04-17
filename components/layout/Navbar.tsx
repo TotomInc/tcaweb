@@ -28,8 +28,10 @@ export function Navbar() {
   return (
     <header
       className={cx(
-        "fixed left-0 right-0 top-0 z-50 bg-white py-6 lg:transition lg:duration-300 lg:ease-out",
-        hasScrolled || isOpen ? "bg-opacity-100" : "bg-opacity-0"
+        "fixed left-0 right-0 top-0 z-50 border-b bg-white py-6 lg:transition lg:duration-300 lg:ease-out",
+        hasScrolled || isOpen
+          ? "border-gray-200 bg-opacity-100"
+          : "border-transparent bg-opacity-0"
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8">
@@ -59,7 +61,7 @@ export function Navbar() {
           className="flex h-8 w-8 items-center justify-center rounded-md bg-white lg:hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
-          <Bars3Icon className="h-auto w-6 text-black" />
+          {isOpen ? <Bars3Icon className="h-auto w-6 text-black" /> : null}
         </button>
       </div>
 
