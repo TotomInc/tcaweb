@@ -7,10 +7,11 @@ import {
   WrenchScrewdriverIcon,
 } from "@heroicons/react/24/outline";
 
-import { Hero } from "../components/sections/Hero";
-import { Features } from "../components/sections/Features";
-import { SideFeaturesChecks } from "../components/sections/SideFeaturesChecks";
-import { LinkBanner } from "../components/sections/LinkBanner";
+import { Portfolio } from "@/components/sections/Portfolio";
+import { Hero } from "@/components/sections/Hero";
+import { Features } from "@/components/sections/Features";
+import { SideFeaturesChecks } from "@/components/sections/SideFeaturesChecks";
+import { LinkBanner } from "@/components/sections/LinkBanner";
 
 export default function Home() {
   return (
@@ -142,6 +143,8 @@ export default function Home() {
         ctaTitle="En savoir plus"
         link="/sites-vitrines"
       />
+
+      <Portfolio className="mb-24" />
     </>
   );
 }
