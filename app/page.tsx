@@ -16,7 +16,36 @@ import { LinkBanner } from "@/components/sections/LinkBanner";
 export default function Home() {
   return (
     <>
-      <Hero />
+      <Hero
+        title={
+          <>
+            <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
+              Le Labo Web
+            </span>
+            , l&apos;agence web pensée pour les petites & moyennes entreprises.
+          </>
+        }
+        description={
+          <>
+            Confiez votre présence digitale à un{" "}
+            <span className="font-medium">professionnel</span>. Votre solution
+            tout-en-un afin de maitriser la{" "}
+            <span className="font-medium">présence numérique</span> de votre
+            entreprise.
+          </>
+        }
+        cta={{ href: "/contact", label: "Estimer mon devis en ligne" }}
+        image={{
+          width: 384,
+          height: 328,
+          alt: "",
+          src: "/_static/images/landing-mockup.png",
+        }}
+        checks={[
+          "Estimation gratuite en ligne en 5 min.",
+          "Premier contact facile (email, téléphone)",
+        ]}
+      />
 
       <Features
         className="mt-24 pb-24"
