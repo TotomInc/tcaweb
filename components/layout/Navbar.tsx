@@ -9,6 +9,8 @@ import { Logo } from "../ui/Logo";
 
 const links = [
   { href: "/", label: "Accueil" },
+  { href: "/sites-vitrines", label: "Sites vitrines" },
+  { href: "/sites-ecommerces", label: "Sites e-commerces" },
   { href: "/contact", label: "Contact" },
 ];
 
