@@ -35,7 +35,7 @@ export function LinkBanner({
           src={coverImage.src}
           alt={coverImage.alt}
           fill
-          className="pointer-events-none absolute inset-0 object-cover opacity-[0.075] transition-transform duration-500 ease-out group-hover:scale-105"
+          className="pointer-events-none absolute inset-0 object-cover opacity-[0.125] transition-transform duration-500 ease-out group-hover:scale-105"
         />
       ) : null}
 
