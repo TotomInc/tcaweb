@@ -63,7 +63,7 @@ export function SideFeaturesChecks({
               <div key={feature.title}>
                 <dt className="flex items-center">
                   <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-800 to-blue-600">
-                    <CheckIcon className="block h-auto w-4 text-white" />
+                    <CheckIcon className="block h-auto w-4 shrink-0 text-white" />
                   </div>
 
                   <h3 className="ml-3 font-spline text-xl font-medium text-gray-950">
