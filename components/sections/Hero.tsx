@@ -53,7 +53,7 @@ export function Hero({ title, description, cta, checks, image }: HeroProps) {
           <div className="my-6 flex flex-col space-y-2">
             {checks.map((check) => (
               <div className="flex items-center justify-start">
-                <CheckBadgeIcon className="mr-1.5 h-auto w-5 fill-blue-600 text-blue-200" />
+                <CheckBadgeIcon className="mr-1.5 h-auto w-5 shrink-0 fill-blue-600 text-blue-200" />
                 <p className="text-sm font-medium text-blue-100">{check}</p>
               </div>
             ))}
