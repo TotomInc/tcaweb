@@ -15,8 +15,8 @@ const CONTACT_LINKS = [
 export function Footer() {
   return (
     <>
-      <footer className="bg-gradient-to-br from-blue-900 to-blue-800 px-8 py-8">
-        <div className="mx-auto max-w-7xl">
+      <footer className="bg-gradient-to-br from-blue-900 to-blue-800 py-8">
+        <div className="mx-auto max-w-7xl px-8">
           <Link href="/" className="inline-flex">
             <Logo textColorVariant="white" />
           </Link>
