@@ -57,7 +57,7 @@ export default function Page() {
       <Features
         className="mt-24 pb-24"
         title="La vente en ligne, un canal de vente supplémentaire"
-        description="60% des Français ont acheté en ligne, soit 40 millions de personnes. C'est un canal de vente essentiel pour toute entreprise."
+        description="60% des Français ont acheté en ligne en 2022, soit 40 millions de personnes. C'est un canal de vente essentiel pour toute entreprise."
         features={[
           {
             title: "Augmentez vos ventes",
