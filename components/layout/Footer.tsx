@@ -49,10 +49,13 @@ export function Footer() {
       </footer>
 
       <div className="bg-blue-950 px-8 py-4">
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl px-8">
           <p className="text-xs text-blue-200/75">
-            Copyright © 2023-Present —{" "}
-            <span className="font-heading text-sm font-bold">LeLaboWeb</span>
+            Copyright © {new Date().getFullYear()} —{" "}
+            <span className="font-heading text-sm font-bold">
+              LeLaboWeb (LLW)
+            </span>{" "}
+            — Tous droits réservés
           </p>
         </div>
       </div>
