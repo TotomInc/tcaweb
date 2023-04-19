@@ -45,6 +45,13 @@ export default function Page() {
           "Démarrez la vente en ligne facilement et rapidement",
           "Interface de gestion simple et intuitive",
         ]}
+        image={{
+          width: 768,
+          height: 414,
+          alt: "",
+          src: "/_static/images/landing/ecommerce-mockup.png",
+          className: "w-72",
+        }}
       />
 
       <Features

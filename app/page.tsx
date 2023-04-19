@@ -36,10 +36,10 @@ export default function Home() {
         }
         cta={{ href: "/contact", label: "Estimer mon devis en ligne" }}
         image={{
-          width: 384,
-          height: 328,
+          width: 768,
+          height: 650,
           alt: "",
-          src: "/_static/images/landing-mockup.png",
+          src: "/_static/images/landing/landing-mockup.png",
         }}
         checks={[
           "Estimation gratuite en ligne en 5 min.",

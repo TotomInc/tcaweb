@@ -42,6 +42,13 @@ export default function Page() {
           "Rendez votre entreprise visible en ligne",
           "Site sur-mesure, adapté à l'identité de votre entreprise",
         ]}
+        image={{
+          width: 768,
+          height: 414,
+          alt: "",
+          src: "/_static/images/landing/vitrine-mockup.png",
+          className: "w-72",
+        }}
       />
 
       <Features

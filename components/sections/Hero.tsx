@@ -14,7 +14,13 @@ export type HeroProps = {
   title: React.ReactNode;
   description: React.ReactNode;
   cta: { href: string; label: string };
-  image?: { width: number; height: number; alt: string; src: string };
+  image?: {
+    width: number;
+    height: number;
+    alt: string;
+    src: string;
+    className?: string;
+  };
   checks: string[];
 };
 
@@ -60,7 +66,10 @@ export function Hero({ title, description, cta, checks, image }: HeroProps) {
             alt={image.alt}
             width={image.width}
             height={image.height}
-            className="absolute bottom-0 right-0 z-10 -mb-8 mr-4 block h-auto w-48 sm:w-72 md:w-full md:max-w-md lg:max-w-2xl 2xl:max-w-3xl"
+            className={cx(
+              "absolute bottom-0 right-0 z-10 -mb-8 mr-4 block h-auto w-48 sm:w-72 md:w-full md:max-w-md lg:max-w-2xl 2xl:max-w-3xl",
+              image.className
+            )}
           />
         ) : null}
       </div>
