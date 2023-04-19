@@ -37,7 +37,7 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8">
-        <Link href="/" className="flex">
+        <Link href="/" className="flex" onClick={() => setIsOpen(false)}>
           <Logo
             textColorVariant={hasScrolled || isOpen ? "blue-gradient" : "white"}
           />
@@ -84,6 +84,7 @@ export function Navbar() {
             className={cx(
               "font-spline text-base font-medium text-blue-950 ease-out"
             )}
+            onClick={() => setIsOpen(false)}
           >
             {label}
           </Link>
