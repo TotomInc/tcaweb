@@ -50,7 +50,9 @@ export function Navbar() {
               href={href}
               className={cx(
                 "font-spline text-base font-medium",
-                hasScrolled ? "text-blue-950" : "text-white"
+                hasScrolled
+                  ? "text-blue-950 hover:text-blue-800"
+                  : "text-white hover:text-blue-200"
               )}
             >
               {label}
