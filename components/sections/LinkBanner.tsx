@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
 import cx from "classnames";
@@ -8,6 +9,10 @@ export type LinkBannerProps = {
   description: string;
   link: string;
   ctaTitle: string;
+  coverImage?: {
+    src: string;
+    alt: string;
+  };
 };
 
 export function LinkBanner({
@@ -16,15 +21,28 @@ export function LinkBanner({
   description,
   link,
   ctaTitle,
+  coverImage,
 }: LinkBannerProps) {
   return (
     <section
       className={cx(
-        "relative w-full bg-gradient-to-br from-blue-800 to-blue-600 px-8 py-10 lg:mx-auto lg:max-w-4xl lg:rounded-2xl lg:shadow-lg 2xl:max-w-7xl",
+        "group relative w-full overflow-hidden bg-gradient-to-br from-blue-800 to-blue-600  lg:mx-auto lg:max-w-4xl lg:rounded-2xl lg:shadow-lg 2xl:max-w-7xl",
         className
       )}
     >
-      <Link href={link} className="flex flex-col items-start">
+      {coverImage ? (
+        <Image
+          src={coverImage.src}
+          alt={coverImage.alt}
+          fill
+          className="pointer-events-none absolute inset-0 object-cover opacity-[0.075] transition-transform duration-500 ease-out group-hover:scale-105"
+        />
+      ) : null}
+
+      <Link
+        href={link}
+        className="relative flex w-full flex-col items-start px-8 py-10"
+      >
         <h3 className="font-spline text-2xl font-bold text-white lg:text-3xl">
           {title}
         </h3>

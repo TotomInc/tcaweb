@@ -131,7 +131,11 @@ export default function Home() {
         title="Découvrez la création de sites e-commerces"
         description="Développez votre activité grâce à la vente en ligne. Gestion des produits et commandes via une interface simple."
         ctaTitle="En savoir plus"
-        link="/sites-ecommerce"
+        link="/sites-ecommerces"
+        coverImage={{
+          src: "/_static/images/landing/ecommerce-grid-mockup.png",
+          alt: "",
+        }}
       />
 
       <SideFeaturesChecks
@@ -171,6 +175,10 @@ export default function Home() {
         description="Grâce à un site vitrine, démarrez votre présence numérique. Cela vous donne l'opportunité d'être visible sur le web et de renforcer votre image de marque, auprès de vos (futurs) clients."
         ctaTitle="En savoir plus"
         link="/sites-vitrines"
+        coverImage={{
+          src: "/_static/images/landing/vitrine-grid-mockup.png",
+          alt: "",
+        }}
       />
 
       <Portfolio className="mb-24" />
