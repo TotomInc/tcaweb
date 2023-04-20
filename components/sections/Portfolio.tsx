@@ -34,7 +34,10 @@ export function Portfolio({ className }: PortfolioProps) {
 
         <div className="mt-12 flex flex-col items-center space-y-12">
           {ITEMS.map((item) => (
-            <div className="relative flex w-full shrink-0 snap-center flex-col justify-center rounded-lg border-l-4 border-l-blue-700 px-8 py-8 shadow-md sm:max-w-sm">
+            <div
+              key={item.link}
+              className="relative flex w-full shrink-0 snap-center flex-col justify-center rounded-lg border-l-4 border-l-blue-700 px-8 py-8 shadow-md sm:max-w-sm"
+            >
               <Image
                 src={item.image}
                 alt={item.name}
