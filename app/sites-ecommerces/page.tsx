@@ -10,6 +10,8 @@ import {
 
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
+import { SideFeaturesChecks } from "@/components/sections/SideFeaturesChecks";
+import { LinkBanner } from "@/components/sections/LinkBanner";
 
 export const metadata: Metadata = {
   title:
@@ -96,6 +98,49 @@ export default function Page() {
             icon: EyeSlashIcon,
           },
         ]}
+      />
+
+      <SideFeaturesChecks
+        className="pb-24"
+        image={{
+          src: "/_static/images/ecommerce/cms-example.png",
+          alt: "Interface de gestion de produits, édition du nom, description, prix, image, et bien d'autres paramètres.",
+          height: 400,
+          width: 512,
+          className:
+            "max-w-md mx-auto lg:max-w-lg rounded-lg border border-gray-200",
+        }}
+        title="Gérez votre site e-commerce facilement"
+        description="Grâce à une interface de gestion simple et intuitive, vous pouvez ajouter, modifier et supprimer vos produits en quelques clics."
+        features={[
+          {
+            title: "Prise en main rapide",
+            description:
+              "L'interface de gestion est simple à utiliser, nous vous accompagnons dans la prise en main de cette interface.",
+          },
+          {
+            title: "Gérez vos promotions",
+            description:
+              "Créez des promotions et offres spéciales sur vos produits vendus en ligne.",
+          },
+          {
+            title: "Gestion des commandes et clients",
+            description:
+              "Gérez et suivez les commandes et vos profils clients en quelques clics, grâce à une interface intuitive.",
+          },
+        ]}
+      />
+
+      <LinkBanner
+        className="mb-24"
+        title="Développez votre commerce en ligne"
+        description="Vendez vos produits en ligne et répondez aux nouveaux besoins de vos clients. Site e-commerce à partir de 8 000€. Contactez-nous pour en savoir plus et avoir une estimation."
+        ctaTitle="Je prends contact"
+        link="/contact"
+        coverImage={{
+          src: "/_static/images/landing/ecommerce-grid-mockup.png",
+          alt: "",
+        }}
       />
     </>
   );
