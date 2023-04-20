@@ -48,7 +48,7 @@ export function Footer() {
         </div>
       </footer>
 
-      <div className="bg-blue-950 px-8 py-4">
+      <div className="bg-blue-950 py-4">
         <div className="mx-auto max-w-7xl px-8">
           <p className="text-xs text-blue-200/75">
             Copyright © {new Date().getFullYear()} —{" "}
