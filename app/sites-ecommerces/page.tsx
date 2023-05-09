@@ -119,6 +119,11 @@ export default function Page() {
               "L'interface de gestion est simple à utiliser, nous vous accompagnons dans la prise en main de cette interface.",
           },
           {
+            title: "Différents modes de retrait",
+            description:
+              "Acceptez les paiements en ligne et proposez le retrait en magasin ou la livraison à domicile.",
+          },
+          {
             title: "Gérez vos promotions",
             description:
               "Créez des promotions et offres spéciales sur vos produits vendus en ligne.",
@@ -134,7 +139,7 @@ export default function Page() {
       <LinkBanner
         className="mb-24"
         title="Développez votre commerce en ligne"
-        description="Vendez vos produits en ligne et répondez aux nouveaux besoins de vos clients. Site e-commerce à partir de 8 000€. Contactez-nous pour en savoir plus et avoir une estimation."
+        description="Vendez vos produits en ligne et répondez aux nouveaux besoins de vos clients. Acceptez les paiements en ligne dès maintenant. Contactez-nous pour en savoir plus et avoir une estimation."
         ctaTitle="Je prends contact"
         link="/contact"
         coverImage={{
