@@ -40,7 +40,7 @@ function Textarea({
 }
 
 export function ContactForm() {
-  const [success, setSuccess] = useState(true);
+  const [success, setSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   const [entreprise, setEntreprise] = useState("");
