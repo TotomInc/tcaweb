@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { Hero } from "@/components/sections/Hero";
 import { WebsiteCalculator } from "@/components/marketing/WebsiteCalculator";
+import { ContactForm } from "@/components/sections/ContactForm";
 
 export const metadata: Metadata = {
   title:
@@ -38,6 +39,8 @@ export default function ContactPage() {
       />
 
       <WebsiteCalculator className="mb-8" />
+
+      <ContactForm />
     </>
   );
 }
