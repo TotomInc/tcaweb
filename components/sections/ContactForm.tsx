@@ -3,6 +3,7 @@
 "use client";
 
 import { useState } from "react";
+import Balancer from "react-wrap-balancer";
 
 function Label({
   children,
@@ -22,7 +23,7 @@ function Input({ ...inputProps }: React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <input
       {...inputProps}
-      className="block w-full rounded-md border border-gray-200 px-3 py-2 text-base font-medium text-gray-950 placeholder-gray-400 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-200"
+      className="block w-full rounded-md border border-gray-200 px-3 py-2.5 text-base font-medium text-gray-950 placeholder-gray-400 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-200"
     />
   );
 }
@@ -39,7 +40,7 @@ function Textarea({
 }
 
 export function ContactForm() {
-  const [success, setSuccess] = useState(false);
+  const [success, setSuccess] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
 
   const [entreprise, setEntreprise] = useState("");
@@ -79,6 +80,23 @@ export function ContactForm() {
         <h3 className="font-spline text-xl font-medium text-gray-950">
           Contact
         </h3>
+
+        <p className="mt-4 text-base text-gray-800">
+          <Balancer>
+            Vous avez un projet web et vous souhaitez en discuter&nbsp;?
+            Contactez-nous via le formulaire ci-dessous ou à l&apos;adresse
+            e-mail{" "}
+            <a
+              href="mailto:thomas@lelaboweb.fr"
+              target="_blank"
+              className="font-spline font-medium text-blue-950 underline hover:text-blue-700"
+              rel="noreferrer"
+            >
+              thomas@lelaboweb.fr
+            </a>
+            .
+          </Balancer>
+        </p>
 
         <div className="mt-4 flex flex-col space-y-4">
           <div className="flex w-full flex-col">
@@ -120,15 +138,22 @@ export function ContactForm() {
             <Textarea
               name="message"
               id="message"
-              placeholder="Expliquez brièvement votre besoin, le type de site web voulu."
+              placeholder="Expliquez brièvement votre projet web"
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
         </div>
 
+        {success ? (
+          <p className="mt-6 text-center text-sm font-medium text-gray-950">
+            Merci ! Nous vous recontacterons le plus rapidement possible afin de
+            prendre connaissance de votre projet.
+          </p>
+        ) : null}
+
         <button
           type="submit"
-          className="mt-8 self-end rounded-md bg-blue-600 px-8 py-3 font-spline font-medium text-white hover:bg-blue-700 focus:outline-none"
+          className="mt-8 self-end rounded-md bg-blue-600 px-8 py-3 font-spline font-medium text-white hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200"
           disabled={isLoading || success}
         >
           Envoyer

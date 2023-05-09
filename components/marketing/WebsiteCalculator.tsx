@@ -47,7 +47,7 @@ function StepButton({
     <button
       {...buttonProps}
       type="button"
-      className="rounded-md bg-blue-600 px-6 py-3 text-base font-medium text-white transition-colors duration-300 ease-out hover:bg-blue-700"
+      className="rounded-md bg-blue-600 px-6 py-3 text-base font-medium text-white transition-colors duration-300 ease-out hover:bg-blue-700 focus:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-200"
     >
       {children}
     </button>
@@ -304,6 +304,10 @@ export function WebsiteCalculator({ className }: { className?: string }) {
       <div className="mx-auto w-full max-w-xl rounded-md border border-gray-200 bg-white p-6 shadow-md lg:p-10">
         {!websiteType ? (
           <>
+            <h2 className="mb-4 font-spline text-2xl font-semibold text-gray-950">
+              Outil d&apos;estimation rapide de votre projet web
+            </h2>
+
             <StepTitle>Quel type de site souhaitez-vous ?</StepTitle>
 
             <StepDescription>
