@@ -182,6 +182,14 @@ export default function Home() {
       />
 
       <Portfolio className="mb-24" />
+
+      <LinkBanner
+        className="mb-24"
+        title="J'estime mon projet instantanément"
+        description="Grâce à notre formulaire interactif, vous pouvez estimez rapidement le prix de votre projet web. Nous vous répondrons dans les plus brefs délais."
+        ctaTitle="J'estime mon projet"
+        link="/contact"
+      />
     </>
   );
 }

@@ -10,6 +10,7 @@ import {
 
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
+import { LinkBanner } from "@/components/sections/LinkBanner";
 
 export const metadata: Metadata = {
   title:
@@ -93,6 +94,18 @@ export default function Page() {
             icon: LockClosedIcon,
           },
         ]}
+      />
+
+      <LinkBanner
+        className="mb-24"
+        title="J'estime mon projet instantanément"
+        description="Grâce à notre formulaire interactif, vous pouvez estimez rapidement le prix de votre projet web. Nous vous répondrons dans les plus brefs délais."
+        ctaTitle="J'estime mon projet"
+        link="/contact"
+        coverImage={{
+          src: "/_static/images/landing/vitrine-grid-mockup.png",
+          alt: "",
+        }}
       />
     </>
   );
