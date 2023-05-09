@@ -11,21 +11,21 @@
   "dependencies": {
     "@heroicons/react": "^2.0.17",
     "classnames": "^2.3.2",
-    "next": "13.3.0",
+    "next": "13.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-wrap-balancer": "^0.4.0",
-    "tailwindcss": "3.3.1"
+    "react-wrap-balancer": "^0.4.1",
+    "tailwindcss": "3.3.2"
   },
   "devDependencies": {
-    "@totominc/eslint-config-next": "^0.2.0-beta.1",
+    "@totominc/eslint-config-next": "^0.2.0",
     "@types/node": "18.15.12",
-    "@types/react": "18.0.37",
-    "@types/react-dom": "18.0.11",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
-    "eslint": "^8.38.0",
+    "eslint": "^8.40.0",
     "postcss": "8.4.23",
-    "prettier": "^2.8.7",
+    "prettier": "^2.8.8",
     "typescript": "5.0.4"
   }
 }
