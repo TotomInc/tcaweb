@@ -42,7 +42,7 @@ export default function Home() {
           src: "/_static/images/landing/landing-mockup.png",
         }}
         checks={[
-          "Estimation gratuite en ligne en 5 min.",
+          "Estimation gratuite en ligne en 1 min.",
           "Premier contact facile (email, téléphone)",
         ]}
       />
