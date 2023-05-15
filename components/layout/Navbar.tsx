@@ -11,6 +11,7 @@ const links = [
   { href: "/", label: "Accueil" },
   { href: "/sites-vitrines", label: "Sites vitrines" },
   { href: "/sites-ecommerces", label: "Sites e-commerces" },
+  { href: "/sites-one-page", label: "Sites 1-page" },
   { href: "/contact", label: "Contact" },
 ];
 
