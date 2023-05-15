@@ -59,7 +59,7 @@ export default function Home() {
             icon: DevicePhoneMobileIcon,
           },
           {
-            title: "Service SEO",
+            title: "Référencement web",
             description:
               "Le SEO (Search Engine Optimization) est un élément clé dans la réussite de votre présence numérique.",
             icon: MagnifyingGlassIcon,
