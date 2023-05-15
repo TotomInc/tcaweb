@@ -31,7 +31,7 @@ export function Navbar() {
   return (
     <header
       className={cx(
-        "fixed left-0 right-0 top-0 z-50 border-b bg-white py-6 lg:transition lg:duration-300 lg:ease-out",
+        "fixed left-0 right-0 top-0 z-50 border-b bg-white py-5 transition duration-300 ease-out",
         hasScrolled || isOpen
           ? "border-gray-200 bg-opacity-100"
           : "border-transparent bg-opacity-0"
@@ -76,9 +76,10 @@ export function Navbar() {
 
       <nav
         className={cx(
-          "absolute left-0 right-0 top-0 mt-16 flex flex-col space-y-2 border-b border-b-gray-200 bg-white px-8 py-4 lg:hidden",
+          "absolute left-0 right-0 top-0 flex flex-col space-y-2 border-b border-b-gray-200 bg-white px-8 py-4 transition duration-300 ease-out lg:hidden",
           isOpen ? "opacity-100" : "pointer-events-none opacity-0"
         )}
+        style={{ marginTop: "calc(4.5rem + 1px)" }}
       >
         {links.map(({ href, label }) => (
           <Link
