@@ -73,7 +73,7 @@ export default function Home() {
           {
             title: "Intégration de formulaires",
             description:
-              "Laissez vos (futurs) clients vous contacter facilement grâce à l'intégration de formulaires sur votre site web.",
+              "Permettez à vos clients de vous contacter facilement grâce à l'intégration de formulaires sur votre site web.",
             icon: PaperAirplaneIcon,
           },
           {
@@ -101,7 +101,7 @@ export default function Home() {
           className: "max-w-md mx-auto lg:max-w-lg",
         }}
         title="Un site web de qualité professionnelle"
-        description="Optez pour un site web unique et performant, conçu avec soin et expertise par LeLaboWeb. Un site sur-mesure, vous permettra de vous démarquer de vos concurrents."
+        description="Optez pour un site web unique et performant, conçu avec soin et expertise. Un site sur-mesure permettra de vous démarquer de vos concurrents."
         features={[
           {
             title: "Des sites web performants",
