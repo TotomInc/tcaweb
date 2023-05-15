@@ -103,7 +103,7 @@ export default function Page() {
       <SideFeaturesChecks
         className="pb-24"
         image={{
-          src: "/_static/images/ecommerce/cms-example.png",
+          src: "/_static/images/ecommerce/shopify-product.png",
           alt: "Interface de gestion de produits, édition du nom, description, prix, image, et bien d'autres paramètres.",
           height: 400,
           width: 512,
@@ -114,14 +114,9 @@ export default function Page() {
         description="Grâce à une interface de gestion simple et intuitive, vous pouvez ajouter, modifier et supprimer vos produits en quelques clics."
         features={[
           {
-            title: "Prise en main rapide",
+            title: "Création et édition de produits intuitive",
             description:
               "L'interface de gestion est simple à utiliser, nous vous accompagnons dans la prise en main de cette interface.",
-          },
-          {
-            title: "Différents modes de retrait",
-            description:
-              "Acceptez les paiements en ligne et proposez le retrait en magasin ou la livraison à domicile.",
           },
           {
             title: "Gérez vos promotions",
@@ -129,9 +124,46 @@ export default function Page() {
               "Créez des promotions et offres spéciales sur vos produits vendus en ligne.",
           },
           {
+            title: "Up-selling",
+            description:
+              "Proposez des produits populaires achetés fréquemment et ajoutez des produits recommandés lors de l'achat d'un produit.",
+          },
+          {
+            title: "Statistiques de ventes",
+            description:
+              "Bénéficiez de statistiques de ventes sur les produits achetés par vos clients en ligne.",
+          },
+        ]}
+      />
+
+      <SideFeaturesChecks
+        invert
+        className="pb-24"
+        image={{
+          src: "/_static/images/ecommerce/shopify-order.png",
+          alt: "Interface de gestion des commandes.",
+          height: 400,
+          width: 512,
+          className:
+            "max-w-md mx-auto lg:max-w-lg rounded-lg border border-gray-200",
+        }}
+        title="Gestion des commandes, paiements & modes de livraison"
+        description="Grâce à votre site e-commerce, acceptez les paiements en ligne et proposez différentes options de livraison à vos clients."
+        features={[
+          {
             title: "Gestion des commandes et clients",
             description:
               "Gérez et suivez les commandes et vos profils clients en quelques clics, grâce à une interface intuitive.",
+          },
+          {
+            title: "Paiement en ligne simple & sécurisé",
+            description:
+              "Nous travaillons avec un partenaire spécialisé dans l'e-commerce afin de gérer les paiements en ligne de vos clients.",
+          },
+          {
+            title: "Différents modes de retrait",
+            description:
+              "Proposez à vos clients de venir retirer leurs commande en boutique, ou proposez leur la livraison à domicile.",
           },
         ]}
       />
