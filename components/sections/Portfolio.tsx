@@ -9,7 +9,7 @@ const ITEMS = [
     name: "H.G.M. France",
     subtitle: "Fontainebleau, Île-de-France",
     content:
-      "Réalisation du site web responsive de la société H.G.M. France, spécialisée dans le domaine de la machinerie. Intégration de formulaire, implémentation d'une solution d'analyse d'audience.",
+      "Réalisation du site web de la société H.G.M. France, spécialisée dans le domaine de la machinerie. Intégration d'un catalogue digital, d'un formulaire de contact et d'une solution d'analyse d'audience.",
     image: "/_static/images/portfolio/hgmfrance-mockup.png",
     link: "https://www.hgmfrance.fr",
   },

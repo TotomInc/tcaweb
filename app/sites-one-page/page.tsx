@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title:
     "Conception de sites vitrines — LeLaboWeb, l'agence web sur-mesure des petites & moyennes entreprises",
   description:
-    "LeLaboWeb vous accompagne dans la conception de votre site vitrine. Estimez votre projet en ligne gratuitement, en 5 minutes et sans engagement.",
+    "LeLaboWeb vous accompagne dans la conception de votre site vitrine. Boostez la visibilité de votre entreprise et gagnez de nouveaux clients grâce à une portée digitale.",
 };
 
 export default function Page() {

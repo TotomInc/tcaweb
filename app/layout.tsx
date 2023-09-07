@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title:
     "LeLaboWeb — l'agence web sur-mesure des petites & moyennes entreprises",
   description:
-    "LeLaboWeb est une agence web spécialisée dans le développement numérique de votre activité. Estimez votre projet en ligne gratuitement, en 5 minutes et sans engagement.",
+    "LeLaboWeb est une agence web spécialisée dans le développement numérique de votre activité. confiez votre projet web à un professionnel.",
 };
 
 const inter = Inter({

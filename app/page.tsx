@@ -22,14 +22,14 @@ export default function Home() {
             <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
               Le Labo Web
             </span>
-            , l&apos;agence web pensée pour les petites & moyennes entreprises.
+            , réalisez sereinnement votre projet web.
           </>
         }
         description={
           <>
             Confiez votre présence digitale à un{" "}
             <span className="font-medium">professionnel</span>. Votre solution
-            tout-en-un afin de maitriser la{" "}
+            clé-en-main afin de maitriser la{" "}
             <span className="font-medium">présence numérique</span> de votre
             entreprise.
           </>
@@ -42,8 +42,8 @@ export default function Home() {
           src: "/_static/images/landing/landing-mockup.png",
         }}
         checks={[
-          "Estimation gratuite en ligne en 1 min.",
-          "Premier contact facile (email, téléphone)",
+          "Sites vitrines, projets avec back-office et sites e-commerce.",
+          "Augmentez votre visibilité et votre CA grâce au web.",
         ]}
       />
 
@@ -185,9 +185,9 @@ export default function Home() {
 
       <LinkBanner
         className="mb-24"
-        title="J'estime mon projet instantanément"
-        description="Grâce à notre formulaire interactif, vous pouvez estimez rapidement le prix de votre projet web. Nous vous répondrons dans les plus brefs délais."
-        ctaTitle="J'estime mon projet"
+        title="Confiez votre projet web à un professionnel"
+        description="Contactez-nous afin de nous faire part de votre projet web. Nous vous répondrons dans les plus brefs délais."
+        ctaTitle="Contact"
         link="/contact"
       />
     </>

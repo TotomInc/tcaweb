@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title:
     "Conception de sites vitrines — LeLaboWeb, l'agence web sur-mesure des petites & moyennes entreprises",
   description:
-    "LeLaboWeb vous accompagne dans la conception de votre site vitrine. Estimez votre projet en ligne gratuitement, en 5 minutes et sans engagement.",
+    "LeLaboWeb vous accompagne dans la conception de votre site vitrine. Boostez la visibilité de votre entreprise et gagnez de nouveaux clients grâce à une portée digitale.",
 };
 
 export default function Page() {
@@ -98,9 +98,9 @@ export default function Page() {
 
       <LinkBanner
         className="mb-24"
-        title="J'estime mon projet instantanément"
-        description="Grâce à notre formulaire interactif, vous pouvez estimez rapidement le prix de votre projet web. Nous vous répondrons dans les plus brefs délais."
-        ctaTitle="J'estime mon projet"
+        title="Confiez votre projet web à un professionnel"
+        description="Contactez-nous afin de nous faire part de votre projet web. Nous vous répondrons dans les plus brefs délais."
+        ctaTitle="Contact"
         link="/contact"
         coverImage={{
           src: "/_static/images/landing/vitrine-grid-mockup.png",

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title:
     "Conception de sites e-commerces — LeLaboWeb, l'agence web sur-mesure des petites & moyennes entreprises",
   description:
-    "LeLaboWeb vous accompagne dans la conception de votre site e-commerce. Estimez votre projet en ligne gratuitement, en 5 minutes et sans engagement.",
+    "LeLaboWeb vous accompagne dans la conception de votre site e-commerce. Développez un nouveau canal de vente et augmentez votre chiffre d'affaires.",
 };
 
 export default function Page() {
@@ -44,8 +44,9 @@ export default function Page() {
         }
         cta={{ href: "/contact", label: "En savoir plus" }}
         checks={[
-          "Démarrez la vente en ligne facilement et rapidement",
-          "Interface de gestion simple et intuitive",
+          "Démarrez la vente en ligne facilement et rapidement.",
+          "Un nouveau canal de vente pour votre entreprise.",
+          "Augmentez votre portée et votre chiffre d'affaires.",
         ]}
         image={{
           width: 768,
@@ -172,7 +173,7 @@ export default function Page() {
         className="mb-24"
         title="Développez votre commerce en ligne"
         description="Vendez vos produits en ligne et répondez aux nouveaux besoins de vos clients. Acceptez les paiements en ligne dès maintenant. Contactez-nous pour en savoir plus et avoir une estimation."
-        ctaTitle="Je prends contact"
+        ctaTitle="Contact"
         link="/contact"
         coverImage={{
           src: "/_static/images/landing/ecommerce-grid-mockup.png",
