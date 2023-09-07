@@ -38,7 +38,7 @@ export default function Page() {
             exigences de votre entreprise.
           </>
         }
-        cta={{ href: "/contact", label: "Estimer mon site vitrine" }}
+        cta={{ href: "/contact", label: "En savoir plus" }}
         checks={[
           "Rendez votre entreprise visible en ligne",
           "Site sur-mesure, adapté à l'identité de votre entreprise",

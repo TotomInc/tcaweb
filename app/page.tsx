@@ -34,7 +34,7 @@ export default function Home() {
             entreprise.
           </>
         }
-        cta={{ href: "/contact", label: "Estimer mon devis en ligne" }}
+        cta={{ href: "/contact", label: "En savoir plus" }}
         image={{
           width: 768,
           height: 650,

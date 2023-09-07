@@ -42,7 +42,7 @@ export default function Page() {
             produits & commandes.
           </>
         }
-        cta={{ href: "/contact", label: "Estimer mon site e-commerce" }}
+        cta={{ href: "/contact", label: "En savoir plus" }}
         checks={[
           "Démarrez la vente en ligne facilement et rapidement",
           "Interface de gestion simple et intuitive",

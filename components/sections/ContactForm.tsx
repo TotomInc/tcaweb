@@ -133,7 +133,7 @@ export function ContactForm() {
           </div>
 
           <div className="flex w-full flex-col">
-            <Label htmlFor="message">Message</Label>
+            <Label htmlFor="message">Votre projet</Label>
 
             <Textarea
               name="message"
