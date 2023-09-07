@@ -5,6 +5,7 @@ const schema = z.object({
   entreprise: z.string().min(2).max(50),
   nom: z.string().min(2).max(50),
   email: z.string().email(),
+  phone: z.string().min(2).max(50),
   message: z.string().min(2).max(1000),
 });
 
@@ -16,12 +17,13 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: "Bad request" }, { status: 400 });
   }
 
-  const { entreprise, nom, email, message } = await request.json();
+  const { entreprise, nom, email, phone, message } = await request.json();
 
   const validated = schema.safeParse({
     entreprise,
     nom,
     email,
+    phone,
     message,
   });
 
@@ -34,6 +36,7 @@ export async function POST(request: Request) {
   formData.append("entreprise", validated.data.entreprise);
   formData.append("nom", validated.data.nom);
   formData.append("email", validated.data.email);
+  formData.append("phone", validated.data.phone);
   formData.append("message", validated.data.message);
 
   try {

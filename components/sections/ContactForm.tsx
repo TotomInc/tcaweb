@@ -46,6 +46,7 @@ export function ContactForm() {
   const [entreprise, setEntreprise] = useState("");
   const [nom, setNom] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
 
   const handleOnSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
@@ -60,6 +61,7 @@ export function ContactForm() {
         entreprise,
         nom,
         email,
+        phone,
         message,
       }),
     });
@@ -107,6 +109,7 @@ export function ContactForm() {
               id="entreprise"
               placeholder="Nom de votre entreprise"
               onChange={(e) => setEntreprise(e.target.value)}
+              required
             />
           </div>
 
@@ -118,6 +121,7 @@ export function ContactForm() {
               id="nom"
               placeholder="Votre nom"
               onChange={(e) => setNom(e.target.value)}
+              required
             />
           </div>
 
@@ -129,6 +133,19 @@ export function ContactForm() {
               id="email"
               placeholder="Votre adresse e-mail"
               onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="flex w-full flex-col">
+            <Label htmlFor="email">Numéro de téléphone</Label>
+
+            <Input
+              name="email"
+              id="email"
+              placeholder="Votre numéro de téléphone"
+              onChange={(e) => setPhone(e.target.value)}
+              required
             />
           </div>
 
@@ -140,6 +157,7 @@ export function ContactForm() {
               id="message"
               placeholder="Expliquez brièvement votre projet web"
               onChange={(e) => setMessage(e.target.value)}
+              required
             />
           </div>
         </div>
