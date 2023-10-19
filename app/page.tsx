@@ -20,21 +20,20 @@ export default function Home() {
         title={
           <>
             <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
-              Le Labo Web
+              TCA Web
             </span>
-            , réalisez sereinnement votre projet web.
+            , création & refonte de sites Internet.
           </>
         }
         description={
           <>
-            Confiez votre présence digitale à un{" "}
-            <span className="font-medium">professionnel</span>. Votre solution
-            clé-en-main afin de maitriser la{" "}
-            <span className="font-medium">présence numérique</span> de votre
-            entreprise.
+            Notre équipe d’expert est{" "}
+            <span className="font-semibold">à votre écoute</span> pour vous
+            proposer la meilleure solution{" "}
+            <span className="font-semibold">à vos besoins</span>.
           </>
         }
-        cta={{ href: "/contact", label: "En savoir plus" }}
+        cta={{ href: "/contact", label: "Contactez-nous" }}
         image={{
           width: 768,
           height: 650,
@@ -42,8 +41,9 @@ export default function Home() {
           src: "/_static/images/landing/landing-mockup.png",
         }}
         checks={[
-          "Sites vitrines, projets avec back-office et sites e-commerce.",
-          "Augmentez votre visibilité et votre CA grâce au web.",
+          "Sites vitrines & e-commerces",
+          "Référencement web SEO",
+          "Projets sur-mesure avec éditeur de contenu",
         ]}
       />
 

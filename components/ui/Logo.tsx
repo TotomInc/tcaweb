@@ -10,7 +10,7 @@ export function Logo({ textColorVariant }: LogoProps) {
     <>
       <Image
         src="/_static/images/logo.svg"
-        alt="LeLaboWeb"
+        alt="TCA Web"
         width={32}
         height={32}
       />
@@ -22,10 +22,10 @@ export function Logo({ textColorVariant }: LogoProps) {
           "text-white": textColorVariant === "white",
         })}
       >
-        LLW
+        TCA Web
       </span>
 
-      <span className="sr-only">LeLaboWeb, agence de développement web</span>
+      <span className="sr-only">TCA Web, agence de développement web</span>
     </>
   );
 }

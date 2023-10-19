@@ -5,9 +5,9 @@ import { ContactForm } from "@/components/sections/ContactForm";
 
 export const metadata: Metadata = {
   title:
-    "Contact — LeLaboWeb, l'agence web sur-mesure des petites & moyennes entreprises",
+    "Contactez-nous pour parler de votre projet web, création site Internet ou refonte | TCA Web",
   description:
-    "LeLaboWeb vous accompagne dans la conception de votre site projet web.",
+    "Confiez votre projet web à un expert afin d'en guarantir le succès tout en étant accompagné. Demandez un devis gratuit pour votre projet web.",
 };
 
 export default function ContactPage() {

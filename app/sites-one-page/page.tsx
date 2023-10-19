@@ -13,10 +13,9 @@ import { Features } from "@/components/sections/Features";
 import { LinkBanner } from "@/components/sections/LinkBanner";
 
 export const metadata: Metadata = {
-  title:
-    "Conception de sites vitrines — LeLaboWeb, l'agence web sur-mesure des petites & moyennes entreprises",
+  title: "Création de sites vitrines | TCA Web",
   description:
-    "LeLaboWeb vous accompagne dans la conception de votre site vitrine. Boostez la visibilité de votre entreprise et gagnez de nouveaux clients grâce à une portée digitale.",
+    "Boostez la visibilité de votre entreprise et gagnez de nouveaux clients grâce à une portée agumentée. TCA Web vous accompagne dans la conception de votre site vitrine.",
 };
 
 export default function Page() {

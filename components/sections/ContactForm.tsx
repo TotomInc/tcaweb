@@ -89,12 +89,12 @@ export function ContactForm() {
             Contactez-nous via le formulaire ci-dessous ou à l&apos;adresse
             e-mail{" "}
             <a
-              href="mailto:thomas@lelaboweb.fr"
+              href="mailto:thomas@tcaweb.fr"
               target="_blank"
               className="font-spline font-medium text-blue-950 underline hover:text-blue-700"
               rel="noreferrer"
             >
-              thomas@lelaboweb.fr
+              thomas@tcaweb.fr
             </a>
             .
           </Balancer>

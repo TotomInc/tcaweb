@@ -6,8 +6,8 @@ import { Logo } from "../ui/Logo";
 
 const CONTACT_LINKS = [
   {
-    label: "thomas@lelaboweb.fr",
-    href: "mailto:thomas@lelaboweb.fr",
+    label: "thomas@tcaweb.fr",
+    href: "mailto:thomas@tcaweb.fr",
     icon: EnvelopeIcon,
   },
 ];
@@ -24,10 +24,11 @@ export function Footer() {
           <p className="mt-2 max-w-lg text-sm font-medium text-blue-200">
             <Balancer>
               <span className="bg-gradient-to-br from-blue-50 via-amber-200 to-red-300 bg-clip-text font-heading font-bold text-transparent">
-                LeLaboWeb
+                TCA Web
               </span>
-              , l&apos;agence web pensée sur-mesure pour les petites & moyennes
-              entreprises.
+              , l&apos;agence web qui vous accompagne dans votre stratégie web
+              et e-commerce, création ou refonte de site Internet, design et
+              maquettes digitales.
             </Balancer>
           </p>
 
@@ -52,10 +53,8 @@ export function Footer() {
         <div className="mx-auto max-w-7xl px-8">
           <p className="text-xs text-blue-200/75">
             Copyright © {new Date().getFullYear()} —{" "}
-            <span className="font-heading text-sm font-bold">
-              LeLaboWeb (LLW)
-            </span>{" "}
-            — Tous droits réservés
+            <span className="font-heading text-sm font-bold">TCA Web</span> —
+            Tous droits réservés
           </p>
         </div>
       </div>

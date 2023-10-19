@@ -14,10 +14,9 @@ import { SideFeaturesChecks } from "@/components/sections/SideFeaturesChecks";
 import { LinkBanner } from "@/components/sections/LinkBanner";
 
 export const metadata: Metadata = {
-  title:
-    "Conception de sites e-commerces — LeLaboWeb, l'agence web sur-mesure des petites & moyennes entreprises",
+  title: "Création de site e-commerce | TCA Web",
   description:
-    "LeLaboWeb vous accompagne dans la conception de votre site e-commerce. Développez un nouveau canal de vente et augmentez votre chiffre d'affaires.",
+    "Créez un nouveau canal de vente pour votre activité et augmentez vos ventes. Nous vous accompagnons dans la conception de votre site e-commerce afin d'en garantir le succès.",
 };
 
 export default function Page() {

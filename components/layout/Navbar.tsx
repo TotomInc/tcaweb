@@ -33,7 +33,7 @@ export function Navbar() {
       className={cx(
         "fixed left-0 right-0 top-0 z-50 border-b bg-white py-5 transition duration-300 ease-out",
         hasScrolled || isOpen
-          ? "border-gray-200 bg-opacity-100 lg:bg-opacity-75 lg:backdrop-blur-2xl lg:backdrop-filter"
+          ? "border-gray-200 bg-opacity-100"
           : "border-transparent bg-opacity-0"
       )}
     >
@@ -52,7 +52,7 @@ export function Navbar() {
               className={cx(
                 "font-spline text-base font-medium hover:underline",
                 hasScrolled
-                  ? "text-blue-950 hover:text-blue-800"
+                  ? "text-gray-900 hover:text-gray-800"
                   : "text-white hover:text-blue-200"
               )}
             >
@@ -86,7 +86,7 @@ export function Navbar() {
             key={`mobile-${href}`}
             href={href}
             className={cx(
-              "font-spline text-base font-medium text-blue-950 ease-out"
+              "font-spline text-base font-medium text-gray-900 ease-out"
             )}
             onClick={() => setIsOpen(false)}
           >

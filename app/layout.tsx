@@ -8,11 +8,10 @@ import { Navbar } from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://lelaboweb.fr"),
-  title:
-    "LeLaboWeb — l'agence web sur-mesure des petites & moyennes entreprises",
+  metadataBase: new URL("https://tcaweb.fr"),
+  title: "Agence web création site internet et e-commerce | TCA Web",
   description:
-    "LeLaboWeb est une agence web spécialisée dans le développement numérique de votre activité. confiez votre projet web à un professionnel.",
+    "TCA Web est une agence web qui vous accompagne dans votre stratégie web et e-commerce, création ou refonte de site Internet, design et maquettes digitales.",
 };
 
 const inter = Inter({
@@ -50,7 +49,7 @@ export default function RootLayout({
 
         <Script
           src="https://hello.jsgarden.co/js/script.js"
-          data-domain="lelaboweb.fr"
+          data-domain="tcaweb.fr"
           defer
         />
       </body>
