@@ -40,14 +40,14 @@ export function SideFeaturesChecks({
           className={cx(
             "block h-auto w-full",
             invert ? "order-2" : "",
-            image.className
+            image.className,
           )}
         />
 
         <div
           className={cx(
             "mt-12 flex w-full flex-col",
-            invert ? "order-1" : "lg:pl-16"
+            invert ? "order-1" : "lg:pl-16",
           )}
         >
           <h2 className="text-3xl font-bold text-gray-950">

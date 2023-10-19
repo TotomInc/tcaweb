@@ -27,7 +27,7 @@ export function LinkBanner({
     <section
       className={cx(
         "group relative w-full overflow-hidden bg-gradient-to-br from-blue-800 to-blue-600  lg:mx-auto lg:max-w-4xl lg:rounded-2xl lg:shadow-lg 2xl:max-w-7xl",
-        className
+        className,
       )}
     >
       {coverImage ? (

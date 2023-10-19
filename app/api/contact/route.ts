@@ -49,7 +49,7 @@ export async function POST(request: Request) {
   } catch (error) {
     return NextResponse.json(
       { message: "Something went wrong" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }

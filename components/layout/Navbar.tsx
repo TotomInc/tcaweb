@@ -34,7 +34,7 @@ export function Navbar() {
         "fixed left-0 right-0 top-0 z-50 border-b bg-white py-5 transition duration-300 ease-out",
         hasScrolled || isOpen
           ? "border-gray-200 bg-opacity-100"
-          : "border-transparent bg-opacity-0"
+          : "border-transparent bg-opacity-0",
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8">
@@ -53,7 +53,7 @@ export function Navbar() {
                 "font-spline text-base font-medium hover:underline",
                 hasScrolled
                   ? "text-gray-900 hover:text-gray-800"
-                  : "text-white hover:text-blue-200"
+                  : "text-white hover:text-blue-200",
               )}
             >
               {label}
@@ -77,7 +77,7 @@ export function Navbar() {
       <nav
         className={cx(
           "absolute left-0 right-0 top-0 flex flex-col space-y-2 border-b border-b-gray-200 bg-white px-8 py-4 transition duration-300 ease-out lg:hidden",
-          isOpen ? "opacity-100" : "pointer-events-none opacity-0"
+          isOpen ? "opacity-100" : "pointer-events-none opacity-0",
         )}
         style={{ marginTop: "calc(4.5rem + 1px)" }}
       >
@@ -86,7 +86,7 @@ export function Navbar() {
             key={`mobile-${href}`}
             href={href}
             className={cx(
-              "font-spline text-base font-medium text-gray-900 ease-out"
+              "font-spline text-base font-medium text-gray-900 ease-out",
             )}
             onClick={() => setIsOpen(false)}
           >
