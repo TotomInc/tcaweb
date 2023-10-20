@@ -3,7 +3,10 @@
 "use client";
 
 import { useState } from "react";
-import Balancer from "react-wrap-balancer";
+
+type Props = {
+  title?: string;
+};
 
 function Label({
   children,
@@ -39,14 +42,14 @@ function Textarea({
   );
 }
 
-export function ContactForm() {
+export function ContactForm({ title }: Props) {
   const [success, setSuccess] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const [entreprise, setEntreprise] = useState("");
   const [nom, setNom] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
+  const [activite, setActivite] = useState("");
   const [message, setMessage] = useState("");
 
   const handleOnSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
@@ -58,10 +61,10 @@ export function ContactForm() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        entreprise,
         nom,
         email,
         phone,
+        activite,
         message,
       }),
     });
@@ -77,42 +80,19 @@ export function ContactForm() {
     <section className="relative mb-8 px-8">
       <form
         onSubmit={handleOnSubmit}
-        className="mx-auto flex w-full max-w-xl flex-col rounded-md border border-gray-200 bg-white p-6 shadow-md lg:p-10"
+        className="mx-auto flex w-full max-w-2xl flex-col rounded-md border border-gray-200 bg-white p-6 shadow-md lg:p-12"
       >
         <h3 className="font-spline text-xl font-medium text-gray-950">
-          Contact
+          {title ?? "Contact"}
         </h3>
 
         <p className="mt-4 text-base text-gray-800">
-          <Balancer>
-            Vous avez un projet web et vous souhaitez en discuter&nbsp;?
-            Contactez-nous via le formulaire ci-dessous ou à l&apos;adresse
-            e-mail{" "}
-            <a
-              href="mailto:thomas@tcaweb.fr"
-              target="_blank"
-              className="font-spline font-medium text-blue-950 underline hover:text-blue-700"
-              rel="noreferrer"
-            >
-              thomas@tcaweb.fr
-            </a>
-            .
-          </Balancer>
+          Vous avez un projet web et vous souhaitez en discuter&nbsp;?
+          <br />
+          Contactez-nous via le formulaire ci-dessous.
         </p>
 
         <div className="mt-4 flex flex-col space-y-4">
-          <div className="flex w-full flex-col">
-            <Label htmlFor="entreprise">Entreprise</Label>
-
-            <Input
-              name="entreprise"
-              id="entreprise"
-              placeholder="Nom de votre entreprise"
-              onChange={(e) => setEntreprise(e.target.value)}
-              required
-            />
-          </div>
-
           <div className="flex w-full flex-col">
             <Label htmlFor="nom">Nom</Label>
 
@@ -145,6 +125,18 @@ export function ContactForm() {
               id="email"
               placeholder="Votre numéro de téléphone"
               onChange={(e) => setPhone(e.target.value)}
+              required
+            />
+          </div>
+
+          <div className="flex w-full flex-col">
+            <Label htmlFor="email">Activité</Label>
+
+            <Input
+              name="activite"
+              id="activite"
+              placeholder="Votre activité"
+              onChange={(e) => setActivite(e.target.value)}
               required
             />
           </div>

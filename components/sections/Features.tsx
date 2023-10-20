@@ -21,11 +21,11 @@ export function Features({
   return (
     <section className={cx("relative w-full", className)}>
       <div className="mx-auto max-w-7xl px-8">
-        <h2 className="mx-auto max-w-lg text-center text-3xl font-bold text-gray-950">
+        <h2 className="mx-auto max-w-xl text-center text-3xl font-bold text-gray-950">
           <Balancer>{title}</Balancer>
         </h2>
 
-        <p className="mx-auto mt-8 max-w-lg text-center text-base leading-snug text-gray-800">
+        <p className="mx-auto mt-8 max-w-2xl text-center text-base leading-snug text-gray-800">
           <Balancer>{description}</Balancer>
         </p>
 

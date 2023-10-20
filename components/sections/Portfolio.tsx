@@ -17,20 +17,16 @@ const ITEMS = [
 
 export type PortfolioProps = {
   className?: string;
+  titleClassName?: string;
 };
 
-export function Portfolio({ className }: PortfolioProps) {
+export function Portfolio({ className, titleClassName }: PortfolioProps) {
   return (
     <section className={cx("relative w-full", className)}>
       <div className="mx-auto max-w-7xl px-8">
-        <h2 className="text-3xl font-bold text-gray-950">
+        <h2 className={cx("text-3xl font-bold text-gray-950", titleClassName)}>
           Portfolio <span className="h-px w-12" />
         </h2>
-
-        <p className="mt-8 text-base leading-snug text-gray-800">
-          Découvrez nos réalisations et notre portfolio de clients satisfaits
-          par nos services.
-        </p>
 
         <div className="mt-12 flex flex-col items-center space-y-12">
           {ITEMS.map((item) => (

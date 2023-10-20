@@ -22,9 +22,17 @@ export type HeroProps = {
     className?: string;
   };
   checks?: string[];
+  children?: React.ReactNode;
 };
 
-export function Hero({ title, description, cta, checks, image }: HeroProps) {
+export function Hero({
+  title,
+  description,
+  cta,
+  checks,
+  image,
+  children,
+}: HeroProps) {
   return (
     <main className="relative mb-12 bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500">
       <div className="relative mx-auto max-w-7xl pb-32 pt-24 lg:pb-56 lg:pt-32">
@@ -62,6 +70,8 @@ export function Hero({ title, description, cta, checks, image }: HeroProps) {
               ))}
             </div>
           ) : null}
+
+          {children}
         </div>
 
         {image ? (

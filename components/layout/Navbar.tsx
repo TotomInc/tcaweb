@@ -8,10 +8,8 @@ import cx from "classnames";
 import { Logo } from "../ui/Logo";
 
 const links = [
-  { href: "/", label: "Accueil" },
-  { href: "/sites-vitrines", label: "Sites vitrines" },
-  { href: "/sites-ecommerces", label: "Sites e-commerces" },
-  { href: "/sites-one-page", label: "Sites 1-page" },
+  { href: "/sites-internet", label: "Création de site" },
+  { href: "/sites-ecommerces", label: "Création de site e-commerce" },
   { href: "/contact", label: "Contact" },
 ];
 

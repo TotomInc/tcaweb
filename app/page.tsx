@@ -1,10 +1,10 @@
 import {
-  DevicePhoneMobileIcon,
-  MagnifyingGlassIcon,
+  KeyIcon,
   PaintBrushIcon,
-  PaperAirplaneIcon,
+  ArrowTrendingUpIcon,
   ChartBarIcon,
   WrenchScrewdriverIcon,
+  UserIcon,
 } from "@heroicons/react/24/outline";
 
 import { Portfolio } from "@/components/sections/Portfolio";
@@ -49,32 +49,32 @@ export default function Home() {
 
       <Features
         className="mt-24 pb-24"
-        title="Votre solution digitale sur-mesure, tout-en-un"
-        description="Un site web permet d'activer votre présence numérique. C'est la première étape de votre visibilité en ligne."
+        title="Pourquoi travailler avec TCA Web ?"
+        description="Nous avons pour objectif de vous proposer une solution juste et efficace, à un prix respectable afin de vous accompagner dans la réussite de votre projet web."
         features={[
           {
-            title: "Site Responsive",
+            title: "Site clé en main",
             description:
-              "Le site s'adapte automatiquement à toutes les tailles d'écrans, afin d'accéder au contenu n'importe où.",
-            icon: DevicePhoneMobileIcon,
+              "Votre site sera livré beau, dynamique et prêt à l'emploi, adapté sur mobiles & ordinateurs.",
+            icon: KeyIcon,
           },
           {
-            title: "Référencement web",
+            title: "Site évolutif",
             description:
-              "Le SEO (Search Engine Optimization) est un élément clé dans la réussite de votre présence numérique.",
-            icon: MagnifyingGlassIcon,
+              "Votre site est vivant, il évolue avec votre entreprise selon vos besoins et les fonctionnalités nécessaires.",
+            icon: ArrowTrendingUpIcon,
+          },
+          {
+            title: "Interlocuteur unique",
+            description:
+              "Vous travaillerez avec un interlocuteur unique, afin de faciliter les échanges et la communication.",
+            icon: UserIcon,
           },
           {
             title: "Design sur-mesure",
             description:
               "Un design développé sur-mesure afin de correspondre aux besoins et à l'activité de votre entreprise.",
             icon: PaintBrushIcon,
-          },
-          {
-            title: "Intégration de formulaires",
-            description:
-              "Permettez à vos clients de vous contacter facilement grâce à l'intégration de formulaires sur votre site web.",
-            icon: PaperAirplaneIcon,
           },
           {
             title: "Statistiques de performance",
@@ -106,7 +106,7 @@ export default function Home() {
           {
             title: "Des sites web performants",
             description:
-              "Nous n'utilisons ni WordPress, ni des page-builder comme Wix, afin de garantir une performance maximale de votre site web. Ces solutions sont des pièges, elles sont lentes et très peu sécurisées.",
+              "Nous utilisons des technologies modernes afin de garantir une performance maximale de votre site web. Les solutions comme Wix, WordPress et autres sont des pièges, votre site ne sera jamais unique.",
           },
           {
             title: "Un design sur-mesure",
@@ -174,7 +174,7 @@ export default function Home() {
         title="Découvrez la création de sites vitrines"
         description="Grâce à un site vitrine, démarrez votre présence numérique. Cela vous donne l'opportunité d'être visible sur le web et de renforcer votre image de marque, auprès de vos (futurs) clients."
         ctaTitle="En savoir plus"
-        link="/sites-vitrines"
+        link="/sites-internet"
         coverImage={{
           src: "/_static/images/landing/vitrine-grid-mockup.png",
           alt: "",

@@ -2,10 +2,10 @@ import { NextResponse } from "next/server";
 import { z } from "zod";
 
 const schema = z.object({
-  entreprise: z.string().min(2).max(50),
   nom: z.string().min(2).max(50),
   email: z.string().email(),
   phone: z.string().min(2).max(50),
+  activite: z.string().min(2).max(50),
   message: z.string().min(2).max(1000),
 });
 
@@ -17,13 +17,13 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: "Bad request" }, { status: 400 });
   }
 
-  const { entreprise, nom, email, phone, message } = await request.json();
+  const { activite, nom, email, phone, message } = await request.json();
 
   const validated = schema.safeParse({
-    entreprise,
     nom,
     email,
     phone,
+    activite,
     message,
   });
 
@@ -33,14 +33,14 @@ export async function POST(request: Request) {
 
   const formData = new FormData();
 
-  formData.append("entreprise", validated.data.entreprise);
   formData.append("nom", validated.data.nom);
   formData.append("email", validated.data.email);
   formData.append("phone", validated.data.phone);
+  formData.append("activite", validated.data.activite);
   formData.append("message", validated.data.message);
 
   try {
-    await fetch("https://nocodeform.io/f/645a138193a604851b338ffe", {
+    await fetch("https://nocodeform.io/f/653257ec2f0eb1b11db8a503", {
       method: "POST",
       body: formData,
     });

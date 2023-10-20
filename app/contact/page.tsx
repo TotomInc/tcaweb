@@ -24,11 +24,9 @@ export default function ContactPage() {
         }
         description={
           <>
-            Boostez votre présence digitale grâce à notre expertise en{" "}
-            <span className="font-medium text-blue-200">développement web</span>
-            . Demandez un{" "}
-            <span className="font-medium text-blue-200">devis gratuit</span>{" "}
-            pour votre projet.
+            Discutons de votre prochain projet web. Nous vous accompagnons dans
+            la conception de votre site web afin d&apos;en{" "}
+            <span className="font-semibold">garantir le succès</span>.
           </>
         }
         image={{

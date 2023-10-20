@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import {
-  ArrowTrendingUpIcon,
+  BeakerIcon,
   TicketIcon,
   CursorArrowRaysIcon,
   PaperAirplaneIcon,
@@ -11,7 +12,7 @@ import {
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
 import { SideFeaturesChecks } from "@/components/sections/SideFeaturesChecks";
-import { LinkBanner } from "@/components/sections/LinkBanner";
+import { ContactForm } from "@/components/sections/ContactForm";
 
 export const metadata: Metadata = {
   title: "Création de site e-commerce | TCA Web",
@@ -26,47 +27,52 @@ export default function Page() {
         title={
           <>
             <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
-              Les sites e-commerces
+              Création de site ecommerce
             </span>
             , vendez vos produits en ligne facilement.
           </>
         }
         description={
           <>
-            Nous démocratisons l&apos;e-commerce en le rendant{" "}
-            <span className="font-medium text-blue-200">simple</span>,{" "}
-            <span className="font-medium text-blue-200">efficace</span> et{" "}
-            <span className="font-medium text-blue-200">accessible</span>.
-            Accédez à une interface de gestion simple et intuitive de vos
-            produits & commandes.
+            Concevoir et gérer un site e-commerce{" "}
+            <span className="font-semibold">est complexe</span>. Nous vous
+            accompagnons dans la conception de votre site e-commerce afin
+            d&apos;en <span className="font-semibold">garantir le succès</span>.
           </>
         }
-        cta={{ href: "/contact", label: "En savoir plus" }}
         checks={[
           "Démarrez la vente en ligne facilement et rapidement.",
           "Un nouveau canal de vente pour votre entreprise.",
-          "Augmentez votre portée et votre chiffre d'affaires.",
         ]}
         image={{
           width: 768,
           height: 414,
           alt: "",
           src: "/_static/images/landing/ecommerce-mockup.png",
-          className: "w-72",
+          className: "w-64",
         }}
-      />
+      >
+        <div className="flex items-center justify-center">
+          <Image
+            src="/_static/images/shopify-partners.png"
+            alt="Partenaire Shopify"
+            width="192"
+            height="32"
+            className="block h-[24px] w-auto lg:h-[32px]"
+            unoptimized
+          />
+
+          <p className="ml-2 rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-900 shadow-md lg:ml-4 lg:px-4 lg:text-sm">
+            Partenaire Shopify
+          </p>
+        </div>
+      </Hero>
 
       <Features
         className="mt-24 pb-24"
-        title="La vente en ligne, un canal de vente supplémentaire"
-        description="60% des Français ont acheté en ligne en 2022, soit 40 millions de personnes. C'est un canal de vente essentiel pour toute entreprise."
+        title="Les avantages de travailler avec TCA Web"
+        description="En travaillant avec des pros, vous avez tout à gagner afin de faire évoluer vos ventes."
         features={[
-          {
-            title: "Augmentez vos ventes",
-            description:
-              "Touchez un public plus large et augmentez vos ventes en ligne.",
-            icon: ArrowTrendingUpIcon,
-          },
           {
             title: "Gestion des produits",
             description:
@@ -96,6 +102,12 @@ export default function Page() {
             description:
               "Avec la mise en place de la loi RGPD, nous respectons la confidentialité de vos utilisateurs.",
             icon: EyeSlashIcon,
+          },
+          {
+            title: "Design unique",
+            description:
+              "Pas de thèmes préconçus réutilisés par toutes les agences web. Nous livrons un site web unique et sur-mesure.",
+            icon: BeakerIcon,
           },
         ]}
       />
@@ -168,17 +180,7 @@ export default function Page() {
         ]}
       />
 
-      <LinkBanner
-        className="mb-24"
-        title="Développez votre commerce en ligne"
-        description="Vendez vos produits en ligne et répondez aux nouveaux besoins de vos clients. Acceptez les paiements en ligne dès maintenant. Contactez-nous pour en savoir plus et avoir une estimation."
-        ctaTitle="Contact"
-        link="/contact"
-        coverImage={{
-          src: "/_static/images/landing/ecommerce-grid-mockup.png",
-          alt: "",
-        }}
-      />
+      <ContactForm title="Demander un devis gratuit" />
     </>
   );
 }
