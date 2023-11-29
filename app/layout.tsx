@@ -1,8 +1,8 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Inter, Spline_Sans, Space_Grotesk } from "next/font/google";
-import Script from "next/script";
 
 import { Navbar } from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";
@@ -46,12 +46,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
-
-        <Script
-          src="https://hello.jsgarden.co/js/script.js"
-          data-domain="tcaweb.fr"
-          defer
-        />
+        <Analytics />
       </body>
     </html>
   );
