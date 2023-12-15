@@ -16,7 +16,7 @@ import { ContactForm } from "@/components/sections/ContactForm";
 export const metadata: Metadata = {
   title: "Création de site Internet | TCA Web",
   description:
-    "Boostez la visibilité de votre entreprise et gagnez de nouveaux clients grâce à une portée agumentée. TCA Web vous accompagne dans la conception de votre site Internet.",
+    "Boostez la visibilité de votre entreprise et gagnez de nouveaux clients grâce à une portée augmentée. TCA Web vous accompagne dans la conception de votre site Internet.",
 };
 
 export default function Page() {
