@@ -4,8 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { ContactForm } from "@/components/sections/ContactForm";
 
 export const metadata: Metadata = {
-  title:
-    "Contactez-nous pour parler de votre projet web, création site Internet ou refonte | TCA Web",
+  title: "Contact | TCA Web",
   description:
     "Confiez votre projet web à un expert afin d'en guarantir le succès tout en étant accompagné. Demandez un devis gratuit pour votre projet web.",
 };
