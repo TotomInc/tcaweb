@@ -13,6 +13,14 @@ const ITEMS = [
     image: "/_static/images/portfolio/hgmfrance-mockup.png",
     link: "https://www.hgmfrance.fr",
   },
+  {
+    name: "Inyda",
+    subtitle: "Fontainebleau, Île-de-France",
+    content:
+      "Refonte du site web d'Inyda, entreprise spécialisée dans la Data Science. Intégration d'un CMS pour la gestion des contenus et du multi-langue.",
+    image: "/_static/images/portfolio/inyda-mockup.png",
+    link: "https://www.inyda.com",
+  },
 ];
 
 export type PortfolioProps = {
@@ -28,7 +36,7 @@ export function Portfolio({ className, titleClassName }: PortfolioProps) {
           Portfolio <span className="h-px w-12" />
         </h2>
 
-        <div className="mt-12 flex flex-col items-center space-y-12">
+        <div className="mt-12 flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-12 sm:space-y-0">
           {ITEMS.map((item) => (
             <div
               key={item.link}
