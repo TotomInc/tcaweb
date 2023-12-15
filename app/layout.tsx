@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://tcaweb.fr"),
   title: "Agence web création site internet et e-commerce | TCA Web",
   description:
-    "TCA Web est une agence web qui vous accompagne dans votre stratégie web et e-commerce, création ou refonte de site Internet, design et maquettes digitales.",
+    "TCA Web, l'agence web qui vous accompagne dans votre stratégie web et e-commerce, création ou refonte de site Internet, design et maquettes digitales.",
 };
 
 const inter = Inter({
