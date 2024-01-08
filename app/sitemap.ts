@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-import { cities, slugifyCity } from "@/lib/cities";
+import { cities, slugify } from "@/lib/geo";
 
 const BASE_URL = "https://tcaweb.fr";
 
@@ -24,11 +24,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const citiesRoutes = cities.map(
     (city) =>
       ({
-        url: `${BASE_URL}/creation-site-internet-sur-mesure/${slugifyCity(
-          city,
-        )}`,
+        url: `${BASE_URL}/creation-site-internet-sur-mesure/${slugify(city)}`,
         changeFrequency: "monthly",
-        priority: 0.7,
+        priority: 1,
       }) satisfies SitemapItem,
   );
 

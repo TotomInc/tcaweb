@@ -18,6 +18,6 @@ export const cities = [
   "Vulaines sur Seine",
 ];
 
-export const slugifyCity = (city: string) => {
-  return city.toLowerCase().replaceAll(" ", "-");
+export const slugify = (str: string) => {
+  return str.toLowerCase().replaceAll(" ", "-");
 };

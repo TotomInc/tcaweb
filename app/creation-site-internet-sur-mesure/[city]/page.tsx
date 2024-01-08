@@ -9,7 +9,7 @@ import {
   BeakerIcon,
 } from "@heroicons/react/24/outline";
 
-import { cities, slugifyCity } from "@/lib/cities";
+import { cities, slugify } from "@/lib/geo";
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
 import { Portfolio } from "@/components/sections/Portfolio";
@@ -22,11 +22,11 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  return cities.map((city) => ({ city: slugifyCity(city) }));
+  return cities.map((city) => ({ city: slugify(city) }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const city = cities.find((c) => slugifyCity(c) === params.city);
+  const city = cities.find((c) => slugify(c) === params.city);
 
   return {
     title: `Création de site Internet à ${city ?? params.city} | TCA Web`,
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function Page({ params }: Props) {
-  const city = cities.find((c) => slugifyCity(c) === params.city);
+  const city = cities.find((c) => slugify(c) === params.city);
 
   if (!city) {
     redirect("/");
