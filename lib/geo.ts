@@ -1,22 +1,14 @@
-export const cities = [
-  "Fontainebleau",
-  "Melun",
-  "Moret Loing et Orvanne",
-  "Ecuelles",
-  "Montargis",
-  "Nemours",
-  "Montereau",
-  "Bois le Roi",
-  "Avon",
-  "Provins",
-  "Chatelet en Brie",
-  "Villiers en Bière",
-  "Dammarie lès Lys",
-  "Vaux le Pénil",
-  "La Rochette",
-  "Samoreau",
-  "Vulaines sur Seine",
-];
+import idfCities from "@/data/77.json";
+
+const capitalizeEachWord = (str: string) =>
+  str
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+
+export const cities = idfCities
+  .map((city) => capitalizeEachWord(city.city_code))
+  .filter((value, index, self) => self.indexOf(value) === index);
 
 export const slugify = (str: string) => {
   return str.toLowerCase().replaceAll(" ", "-");

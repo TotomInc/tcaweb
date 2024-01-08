@@ -1,0 +1,3938 @@
+[
+  {
+    "zip_code": "77120",
+    "city_code": "amillis"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "amponville"
+  },
+  {
+    "zip_code": "77910",
+    "city_code": "barcy"
+  },
+  {
+    "zip_code": "77750",
+    "city_code": "bassevelle"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "beauvoir"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "beton bazoches"
+  },
+  {
+    "zip_code": "77720",
+    "city_code": "bombon"
+  },
+  {
+    "zip_code": "77470",
+    "city_code": "boutigny"
+  },
+  {
+    "zip_code": "77480",
+    "city_code": "bray sur seine"
+  },
+  {
+    "zip_code": "77750",
+    "city_code": "bussieres"
+  },
+  {
+    "zip_code": "77460",
+    "city_code": "chaintreaux"
+  },
+  {
+    "zip_code": "77171",
+    "city_code": "chalautre la grande"
+  },
+  {
+    "zip_code": "77160",
+    "city_code": "chalautre la petite"
+  },
+  {
+    "zip_code": "77430",
+    "city_code": "champagne sur seine"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "champdeuil"
+  },
+  {
+    "zip_code": "77720",
+    "city_code": "champeaux"
+  },
+  {
+    "zip_code": "77590",
+    "city_code": "chartrettes"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "chaumes en brie"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "chevru"
+  },
+  {
+    "zip_code": "77173",
+    "city_code": "chevry cossigny"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "claye souilly"
+  },
+  {
+    "zip_code": "77380",
+    "city_code": "combs la ville"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "congis sur therouanne"
+  },
+  {
+    "zip_code": "77170",
+    "city_code": "coubert"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "courtomer"
+  },
+  {
+    "zip_code": "77154",
+    "city_code": "coutencon"
+  },
+  {
+    "zip_code": "77124",
+    "city_code": "cregy les meaux"
+  },
+  {
+    "zip_code": "77183",
+    "city_code": "croissy beaubourg"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "dagny"
+  },
+  {
+    "zip_code": "77163",
+    "city_code": "dammartin sur tigeaux"
+  },
+  {
+    "zip_code": "77400",
+    "city_code": "dampmart"
+  },
+  {
+    "zip_code": "77139",
+    "city_code": "douy la ramee"
+  },
+  {
+    "zip_code": "77830",
+    "city_code": "echouboulains"
+  },
+  {
+    "zip_code": "77184",
+    "city_code": "emerainville"
+  },
+  {
+    "zip_code": "77157",
+    "city_code": "everly"
+  },
+  {
+    "zip_code": "77166",
+    "city_code": "evry gregy sur yerre"
+  },
+  {
+    "zip_code": "77590",
+    "city_code": "fontaine le port"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "fontains"
+  },
+  {
+    "zip_code": "77165",
+    "city_code": "forfry"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "fouju"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "fresnes sur marne"
+  },
+  {
+    "zip_code": "77720",
+    "city_code": "grandpuits bailly carrois"
+  },
+  {
+    "zip_code": "77720",
+    "city_code": "grandpuits bailly carrois"
+  },
+  {
+    "zip_code": "77220",
+    "city_code": "gretz armainvilliers"
+  },
+  {
+    "zip_code": "77480",
+    "city_code": "grisy sur seine"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "jaignes"
+  },
+  {
+    "zip_code": "77127",
+    "city_code": "lieusaint"
+  },
+  {
+    "zip_code": "77550",
+    "city_code": "limoges fourches"
+  },
+  {
+    "zip_code": "77185",
+    "city_code": "lognes"
+  },
+  {
+    "zip_code": "77650",
+    "city_code": "longueville"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "louan villegruis fontaine"
+  },
+  {
+    "zip_code": "77138",
+    "city_code": "luzancy"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "marchemoret"
+  },
+  {
+    "zip_code": "77139",
+    "city_code": "marcilly"
+  },
+  {
+    "zip_code": "77350",
+    "city_code": "le mee sur seine"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "meigneux"
+  },
+  {
+    "zip_code": "77130",
+    "city_code": "misy sur yonne"
+  },
+  {
+    "zip_code": "77290",
+    "city_code": "mitry mory"
+  },
+  {
+    "zip_code": "77550",
+    "city_code": "moissy cramayel"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "montenils"
+  },
+  {
+    "zip_code": "77144",
+    "city_code": "montevrain"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "montge en goele"
+  },
+  {
+    "zip_code": "77163",
+    "city_code": "mortcerf"
+  },
+  {
+    "zip_code": "77480",
+    "city_code": "mousseaux les bray"
+  },
+  {
+    "zip_code": "77176",
+    "city_code": "nandy"
+  },
+  {
+    "zip_code": "77140",
+    "city_code": "nemours"
+  },
+  {
+    "zip_code": "77610",
+    "city_code": "neufmoutiers en brie"
+  },
+  {
+    "zip_code": "77940",
+    "city_code": "noisy rudignon"
+  },
+  {
+    "zip_code": "77890",
+    "city_code": "obsonville"
+  },
+  {
+    "zip_code": "77750",
+    "city_code": "orly sur morin"
+  },
+  {
+    "zip_code": "77280",
+    "city_code": "othis"
+  },
+  {
+    "zip_code": "77330",
+    "city_code": "ozoir la ferriere"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "ozouer le voulgis"
+  },
+  {
+    "zip_code": "77131",
+    "city_code": "pezarches"
+  },
+  {
+    "zip_code": "77165",
+    "city_code": "le plessis l eveque"
+  },
+  {
+    "zip_code": "77400",
+    "city_code": "pomponne"
+  },
+  {
+    "zip_code": "77340",
+    "city_code": "pontault combault"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "precy sur marne"
+  },
+  {
+    "zip_code": "77220",
+    "city_code": "presles en brie"
+  },
+  {
+    "zip_code": "77510",
+    "city_code": "rebais"
+  },
+  {
+    "zip_code": "77680",
+    "city_code": "roissy en brie"
+  },
+  {
+    "zip_code": "77540",
+    "city_code": "rozay en brie"
+  },
+  {
+    "zip_code": "77730",
+    "city_code": "saacy sur marne"
+  },
+  {
+    "zip_code": "77310",
+    "city_code": "st fargeau ponthierry"
+  },
+  {
+    "zip_code": "77310",
+    "city_code": "st fargeau ponthierry"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "st martin des champs"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "st martin du boschet"
+  },
+  {
+    "zip_code": "77630",
+    "city_code": "st martin en biere"
+  },
+  {
+    "zip_code": "77750",
+    "city_code": "st ouen sur morin"
+  },
+  {
+    "zip_code": "77120",
+    "city_code": "beautheil saints"
+  },
+  {
+    "zip_code": "77169",
+    "city_code": "st simeon"
+  },
+  {
+    "zip_code": "77148",
+    "city_code": "salins"
+  },
+  {
+    "zip_code": "77260",
+    "city_code": "sammeron"
+  },
+  {
+    "zip_code": "77920",
+    "city_code": "samois sur seine"
+  },
+  {
+    "zip_code": "77210",
+    "city_code": "samoreau"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "sancy les provins"
+  },
+  {
+    "zip_code": "77650",
+    "city_code": "savins"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "sognolles en montois"
+  },
+  {
+    "zip_code": "77130",
+    "city_code": "la tombe"
+  },
+  {
+    "zip_code": "77260",
+    "city_code": "ussy sur marne"
+  },
+  {
+    "zip_code": "77360",
+    "city_code": "vaires sur marne"
+  },
+  {
+    "zip_code": "77630",
+    "city_code": "arbonne la foret"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "vanville"
+  },
+  {
+    "zip_code": "77570",
+    "city_code": "aufferville"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "vaucourtois"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "augers en brie"
+  },
+  {
+    "zip_code": "77000",
+    "city_code": "vaux le penil"
+  },
+  {
+    "zip_code": "77120",
+    "city_code": "aulnoy"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "vendrest"
+  },
+  {
+    "zip_code": "77118",
+    "city_code": "balloy"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "villeneuve sous dammartin"
+  },
+  {
+    "zip_code": "77630",
+    "city_code": "barbizon"
+  },
+  {
+    "zip_code": "77130",
+    "city_code": "ville st jacques"
+  },
+  {
+    "zip_code": "77510",
+    "city_code": "bellot"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "villevaude"
+  },
+  {
+    "zip_code": "77540",
+    "city_code": "bernay vilbert"
+  },
+  {
+    "zip_code": "77190",
+    "city_code": "villiers en biere"
+  },
+  {
+    "zip_code": "77590",
+    "city_code": "bois le roi"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "villiers sur morin"
+  },
+  {
+    "zip_code": "77169",
+    "city_code": "boissy le chatel"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "vimpelles"
+  },
+  {
+    "zip_code": "77600",
+    "city_code": "bussy st martin"
+  },
+  {
+    "zip_code": "77540",
+    "city_code": "voinsles"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "buthiers"
+  },
+  {
+    "zip_code": "78660",
+    "city_code": "ablis"
+  },
+  {
+    "zip_code": "77240",
+    "city_code": "cesson"
+  },
+  {
+    "zip_code": "78580",
+    "city_code": "bazemont"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "cessoy en montois"
+  },
+  {
+    "zip_code": "78910",
+    "city_code": "behoust"
+  },
+  {
+    "zip_code": "77930",
+    "city_code": "chailly en biere"
+  },
+  {
+    "zip_code": "78650",
+    "city_code": "beynes"
+  },
+  {
+    "zip_code": "77420",
+    "city_code": "champs sur marne"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "bonnieres sur seine"
+  },
+  {
+    "zip_code": "77720",
+    "city_code": "la chapelle gauthier"
+  },
+  {
+    "zip_code": "78930",
+    "city_code": "breuil bois robert"
+  },
+  {
+    "zip_code": "77610",
+    "city_code": "les chapelles bourbon"
+  },
+  {
+    "zip_code": "78980",
+    "city_code": "breval"
+  },
+  {
+    "zip_code": "77820",
+    "city_code": "chatillon la borde"
+  },
+  {
+    "zip_code": "78830",
+    "city_code": "bullion"
+  },
+  {
+    "zip_code": "77169",
+    "city_code": "chauffry"
+  },
+  {
+    "zip_code": "78720",
+    "city_code": "la celle les bordes"
+  },
+  {
+    "zip_code": "77500",
+    "city_code": "chelles"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "chaufour les bonnieres"
+  },
+  {
+    "zip_code": "77160",
+    "city_code": "chenoise cucharmoy"
+  },
+  {
+    "zip_code": "78150",
+    "city_code": "le chesnay rocquencourt"
+  },
+  {
+    "zip_code": "77700",
+    "city_code": "chessy"
+  },
+  {
+    "zip_code": "78460",
+    "city_code": "chevreuse"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "chevrainvilliers"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "cravent"
+  },
+  {
+    "zip_code": "77710",
+    "city_code": "chevry en sereine"
+  },
+  {
+    "zip_code": "78990",
+    "city_code": "elancourt"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "claye souilly"
+  },
+  {
+    "zip_code": "78690",
+    "city_code": "les essarts le roi"
+  },
+  {
+    "zip_code": "77860",
+    "city_code": "couilly pont aux dames"
+  },
+  {
+    "zip_code": "78200",
+    "city_code": "favrieux"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "coulommes"
+  },
+  {
+    "zip_code": "78840",
+    "city_code": "freneuse"
+  },
+  {
+    "zip_code": "77540",
+    "city_code": "courpalay"
+  },
+  {
+    "zip_code": "78250",
+    "city_code": "gaillon sur montcient"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "courquetaine"
+  },
+  {
+    "zip_code": "78950",
+    "city_code": "gambais"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "crecy la chapelle"
+  },
+  {
+    "zip_code": "78490",
+    "city_code": "gambaiseuil"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "crisenoy"
+  },
+  {
+    "zip_code": "78890",
+    "city_code": "garancieres"
+  },
+  {
+    "zip_code": "77183",
+    "city_code": "croissy beaubourg"
+  },
+  {
+    "zip_code": "78440",
+    "city_code": "gargenville"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "dammartin en goele"
+  },
+  {
+    "zip_code": "78520",
+    "city_code": "guernes"
+  },
+  {
+    "zip_code": "77820",
+    "city_code": "les ecrennes"
+  },
+  {
+    "zip_code": "78440",
+    "city_code": "guitrancourt"
+  },
+  {
+    "zip_code": "77620",
+    "city_code": "egreville"
+  },
+  {
+    "zip_code": "78790",
+    "city_code": "hargeville"
+  },
+  {
+    "zip_code": "77450",
+    "city_code": "esbly"
+  },
+  {
+    "zip_code": "78820",
+    "city_code": "juziers"
+  },
+  {
+    "zip_code": "77139",
+    "city_code": "etrepilly"
+  },
+  {
+    "zip_code": "78730",
+    "city_code": "longvilliers"
+  },
+  {
+    "zip_code": "77220",
+    "city_code": "favieres"
+  },
+  {
+    "zip_code": "78310",
+    "city_code": "maurepas"
+  },
+  {
+    "zip_code": "77167",
+    "city_code": "fay les nemours"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "mericourt"
+  },
+  {
+    "zip_code": "77260",
+    "city_code": "la ferte sous jouarre"
+  },
+  {
+    "zip_code": "78600",
+    "city_code": "le mesnil le roi"
+  },
+  {
+    "zip_code": "77300",
+    "city_code": "fontainebleau"
+  },
+  {
+    "zip_code": "78320",
+    "city_code": "le mesnil st denis"
+  },
+  {
+    "zip_code": "77480",
+    "city_code": "fontaine fourches"
+  },
+  {
+    "zip_code": "78970",
+    "city_code": "mezieres sur seine"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "fretoy"
+  },
+  {
+    "zip_code": "78940",
+    "city_code": "millemont"
+  },
+  {
+    "zip_code": "77890",
+    "city_code": "garentreville"
+  },
+  {
+    "zip_code": "78360",
+    "city_code": "montesson"
+  },
+  {
+    "zip_code": "77165",
+    "city_code": "gesvres le chapitre"
+  },
+  {
+    "zip_code": "78130",
+    "city_code": "les mureaux"
+  },
+  {
+    "zip_code": "77114",
+    "city_code": "gouaix"
+  },
+  {
+    "zip_code": "78640",
+    "city_code": "neauphle le vieux"
+  },
+  {
+    "zip_code": "77400",
+    "city_code": "gouvernes"
+  },
+  {
+    "zip_code": "78125",
+    "city_code": "orcemont"
+  },
+  {
+    "zip_code": "77118",
+    "city_code": "gravon"
+  },
+  {
+    "zip_code": "78910",
+    "city_code": "orgerus"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "guercheville"
+  },
+  {
+    "zip_code": "78630",
+    "city_code": "orgeval"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "gurcy le chatel"
+  },
+  {
+    "zip_code": "78125",
+    "city_code": "orphin"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "gurcy le chatel"
+  },
+  {
+    "zip_code": "78230",
+    "city_code": "le pecq"
+  },
+  {
+    "zip_code": "77515",
+    "city_code": "hautefeuille"
+  },
+  {
+    "zip_code": "78550",
+    "city_code": "richebourg"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "la haute maison"
+  },
+  {
+    "zip_code": "78710",
+    "city_code": "rosny sur seine"
+  },
+  {
+    "zip_code": "77850",
+    "city_code": "hericy"
+  },
+  {
+    "zip_code": "78640",
+    "city_code": "st germain de la grange"
+  },
+  {
+    "zip_code": "77610",
+    "city_code": "la houssaye en brie"
+  },
+  {
+    "zip_code": "78980",
+    "city_code": "st illiers le bois"
+  },
+  {
+    "zip_code": "77890",
+    "city_code": "ichy"
+  },
+  {
+    "zip_code": "78470",
+    "city_code": "st remy les chevreuse"
+  },
+  {
+    "zip_code": "77450",
+    "city_code": "jablines"
+  },
+  {
+    "zip_code": "78650",
+    "city_code": "saulx marchais"
+  },
+  {
+    "zip_code": "77970",
+    "city_code": "jouy le chatel"
+  },
+  {
+    "zip_code": "78120",
+    "city_code": "sonchamp"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "jouy sur morin"
+  },
+  {
+    "zip_code": "78250",
+    "city_code": "tessancourt sur aubette"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "larchant"
+  },
+  {
+    "zip_code": "78790",
+    "city_code": "tilly"
+  },
+  {
+    "zip_code": "77150",
+    "city_code": "lesigny"
+  },
+  {
+    "zip_code": "78490",
+    "city_code": "le tremblay sur mauldre"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "longperrier"
+  },
+  {
+    "zip_code": "78110",
+    "city_code": "le vesinet"
+  },
+  {
+    "zip_code": "77570",
+    "city_code": "la madeleine sur loing"
+  },
+  {
+    "zip_code": "78125",
+    "city_code": "vieille eglise en yvelines"
+  },
+  {
+    "zip_code": "77610",
+    "city_code": "marles en brie"
+  },
+  {
+    "zip_code": "78450",
+    "city_code": "villepreux"
+  },
+  {
+    "zip_code": "77100",
+    "city_code": "meaux"
+  },
+  {
+    "zip_code": "78220",
+    "city_code": "viroflay"
+  },
+  {
+    "zip_code": "77171",
+    "city_code": "melz sur seine"
+  },
+  {
+    "zip_code": "77122",
+    "city_code": "monthyon"
+  },
+  {
+    "zip_code": "77250",
+    "city_code": "moret loing et orvanne"
+  },
+  {
+    "zip_code": "77480",
+    "city_code": "mouy sur seine"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "nangis"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "nanteau sur essonne"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "nantouillet"
+  },
+  {
+    "zip_code": "77124",
+    "city_code": "chauconin neufmontiers"
+  },
+  {
+    "zip_code": "77114",
+    "city_code": "noyen sur seine"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "ocquerre"
+  },
+  {
+    "zip_code": "77710",
+    "city_code": "paley"
+  },
+  {
+    "zip_code": "77970",
+    "city_code": "pecy"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "pierre levee"
+  },
+  {
+    "zip_code": "77515",
+    "city_code": "pommeuse"
+  },
+  {
+    "zip_code": "77400",
+    "city_code": "pomponne"
+  },
+  {
+    "zip_code": "77720",
+    "city_code": "quiers"
+  },
+  {
+    "zip_code": "77860",
+    "city_code": "quincy voisins"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "rampillon"
+  },
+  {
+    "zip_code": "77000",
+    "city_code": "la rochette"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "rumont"
+  },
+  {
+    "zip_code": "77510",
+    "city_code": "sablonnieres"
+  },
+  {
+    "zip_code": "77860",
+    "city_code": "st germain sur morin"
+  },
+  {
+    "zip_code": "77160",
+    "city_code": "st hilliers"
+  },
+  {
+    "zip_code": "77660",
+    "city_code": "st jean les deux jumeaux"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "st just en brie"
+  },
+  {
+    "zip_code": "77510",
+    "city_code": "st leger"
+  },
+  {
+    "zip_code": "77670",
+    "city_code": "st mammes"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "st mesmes"
+  },
+  {
+    "zip_code": "77178",
+    "city_code": "st pathus"
+  },
+  {
+    "zip_code": "77165",
+    "city_code": "st soupplets"
+  },
+  {
+    "zip_code": "77400",
+    "city_code": "st thibault des vignes"
+  },
+  {
+    "zip_code": "77700",
+    "city_code": "serris"
+  },
+  {
+    "zip_code": "77115",
+    "city_code": "sivry courtry"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "thieux"
+  },
+  {
+    "zip_code": "77940",
+    "city_code": "thoury ferottes"
+  },
+  {
+    "zip_code": "77470",
+    "city_code": "trilport"
+  },
+  {
+    "zip_code": "77123",
+    "city_code": "le vaudoue"
+  },
+  {
+    "zip_code": "77710",
+    "city_code": "vaux sur lunain"
+  },
+  {
+    "zip_code": "77250",
+    "city_code": "villecerf"
+  },
+  {
+    "zip_code": "77710",
+    "city_code": "villemarechal"
+  },
+  {
+    "zip_code": "77710",
+    "city_code": "villemarechal"
+  },
+  {
+    "zip_code": "77124",
+    "city_code": "villenoy"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "villeroy"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "villevaude"
+  },
+  {
+    "zip_code": "77480",
+    "city_code": "villuis"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "vinantes"
+  },
+  {
+    "zip_code": "77950",
+    "city_code": "voisenon"
+  },
+  {
+    "zip_code": "78660",
+    "city_code": "allainville"
+  },
+  {
+    "zip_code": "78930",
+    "city_code": "boinville en mantois"
+  },
+  {
+    "zip_code": "78125",
+    "city_code": "la boissiere ecole"
+  },
+  {
+    "zip_code": "78200",
+    "city_code": "boissy mauvoisin"
+  },
+  {
+    "zip_code": "78410",
+    "city_code": "bouafle"
+  },
+  {
+    "zip_code": "78380",
+    "city_code": "bougival"
+  },
+  {
+    "zip_code": "78440",
+    "city_code": "brueil en vexin"
+  },
+  {
+    "zip_code": "78240",
+    "city_code": "chambourcy"
+  },
+  {
+    "zip_code": "78113",
+    "city_code": "conde sur vesgre"
+  },
+  {
+    "zip_code": "78290",
+    "city_code": "croissy sur seine"
+  },
+  {
+    "zip_code": "78550",
+    "city_code": "dannemarie"
+  },
+  {
+    "zip_code": "78920",
+    "city_code": "ecquevilly"
+  },
+  {
+    "zip_code": "78620",
+    "city_code": "l etang la ville"
+  },
+  {
+    "zip_code": "78740",
+    "city_code": "evecquemont"
+  },
+  {
+    "zip_code": "78125",
+    "city_code": "gazeran"
+  },
+  {
+    "zip_code": "78440",
+    "city_code": "issou"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "notre dame de la mer"
+  },
+  {
+    "zip_code": "78350",
+    "city_code": "jouy en josas"
+  },
+  {
+    "zip_code": "78580",
+    "city_code": "jumeauville"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "lommoye"
+  },
+  {
+    "zip_code": "78114",
+    "city_code": "magny les hameaux"
+  },
+  {
+    "zip_code": "78750",
+    "city_code": "mareil marly"
+  },
+  {
+    "zip_code": "78124",
+    "city_code": "mareil sur mauldre"
+  },
+  {
+    "zip_code": "78160",
+    "city_code": "marly le roi"
+  },
+  {
+    "zip_code": "78550",
+    "city_code": "maulette"
+  },
+  {
+    "zip_code": "78125",
+    "city_code": "mittainville"
+  },
+  {
+    "zip_code": "78980",
+    "city_code": "mondreville"
+  },
+  {
+    "zip_code": "78124",
+    "city_code": "montainville"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "mousseaux sur seine"
+  },
+  {
+    "zip_code": "78590",
+    "city_code": "noisy le roi"
+  },
+  {
+    "zip_code": "78910",
+    "city_code": "orvilliers"
+  },
+  {
+    "zip_code": "78125",
+    "city_code": "poigny la foret"
+  },
+  {
+    "zip_code": "78730",
+    "city_code": "ponthevrard"
+  },
+  {
+    "zip_code": "78440",
+    "city_code": "sailly"
+  },
+  {
+    "zip_code": "78100",
+    "city_code": "st germain en laye"
+  },
+  {
+    "zip_code": "78980",
+    "city_code": "st illiers la ville"
+  },
+  {
+    "zip_code": "78860",
+    "city_code": "st nom la breteche"
+  },
+  {
+    "zip_code": "78470",
+    "city_code": "st remy les chevreuse"
+  },
+  {
+    "zip_code": "78200",
+    "city_code": "soindres"
+  },
+  {
+    "zip_code": "78117",
+    "city_code": "toussus le noble"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "la villeneuve en chevrie"
+  },
+  {
+    "zip_code": "78670",
+    "city_code": "villennes sur seine"
+  },
+  {
+    "zip_code": "78640",
+    "city_code": "villiers st frederic"
+  },
+  {
+    "zip_code": "91410",
+    "city_code": "authon la plaine"
+  },
+  {
+    "zip_code": "91580",
+    "city_code": "auvers st georges"
+  },
+  {
+    "zip_code": "91630",
+    "city_code": "avrainville"
+  },
+  {
+    "zip_code": "91570",
+    "city_code": "bievres"
+  },
+  {
+    "zip_code": "91800",
+    "city_code": "boussy st antoine"
+  },
+  {
+    "zip_code": "91880",
+    "city_code": "bouville"
+  },
+  {
+    "zip_code": "91150",
+    "city_code": "brouy"
+  },
+  {
+    "zip_code": "91580",
+    "city_code": "chauffour les etrechy"
+  },
+  {
+    "zip_code": "91720",
+    "city_code": "courdimanche sur essonne"
+  },
+  {
+    "zip_code": "91490",
+    "city_code": "dannemois"
+  },
+  {
+    "zip_code": "91210",
+    "city_code": "draveil"
+  },
+  {
+    "zip_code": "91210",
+    "city_code": "draveil"
+  },
+  {
+    "zip_code": "91540",
+    "city_code": "echarcon"
+  },
+  {
+    "zip_code": "91080",
+    "city_code": "evry courcouronnes"
+  },
+  {
+    "zip_code": "91410",
+    "city_code": "la foret le roi"
+  },
+  {
+    "zip_code": "91190",
+    "city_code": "gif sur yvette"
+  },
+  {
+    "zip_code": "91630",
+    "city_code": "guibeville"
+  },
+  {
+    "zip_code": "91310",
+    "city_code": "leuville sur orge"
+  },
+  {
+    "zip_code": "91160",
+    "city_code": "longjumeau"
+  },
+  {
+    "zip_code": "91490",
+    "city_code": "moigny sur ecole"
+  },
+  {
+    "zip_code": "91390",
+    "city_code": "morsang sur orge"
+  },
+  {
+    "zip_code": "91750",
+    "city_code": "nainville les roches"
+  },
+  {
+    "zip_code": "91550",
+    "city_code": "paray vieille poste"
+  },
+  {
+    "zip_code": "91720",
+    "city_code": "prunay sur essonne"
+  },
+  {
+    "zip_code": "91150",
+    "city_code": "roinvilliers"
+  },
+  {
+    "zip_code": "91410",
+    "city_code": "st cyr sous dourdan"
+  },
+  {
+    "zip_code": "91180",
+    "city_code": "st germain les arpajon"
+  },
+  {
+    "zip_code": "91780",
+    "city_code": "st hilaire"
+  },
+  {
+    "zip_code": "91940",
+    "city_code": "st jean de beauregard"
+  },
+  {
+    "zip_code": "91530",
+    "city_code": "st maurice montcouronne"
+  },
+  {
+    "zip_code": "91280",
+    "city_code": "st pierre du perray"
+  },
+  {
+    "zip_code": "91770",
+    "city_code": "st vrain"
+  },
+  {
+    "zip_code": "91810",
+    "city_code": "vert le grand"
+  },
+  {
+    "zip_code": "91270",
+    "city_code": "vigneux sur seine"
+  },
+  {
+    "zip_code": "91190",
+    "city_code": "villiers le bacle"
+  },
+  {
+    "zip_code": "91320",
+    "city_code": "wissous"
+  },
+  {
+    "zip_code": "91330",
+    "city_code": "yerres"
+  },
+  {
+    "zip_code": "92270",
+    "city_code": "bois colombes"
+  },
+  {
+    "zip_code": "92100",
+    "city_code": "boulogne billancourt"
+  },
+  {
+    "zip_code": "92290",
+    "city_code": "chatenay malabry"
+  },
+  {
+    "zip_code": "92140",
+    "city_code": "clamart"
+  },
+  {
+    "zip_code": "92140",
+    "city_code": "clamart"
+  },
+  {
+    "zip_code": "92110",
+    "city_code": "clichy"
+  },
+  {
+    "zip_code": "92190",
+    "city_code": "meudon"
+  },
+  {
+    "zip_code": "92120",
+    "city_code": "montrouge"
+  },
+  {
+    "zip_code": "92350",
+    "city_code": "le plessis robinson"
+  },
+  {
+    "zip_code": "92420",
+    "city_code": "vaucresson"
+  },
+  {
+    "zip_code": "93600",
+    "city_code": "aulnay sous bois"
+  },
+  {
+    "zip_code": "93390",
+    "city_code": "clichy sous bois"
+  },
+  {
+    "zip_code": "93120",
+    "city_code": "la courneuve"
+  },
+  {
+    "zip_code": "93450",
+    "city_code": "l ile st denis"
+  },
+  {
+    "zip_code": "93370",
+    "city_code": "montfermeil"
+  },
+  {
+    "zip_code": "93360",
+    "city_code": "neuilly plaisance"
+  },
+  {
+    "zip_code": "93330",
+    "city_code": "neuilly sur marne"
+  },
+  {
+    "zip_code": "93500",
+    "city_code": "pantin"
+  },
+  {
+    "zip_code": "93380",
+    "city_code": "pierrefitte sur seine"
+  },
+  {
+    "zip_code": "93230",
+    "city_code": "romainville"
+  },
+  {
+    "zip_code": "93240",
+    "city_code": "stains"
+  },
+  {
+    "zip_code": "93250",
+    "city_code": "villemomble"
+  },
+  {
+    "zip_code": "93420",
+    "city_code": "villepinte"
+  },
+  {
+    "zip_code": "94500",
+    "city_code": "champigny sur marne"
+  },
+  {
+    "zip_code": "94260",
+    "city_code": "fresnes"
+  },
+  {
+    "zip_code": "94250",
+    "city_code": "gentilly"
+  },
+  {
+    "zip_code": "94700",
+    "city_code": "maisons alfort"
+  },
+  {
+    "zip_code": "94130",
+    "city_code": "nogent sur marne"
+  },
+  {
+    "zip_code": "94150",
+    "city_code": "rungis"
+  },
+  {
+    "zip_code": "94160",
+    "city_code": "st mande"
+  },
+  {
+    "zip_code": "94210",
+    "city_code": "st maur des fosses"
+  },
+  {
+    "zip_code": "94440",
+    "city_code": "santeny"
+  },
+  {
+    "zip_code": "94800",
+    "city_code": "villejuif"
+  },
+  {
+    "zip_code": "94300",
+    "city_code": "vincennes"
+  },
+  {
+    "zip_code": "95510",
+    "city_code": "aincourt"
+  },
+  {
+    "zip_code": "95580",
+    "city_code": "andilly"
+  },
+  {
+    "zip_code": "95810",
+    "city_code": "arronville"
+  },
+  {
+    "zip_code": "95430",
+    "city_code": "auvers sur oise"
+  },
+  {
+    "zip_code": "95420",
+    "city_code": "banthelu"
+  },
+  {
+    "zip_code": "95250",
+    "city_code": "beauchamp"
+  },
+  {
+    "zip_code": "95710",
+    "city_code": "bray et lu"
+  },
+  {
+    "zip_code": "95640",
+    "city_code": "brignancourt"
+  },
+  {
+    "zip_code": "95430",
+    "city_code": "butry sur oise"
+  },
+  {
+    "zip_code": "95000",
+    "city_code": "cergy"
+  },
+  {
+    "zip_code": "95240",
+    "city_code": "cormeilles en parisis"
+  },
+  {
+    "zip_code": "95880",
+    "city_code": "enghien les bains"
+  },
+  {
+    "zip_code": "95610",
+    "city_code": "eragny"
+  },
+  {
+    "zip_code": "95740",
+    "city_code": "frepillon"
+  },
+  {
+    "zip_code": "95690",
+    "city_code": "labbeville"
+  },
+  {
+    "zip_code": "95270",
+    "city_code": "lassy"
+  },
+  {
+    "zip_code": "95580",
+    "city_code": "margency"
+  },
+  {
+    "zip_code": "95640",
+    "city_code": "marines"
+  },
+  {
+    "zip_code": "95670",
+    "city_code": "marly la ville"
+  },
+  {
+    "zip_code": "95370",
+    "city_code": "montigny les cormeilles"
+  },
+  {
+    "zip_code": "95680",
+    "city_code": "montlignon"
+  },
+  {
+    "zip_code": "95160",
+    "city_code": "montmorency"
+  },
+  {
+    "zip_code": "95690",
+    "city_code": "nesles la vallee"
+  },
+  {
+    "zip_code": "95000",
+    "city_code": "neuville sur oise"
+  },
+  {
+    "zip_code": "95420",
+    "city_code": "nucourt"
+  },
+  {
+    "zip_code": "95130",
+    "city_code": "le plessis bouchard"
+  },
+  {
+    "zip_code": "95350",
+    "city_code": "st brice sous foret"
+  },
+  {
+    "zip_code": "95210",
+    "city_code": "st gratien"
+  },
+  {
+    "zip_code": "95320",
+    "city_code": "st leu la foret"
+  },
+  {
+    "zip_code": "95270",
+    "city_code": "st martin du tertre"
+  },
+  {
+    "zip_code": "95310",
+    "city_code": "st ouen l aumone"
+  },
+  {
+    "zip_code": "95470",
+    "city_code": "st witz"
+  },
+  {
+    "zip_code": "95450",
+    "city_code": "seraincourt"
+  },
+  {
+    "zip_code": "95150",
+    "city_code": "taverny"
+  },
+  {
+    "zip_code": "95450",
+    "city_code": "themericourt"
+  },
+  {
+    "zip_code": "95450",
+    "city_code": "us"
+  },
+  {
+    "zip_code": "95500",
+    "city_code": "vaudherland"
+  },
+  {
+    "zip_code": "91670",
+    "city_code": "angerville"
+  },
+  {
+    "zip_code": "91590",
+    "city_code": "baulne"
+  },
+  {
+    "zip_code": "91150",
+    "city_code": "bois herpin"
+  },
+  {
+    "zip_code": "91870",
+    "city_code": "boissy le sec"
+  },
+  {
+    "zip_code": "91790",
+    "city_code": "boissy sous st yon"
+  },
+  {
+    "zip_code": "91820",
+    "city_code": "boutigny sur essonne"
+  },
+  {
+    "zip_code": "91800",
+    "city_code": "brunoy"
+  },
+  {
+    "zip_code": "91590",
+    "city_code": "cerny"
+  },
+  {
+    "zip_code": "91380",
+    "city_code": "chilly mazarin"
+  },
+  {
+    "zip_code": "91590",
+    "city_code": "d huison longueville"
+  },
+  {
+    "zip_code": "91860",
+    "city_code": "epinay sous senart"
+  },
+  {
+    "zip_code": "91150",
+    "city_code": "etampes"
+  },
+  {
+    "zip_code": "91450",
+    "city_code": "etiolles"
+  },
+  {
+    "zip_code": "91640",
+    "city_code": "fontenay les briis"
+  },
+  {
+    "zip_code": "91470",
+    "city_code": "forges les bains"
+  },
+  {
+    "zip_code": "91940",
+    "city_code": "gometz le chatel"
+  },
+  {
+    "zip_code": "91760",
+    "city_code": "itteville"
+  },
+  {
+    "zip_code": "91510",
+    "city_code": "janville sur juine"
+  },
+  {
+    "zip_code": "91470",
+    "city_code": "limours"
+  },
+  {
+    "zip_code": "91160",
+    "city_code": "longjumeau"
+  },
+  {
+    "zip_code": "91150",
+    "city_code": "mespuits"
+  },
+  {
+    "zip_code": "91150",
+    "city_code": "morigny champigny"
+  },
+  {
+    "zip_code": "91590",
+    "city_code": "orveau"
+  },
+  {
+    "zip_code": "91470",
+    "city_code": "pecqueuse"
+  },
+  {
+    "zip_code": "91150",
+    "city_code": "puiselet le marais"
+  },
+  {
+    "zip_code": "91410",
+    "city_code": "richarville"
+  },
+  {
+    "zip_code": "91690",
+    "city_code": "saclas"
+  },
+  {
+    "zip_code": "91400",
+    "city_code": "saclay"
+  },
+  {
+    "zip_code": "91530",
+    "city_code": "st cheron"
+  },
+  {
+    "zip_code": "91410",
+    "city_code": "st escobille"
+  },
+  {
+    "zip_code": "91700",
+    "city_code": "ste genevieve des bois"
+  },
+  {
+    "zip_code": "91250",
+    "city_code": "st germain les corbeil"
+  },
+  {
+    "zip_code": "91940",
+    "city_code": "st jean de beauregard"
+  },
+  {
+    "zip_code": "91910",
+    "city_code": "st sulpice de favieres"
+  },
+  {
+    "zip_code": "91600",
+    "city_code": "savigny sur orge"
+  },
+  {
+    "zip_code": "91530",
+    "city_code": "sermaise"
+  },
+  {
+    "zip_code": "91450",
+    "city_code": "soisy sur seine"
+  },
+  {
+    "zip_code": "91580",
+    "city_code": "souzy la briche"
+  },
+  {
+    "zip_code": "91740",
+    "city_code": "congerville thionville"
+  },
+  {
+    "zip_code": "91480",
+    "city_code": "varennes jarcy"
+  },
+  {
+    "zip_code": "91820",
+    "city_code": "vayres sur essonne"
+  },
+  {
+    "zip_code": "91890",
+    "city_code": "videlles"
+  },
+  {
+    "zip_code": "91620",
+    "city_code": "la ville du bois"
+  },
+  {
+    "zip_code": "92320",
+    "city_code": "chatillon"
+  },
+  {
+    "zip_code": "92400",
+    "city_code": "courbevoie"
+  },
+  {
+    "zip_code": "92260",
+    "city_code": "fontenay aux roses"
+  },
+  {
+    "zip_code": "92250",
+    "city_code": "la garenne colombes"
+  },
+  {
+    "zip_code": "92000",
+    "city_code": "nanterre"
+  },
+  {
+    "zip_code": "92800",
+    "city_code": "puteaux"
+  },
+  {
+    "zip_code": "92210",
+    "city_code": "st cloud"
+  },
+  {
+    "zip_code": "93460",
+    "city_code": "gournay sur marne"
+  },
+  {
+    "zip_code": "93190",
+    "city_code": "livry gargan"
+  },
+  {
+    "zip_code": "93430",
+    "city_code": "villetaneuse"
+  },
+  {
+    "zip_code": "94480",
+    "city_code": "ablon sur seine"
+  },
+  {
+    "zip_code": "94120",
+    "city_code": "fontenay sous bois"
+  },
+  {
+    "zip_code": "94490",
+    "city_code": "ormesson sur marne"
+  },
+  {
+    "zip_code": "94520",
+    "city_code": "perigny"
+  },
+  {
+    "zip_code": "94100",
+    "city_code": "st maur des fosses"
+  },
+  {
+    "zip_code": "94410",
+    "city_code": "st maurice"
+  },
+  {
+    "zip_code": "94460",
+    "city_code": "valenton"
+  },
+  {
+    "zip_code": "94460",
+    "city_code": "valenton"
+  },
+  {
+    "zip_code": "94440",
+    "city_code": "villecresnes"
+  },
+  {
+    "zip_code": "94190",
+    "city_code": "villeneuve st georges"
+  },
+  {
+    "zip_code": "95450",
+    "city_code": "ableiges"
+  },
+  {
+    "zip_code": "95510",
+    "city_code": "amenucourt"
+  },
+  {
+    "zip_code": "95420",
+    "city_code": "arthies"
+  },
+  {
+    "zip_code": "95570",
+    "city_code": "attainville"
+  },
+  {
+    "zip_code": "95560",
+    "city_code": "baillet en france"
+  },
+  {
+    "zip_code": "95270",
+    "city_code": "bellefontaine"
+  },
+  {
+    "zip_code": "95270",
+    "city_code": "belloy en france"
+  },
+  {
+    "zip_code": "95650",
+    "city_code": "boissy l aillerie"
+  },
+  {
+    "zip_code": "95000",
+    "city_code": "cergy"
+  },
+  {
+    "zip_code": "95420",
+    "city_code": "la chapelle en vexin"
+  },
+  {
+    "zip_code": "95750",
+    "city_code": "chars"
+  },
+  {
+    "zip_code": "95190",
+    "city_code": "chatenay en france"
+  },
+  {
+    "zip_code": "95420",
+    "city_code": "clery en vexin"
+  },
+  {
+    "zip_code": "95330",
+    "city_code": "domont"
+  },
+  {
+    "zip_code": "95460",
+    "city_code": "ezanville"
+  },
+  {
+    "zip_code": "95830",
+    "city_code": "fremecourt"
+  },
+  {
+    "zip_code": "95500",
+    "city_code": "gonesse"
+  },
+  {
+    "zip_code": "95410",
+    "city_code": "groslay"
+  },
+  {
+    "zip_code": "95450",
+    "city_code": "guiry en vexin"
+  },
+  {
+    "zip_code": "95640",
+    "city_code": "haravilliers"
+  },
+  {
+    "zip_code": "95420",
+    "city_code": "hodent"
+  },
+  {
+    "zip_code": "95280",
+    "city_code": "jouy le moutier"
+  },
+  {
+    "zip_code": "95270",
+    "city_code": "luzarches"
+  },
+  {
+    "zip_code": "95560",
+    "city_code": "maffliers"
+  },
+  {
+    "zip_code": "95420",
+    "city_code": "maudetour en vexin"
+  },
+  {
+    "zip_code": "95630",
+    "city_code": "meriel"
+  },
+  {
+    "zip_code": "95540",
+    "city_code": "mery sur oise"
+  },
+  {
+    "zip_code": "95720",
+    "city_code": "le mesnil aubry"
+  },
+  {
+    "zip_code": "95770",
+    "city_code": "montreuil sur epte"
+  },
+  {
+    "zip_code": "95590",
+    "city_code": "nerville la foret"
+  },
+  {
+    "zip_code": "95300",
+    "city_code": "pontoise"
+  },
+  {
+    "zip_code": "95700",
+    "city_code": "roissy en france"
+  },
+  {
+    "zip_code": "95200",
+    "city_code": "sarcelles"
+  },
+  {
+    "zip_code": "95470",
+    "city_code": "survilliers"
+  },
+  {
+    "zip_code": "95510",
+    "city_code": "vetheuil"
+  },
+  {
+    "zip_code": "95450",
+    "city_code": "vigny"
+  },
+  {
+    "zip_code": "95720",
+    "city_code": "villiers le sec"
+  },
+  {
+    "zip_code": "75009",
+    "city_code": "paris 09"
+  },
+  {
+    "zip_code": "75010",
+    "city_code": "paris 10"
+  },
+  {
+    "zip_code": "75013",
+    "city_code": "paris 13"
+  },
+  {
+    "zip_code": "75018",
+    "city_code": "paris 18"
+  },
+  {
+    "zip_code": "75019",
+    "city_code": "paris 19"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "acheres la foret"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "andrezel"
+  },
+  {
+    "zip_code": "77970",
+    "city_code": "bannost villegagnon"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "beauchery st martin"
+  },
+  {
+    "zip_code": "77350",
+    "city_code": "boissise la bertrand"
+  },
+  {
+    "zip_code": "77310",
+    "city_code": "boissise le roi"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "boissy aux cailles"
+  },
+  {
+    "zip_code": "77620",
+    "city_code": "bransles"
+  },
+  {
+    "zip_code": "77940",
+    "city_code": "la brosse montceaux"
+  },
+  {
+    "zip_code": "77130",
+    "city_code": "cannes ecluse"
+  },
+  {
+    "zip_code": "77400",
+    "city_code": "carnetin"
+  },
+  {
+    "zip_code": "77120",
+    "city_code": "chailly en brie"
+  },
+  {
+    "zip_code": "77144",
+    "city_code": "chalifert"
+  },
+  {
+    "zip_code": "77910",
+    "city_code": "chambry"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "champcenest"
+  },
+  {
+    "zip_code": "77660",
+    "city_code": "changis sur marne"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "la chapelle la reine"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "la chapelle moutils"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "la chapelle moutils"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "charmentray"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "chateaubleau"
+  },
+  {
+    "zip_code": "77167",
+    "city_code": "chatenoy"
+  },
+  {
+    "zip_code": "77610",
+    "city_code": "chatres"
+  },
+  {
+    "zip_code": "77090",
+    "city_code": "collegien"
+  },
+  {
+    "zip_code": "77600",
+    "city_code": "conches sur gondoire"
+  },
+  {
+    "zip_code": "77120",
+    "city_code": "coulommiers"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "courtacon"
+  },
+  {
+    "zip_code": "77181",
+    "city_code": "courtry"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "crecy la chapelle"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "la croix en brie"
+  },
+  {
+    "zip_code": "77840",
+    "city_code": "crouy sur ourcq"
+  },
+  {
+    "zip_code": "77140",
+    "city_code": "darvault"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "donnemarie dontilly"
+  },
+  {
+    "zip_code": "77126",
+    "city_code": "egligny"
+  },
+  {
+    "zip_code": "77515",
+    "city_code": "faremoutiers"
+  },
+  {
+    "zip_code": "77164",
+    "city_code": "ferrieres en brie"
+  },
+  {
+    "zip_code": "75002",
+    "city_code": "paris 02"
+  },
+  {
+    "zip_code": "77940",
+    "city_code": "flagy"
+  },
+  {
+    "zip_code": "75015",
+    "city_code": "paris 15"
+  },
+  {
+    "zip_code": "77930",
+    "city_code": "fleury en biere"
+  },
+  {
+    "zip_code": "75116",
+    "city_code": "paris 16"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "fontenailles"
+  },
+  {
+    "zip_code": "77910",
+    "city_code": "germigny l eveque"
+  },
+  {
+    "zip_code": "77130",
+    "city_code": "la grande paroisse"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "gressy"
+  },
+  {
+    "zip_code": "77114",
+    "city_code": "herme"
+  },
+  {
+    "zip_code": "77165",
+    "city_code": "iverny"
+  },
+  {
+    "zip_code": "77480",
+    "city_code": "jaulnes"
+  },
+  {
+    "zip_code": "77640",
+    "city_code": "jouarre"
+  },
+  {
+    "zip_code": "77400",
+    "city_code": "lagny sur marne"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "lescherolles"
+  },
+  {
+    "zip_code": "77450",
+    "city_code": "lesches"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "leudon en brie"
+  },
+  {
+    "zip_code": "77220",
+    "city_code": "liverdy en brie"
+  },
+  {
+    "zip_code": "77710",
+    "city_code": "lorrez le bocage preaux"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "louan villegruis fontaine"
+  },
+  {
+    "zip_code": "77540",
+    "city_code": "lumigny nesles ormeaux"
+  },
+  {
+    "zip_code": "77540",
+    "city_code": "lumigny nesles ormeaux"
+  },
+  {
+    "zip_code": "77133",
+    "city_code": "machault"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "maisoncelles en brie"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "maison rouge"
+  },
+  {
+    "zip_code": "77100",
+    "city_code": "mareuil les meaux"
+  },
+  {
+    "zip_code": "77990",
+    "city_code": "mauregard"
+  },
+  {
+    "zip_code": "77990",
+    "city_code": "le mesnil amelot"
+  },
+  {
+    "zip_code": "77151",
+    "city_code": "montceaux les provins"
+  },
+  {
+    "zip_code": "77950",
+    "city_code": "montereau sur le jard"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "montigny lencoup"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "montolivet"
+  },
+  {
+    "zip_code": "77250",
+    "city_code": "moret loing et orvanne"
+  },
+  {
+    "zip_code": "77720",
+    "city_code": "mormant"
+  },
+  {
+    "zip_code": "77120",
+    "city_code": "mouroux"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "moussy le vieux"
+  },
+  {
+    "zip_code": "77100",
+    "city_code": "nanteuil les meaux"
+  },
+  {
+    "zip_code": "77730",
+    "city_code": "nanteuil sur marne"
+  },
+  {
+    "zip_code": "77124",
+    "city_code": "chauconin neufmontiers"
+  },
+  {
+    "zip_code": "77123",
+    "city_code": "noisy sur ecole"
+  },
+  {
+    "zip_code": "77134",
+    "city_code": "les ormes sur voulzie"
+  },
+  {
+    "zip_code": "77167",
+    "city_code": "ormesson"
+  },
+  {
+    "zip_code": "77480",
+    "city_code": "passy sur seine"
+  },
+  {
+    "zip_code": "77124",
+    "city_code": "penchard"
+  },
+  {
+    "zip_code": "77181",
+    "city_code": "le pin"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "le plessis placy"
+  },
+  {
+    "zip_code": "77340",
+    "city_code": "pontault combault"
+  },
+  {
+    "zip_code": "77139",
+    "city_code": "puisieux"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "rouvres"
+  },
+  {
+    "zip_code": "77950",
+    "city_code": "rubelles"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "rupereux"
+  },
+  {
+    "zip_code": "77515",
+    "city_code": "st augustin"
+  },
+  {
+    "zip_code": "77950",
+    "city_code": "st germain laxis"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "st mard"
+  },
+  {
+    "zip_code": "77720",
+    "city_code": "st mery"
+  },
+  {
+    "zip_code": "77140",
+    "city_code": "st pierre les nemours"
+  },
+  {
+    "zip_code": "77176",
+    "city_code": "savigny le temple"
+  },
+  {
+    "zip_code": "77240",
+    "city_code": "seine port"
+  },
+  {
+    "zip_code": "77170",
+    "city_code": "servon"
+  },
+  {
+    "zip_code": "77111",
+    "city_code": "soignolles en brie"
+  },
+  {
+    "zip_code": "77810",
+    "city_code": "thomery"
+  },
+  {
+    "zip_code": "77220",
+    "city_code": "tournan en brie"
+  },
+  {
+    "zip_code": "77670",
+    "city_code": "vernou la celle sur seine"
+  },
+  {
+    "zip_code": "77240",
+    "city_code": "vert st denis"
+  },
+  {
+    "zip_code": "77710",
+    "city_code": "villebeon"
+  },
+  {
+    "zip_code": "77250",
+    "city_code": "villemer"
+  },
+  {
+    "zip_code": "77480",
+    "city_code": "villenauxe la petite"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "villevaude"
+  },
+  {
+    "zip_code": "77870",
+    "city_code": "vulaines sur seine"
+  },
+  {
+    "zip_code": "78113",
+    "city_code": "adainville"
+  },
+  {
+    "zip_code": "78570",
+    "city_code": "andresy"
+  },
+  {
+    "zip_code": "78610",
+    "city_code": "auffargis"
+  },
+  {
+    "zip_code": "78930",
+    "city_code": "auffreville brasseuil"
+  },
+  {
+    "zip_code": "78650",
+    "city_code": "beynes"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "blaru"
+  },
+  {
+    "zip_code": "78660",
+    "city_code": "boinville le gaillard"
+  },
+  {
+    "zip_code": "78910",
+    "city_code": "boissets"
+  },
+  {
+    "zip_code": "78830",
+    "city_code": "bonnelles"
+  },
+  {
+    "zip_code": "78200",
+    "city_code": "buchelay"
+  },
+  {
+    "zip_code": "78955",
+    "city_code": "carrieres sous poissy"
+  },
+  {
+    "zip_code": "78570",
+    "city_code": "chanteloup les vignes"
+  },
+  {
+    "zip_code": "78130",
+    "city_code": "chapet"
+  },
+  {
+    "zip_code": "78400",
+    "city_code": "chatou"
+  },
+  {
+    "zip_code": "78460",
+    "city_code": "choisel"
+  },
+  {
+    "zip_code": "78340",
+    "city_code": "les clayes sous bois"
+  },
+  {
+    "zip_code": "78310",
+    "city_code": "coignieres"
+  },
+  {
+    "zip_code": "78700",
+    "city_code": "conflans ste honorine"
+  },
+  {
+    "zip_code": "78111",
+    "city_code": "dammartin en serve"
+  },
+  {
+    "zip_code": "78440",
+    "city_code": "drocourt"
+  },
+  {
+    "zip_code": "78680",
+    "city_code": "epone"
+  },
+  {
+    "zip_code": "78410",
+    "city_code": "la falaise"
+  },
+  {
+    "zip_code": "78200",
+    "city_code": "flacourt"
+  },
+  {
+    "zip_code": "78910",
+    "city_code": "flexanville"
+  },
+  {
+    "zip_code": "78440",
+    "city_code": "fontenay st pere"
+  },
+  {
+    "zip_code": "78113",
+    "city_code": "grandchamp"
+  },
+  {
+    "zip_code": "78200",
+    "city_code": "jouy mauvoisin"
+  },
+  {
+    "zip_code": "78440",
+    "city_code": "lainville en vexin"
+  },
+  {
+    "zip_code": "78430",
+    "city_code": "louveciennes"
+  },
+  {
+    "zip_code": "78200",
+    "city_code": "mantes la jolie"
+  },
+  {
+    "zip_code": "78711",
+    "city_code": "mantes la ville"
+  },
+  {
+    "zip_code": "78580",
+    "city_code": "maule"
+  },
+  {
+    "zip_code": "78780",
+    "city_code": "maurecourt"
+  },
+  {
+    "zip_code": "78490",
+    "city_code": "mere"
+  },
+  {
+    "zip_code": "78600",
+    "city_code": "le mesnil le roi"
+  },
+  {
+    "zip_code": "78250",
+    "city_code": "meulan en yvelines"
+  },
+  {
+    "zip_code": "78250",
+    "city_code": "mezy sur seine"
+  },
+  {
+    "zip_code": "78490",
+    "city_code": "montfort l amaury"
+  },
+  {
+    "zip_code": "78630",
+    "city_code": "morainvilliers"
+  },
+  {
+    "zip_code": "78980",
+    "city_code": "neauphlette"
+  },
+  {
+    "zip_code": "78250",
+    "city_code": "oinville sur montcient"
+  },
+  {
+    "zip_code": "78660",
+    "city_code": "orsonville"
+  },
+  {
+    "zip_code": "78910",
+    "city_code": "osmoy"
+  },
+  {
+    "zip_code": "78660",
+    "city_code": "paray douaville"
+  },
+  {
+    "zip_code": "78610",
+    "city_code": "le perray en yvelines"
+  },
+  {
+    "zip_code": "78440",
+    "city_code": "porcheville"
+  },
+  {
+    "zip_code": "78560",
+    "city_code": "le port marly"
+  },
+  {
+    "zip_code": "78910",
+    "city_code": "prunay le temple"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "rolleboise"
+  },
+  {
+    "zip_code": "78790",
+    "city_code": "rosay"
+  },
+  {
+    "zip_code": "78210",
+    "city_code": "st cyr l ecole"
+  },
+  {
+    "zip_code": "78125",
+    "city_code": "st hilarion"
+  },
+  {
+    "zip_code": "78470",
+    "city_code": "st lambert"
+  },
+  {
+    "zip_code": "78520",
+    "city_code": "st martin la garenne"
+  },
+  {
+    "zip_code": "78500",
+    "city_code": "sartrouville"
+  },
+  {
+    "zip_code": "78720",
+    "city_code": "senlisse"
+  },
+  {
+    "zip_code": "78790",
+    "city_code": "septeuil"
+  },
+  {
+    "zip_code": "78910",
+    "city_code": "tacoignieres"
+  },
+  {
+    "zip_code": "78113",
+    "city_code": "le tartre gaudran"
+  },
+  {
+    "zip_code": "78980",
+    "city_code": "le tertre st denis"
+  },
+  {
+    "zip_code": "78770",
+    "city_code": "thoiry"
+  },
+  {
+    "zip_code": "78190",
+    "city_code": "trappes"
+  },
+  {
+    "zip_code": "78510",
+    "city_code": "triel sur seine"
+  },
+  {
+    "zip_code": "78740",
+    "city_code": "vaux sur seine"
+  },
+  {
+    "zip_code": "78140",
+    "city_code": "velizy villacoublay"
+  },
+  {
+    "zip_code": "78960",
+    "city_code": "voisins le bretonneux"
+  },
+  {
+    "zip_code": "77890",
+    "city_code": "arville"
+  },
+  {
+    "zip_code": "77720",
+    "city_code": "aubepierre ozouer le repos"
+  },
+  {
+    "zip_code": "77210",
+    "city_code": "avon"
+  },
+  {
+    "zip_code": "77480",
+    "city_code": "baby"
+  },
+  {
+    "zip_code": "77970",
+    "city_code": "bannost villegagnon"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "beauchery st martin"
+  },
+  {
+    "zip_code": "77970",
+    "city_code": "bezalles"
+  },
+  {
+    "zip_code": "77115",
+    "city_code": "blandy"
+  },
+  {
+    "zip_code": "77940",
+    "city_code": "blennes"
+  },
+  {
+    "zip_code": "77750",
+    "city_code": "boitron"
+  },
+  {
+    "zip_code": "77570",
+    "city_code": "bougligny"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "boulancourt"
+  },
+  {
+    "zip_code": "77720",
+    "city_code": "breau"
+  },
+  {
+    "zip_code": "77170",
+    "city_code": "brie comte robert"
+  },
+  {
+    "zip_code": "77600",
+    "city_code": "bussy st georges"
+  },
+  {
+    "zip_code": "77515",
+    "city_code": "la celle sur morin"
+  },
+  {
+    "zip_code": "77930",
+    "city_code": "cely"
+  },
+  {
+    "zip_code": "77650",
+    "city_code": "chalmaison"
+  },
+  {
+    "zip_code": "77600",
+    "city_code": "chanteloup en brie"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "la chapelle rablais"
+  },
+  {
+    "zip_code": "77160",
+    "city_code": "la chapelle st sulpice"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "charny"
+  },
+  {
+    "zip_code": "77820",
+    "city_code": "le chatelet en brie"
+  },
+  {
+    "zip_code": "77160",
+    "city_code": "chenoise cucharmoy"
+  },
+  {
+    "zip_code": "77570",
+    "city_code": "chenou"
+  },
+  {
+    "zip_code": "77173",
+    "city_code": "chevry cossigny"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "choisy en brie"
+  },
+  {
+    "zip_code": "77730",
+    "city_code": "citry"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "cocherel"
+  },
+  {
+    "zip_code": "77290",
+    "city_code": "compans"
+  },
+  {
+    "zip_code": "77700",
+    "city_code": "coupvray"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "courchamp"
+  },
+  {
+    "zip_code": "77610",
+    "city_code": "crevecoeur en brie"
+  },
+  {
+    "zip_code": "77165",
+    "city_code": "cuisy"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "dhuisy"
+  },
+  {
+    "zip_code": "77130",
+    "city_code": "dormelles"
+  },
+  {
+    "zip_code": "77510",
+    "city_code": "doue"
+  },
+  {
+    "zip_code": "77184",
+    "city_code": "emerainville"
+  },
+  {
+    "zip_code": "77133",
+    "city_code": "fericy"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "la ferte gaucher"
+  },
+  {
+    "zip_code": "77610",
+    "city_code": "fontenay tresigny"
+  },
+  {
+    "zip_code": "77130",
+    "city_code": "forges"
+  },
+  {
+    "zip_code": "77690",
+    "city_code": "la genevraye"
+  },
+  {
+    "zip_code": "77120",
+    "city_code": "giremoutiers"
+  },
+  {
+    "zip_code": "77166",
+    "city_code": "grisy suisnes"
+  },
+  {
+    "zip_code": "77166",
+    "city_code": "grisy suisnes"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "guerard"
+  },
+  {
+    "zip_code": "77510",
+    "city_code": "hondevilliers"
+  },
+  {
+    "zip_code": "77450",
+    "city_code": "isles les villenoy"
+  },
+  {
+    "zip_code": "77600",
+    "city_code": "jossigny"
+  },
+  {
+    "zip_code": "77650",
+    "city_code": "jutigny"
+  },
+  {
+    "zip_code": "77148",
+    "city_code": "laval en brie"
+  },
+  {
+    "zip_code": "77171",
+    "city_code": "lechelle"
+  },
+  {
+    "zip_code": "77550",
+    "city_code": "lissy"
+  },
+  {
+    "zip_code": "77000",
+    "city_code": "livry sur seine"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "lizy sur ourcq"
+  },
+  {
+    "zip_code": "77710",
+    "city_code": "lorrez le bocage preaux"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "luisetaines"
+  },
+  {
+    "zip_code": "77540",
+    "city_code": "lumigny nesles ormeaux"
+  },
+  {
+    "zip_code": "77700",
+    "city_code": "magny le hongre"
+  },
+  {
+    "zip_code": "77950",
+    "city_code": "maincy"
+  },
+  {
+    "zip_code": "77120",
+    "city_code": "marolles en brie"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "mary sur marne"
+  },
+  {
+    "zip_code": "77120",
+    "city_code": "mauperthuis"
+  },
+  {
+    "zip_code": "77145",
+    "city_code": "may en multien"
+  },
+  {
+    "zip_code": "77730",
+    "city_code": "mery sur marne"
+  },
+  {
+    "zip_code": "77950",
+    "city_code": "moisenay"
+  },
+  {
+    "zip_code": "77480",
+    "city_code": "montigny le guesdier"
+  },
+  {
+    "zip_code": "77690",
+    "city_code": "montigny sur loing"
+  },
+  {
+    "zip_code": "77940",
+    "city_code": "montmachoux"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "moussy le neuf"
+  },
+  {
+    "zip_code": "77124",
+    "city_code": "chauconin neufmontiers"
+  },
+  {
+    "zip_code": "77186",
+    "city_code": "noisiel"
+  },
+  {
+    "zip_code": "77140",
+    "city_code": "nonville"
+  },
+  {
+    "zip_code": "77178",
+    "city_code": "oissery"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "paroy"
+  },
+  {
+    "zip_code": "77165",
+    "city_code": "le plessis aux bois"
+  },
+  {
+    "zip_code": "77310",
+    "city_code": "pringy"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "recloses"
+  },
+  {
+    "zip_code": "77160",
+    "city_code": "rouilly"
+  },
+  {
+    "zip_code": "77260",
+    "city_code": "ste aulde"
+  },
+  {
+    "zip_code": "77750",
+    "city_code": "st cyr sur morin"
+  },
+  {
+    "zip_code": "77130",
+    "city_code": "st germain laval"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "st mars vieux maisons"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "st remy la vanne"
+  },
+  {
+    "zip_code": "77480",
+    "city_code": "st sauveur les bray"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "sancy"
+  },
+  {
+    "zip_code": "77640",
+    "city_code": "signy signets"
+  },
+  {
+    "zip_code": "77650",
+    "city_code": "soisy bouy"
+  },
+  {
+    "zip_code": "77460",
+    "city_code": "souppes sur loing"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "tancrou"
+  },
+  {
+    "zip_code": "77400",
+    "city_code": "thorigny sur marne"
+  },
+  {
+    "zip_code": "77163",
+    "city_code": "tigeaux"
+  },
+  {
+    "zip_code": "77200",
+    "city_code": "torcy"
+  },
+  {
+    "zip_code": "77450",
+    "city_code": "trilbardou"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "trocy en multien"
+  },
+  {
+    "zip_code": "77830",
+    "city_code": "valence en brie"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "verneuil l etang"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "vieux champagne"
+  },
+  {
+    "zip_code": "77450",
+    "city_code": "vignely"
+  },
+  {
+    "zip_code": "77174",
+    "city_code": "villeneuve le comte"
+  },
+  {
+    "zip_code": "77174",
+    "city_code": "villeneuve st denis"
+  },
+  {
+    "zip_code": "77270",
+    "city_code": "villeparisis"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "villiers sous grez"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "voulangis"
+  },
+  {
+    "zip_code": "77940",
+    "city_code": "voulx"
+  },
+  {
+    "zip_code": "77160",
+    "city_code": "vulaines les provins"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "yebles"
+  },
+  {
+    "zip_code": "78260",
+    "city_code": "acheres"
+  },
+  {
+    "zip_code": "78240",
+    "city_code": "aigremont"
+  },
+  {
+    "zip_code": "78570",
+    "city_code": "andresy"
+  },
+  {
+    "zip_code": "78790",
+    "city_code": "arnouville les mantes"
+  },
+  {
+    "zip_code": "78410",
+    "city_code": "aubergenville"
+  },
+  {
+    "zip_code": "78126",
+    "city_code": "aulnay sur mauldre"
+  },
+  {
+    "zip_code": "78770",
+    "city_code": "autouillet"
+  },
+  {
+    "zip_code": "78870",
+    "city_code": "bailly"
+  },
+  {
+    "zip_code": "78490",
+    "city_code": "bazoches sur guyonne"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "bennecourt"
+  },
+  {
+    "zip_code": "78650",
+    "city_code": "beynes"
+  },
+  {
+    "zip_code": "78390",
+    "city_code": "bois d arcy"
+  },
+  {
+    "zip_code": "78530",
+    "city_code": "buc"
+  },
+  {
+    "zip_code": "78955",
+    "city_code": "carrieres sous poissy"
+  },
+  {
+    "zip_code": "78420",
+    "city_code": "carrieres sur seine"
+  },
+  {
+    "zip_code": "78170",
+    "city_code": "la celle st cloud"
+  },
+  {
+    "zip_code": "78720",
+    "city_code": "cernay la ville"
+  },
+  {
+    "zip_code": "78117",
+    "city_code": "chateaufort"
+  },
+  {
+    "zip_code": "78150",
+    "city_code": "le chesnay rocquencourt"
+  },
+  {
+    "zip_code": "78121",
+    "city_code": "crespieres"
+  },
+  {
+    "zip_code": "78720",
+    "city_code": "dampierre en yvelines"
+  },
+  {
+    "zip_code": "78720",
+    "city_code": "dampierre en yvelines"
+  },
+  {
+    "zip_code": "78690",
+    "city_code": "les essarts le roi"
+  },
+  {
+    "zip_code": "78810",
+    "city_code": "feucherolles"
+  },
+  {
+    "zip_code": "78520",
+    "city_code": "follainville dennemont"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "gommecourt"
+  },
+  {
+    "zip_code": "78930",
+    "city_code": "goussonville"
+  },
+  {
+    "zip_code": "78280",
+    "city_code": "guyancourt"
+  },
+  {
+    "zip_code": "78280",
+    "city_code": "guyancourt"
+  },
+  {
+    "zip_code": "78580",
+    "city_code": "herbeville"
+  },
+  {
+    "zip_code": "78550",
+    "city_code": "houdan"
+  },
+  {
+    "zip_code": "78270",
+    "city_code": "notre dame de la mer"
+  },
+  {
+    "zip_code": "78760",
+    "city_code": "jouars pontchartrain"
+  },
+  {
+    "zip_code": "78320",
+    "city_code": "levis st nom"
+  },
+  {
+    "zip_code": "78520",
+    "city_code": "limay"
+  },
+  {
+    "zip_code": "78490",
+    "city_code": "mareil le guyon"
+  },
+  {
+    "zip_code": "78160",
+    "city_code": "marly le roi"
+  },
+  {
+    "zip_code": "78490",
+    "city_code": "les mesnuls"
+  },
+  {
+    "zip_code": "78440",
+    "city_code": "montalet le bois"
+  },
+  {
+    "zip_code": "78790",
+    "city_code": "montchauvet"
+  },
+  {
+    "zip_code": "78410",
+    "city_code": "nezel"
+  },
+  {
+    "zip_code": "78200",
+    "city_code": "perdreauville"
+  },
+  {
+    "zip_code": "78125",
+    "city_code": "raizeux"
+  },
+  {
+    "zip_code": "78790",
+    "city_code": "st martin des champs"
+  },
+  {
+    "zip_code": "78730",
+    "city_code": "ste mesme"
+  },
+  {
+    "zip_code": "78860",
+    "city_code": "st nom la breteche"
+  },
+  {
+    "zip_code": "78690",
+    "city_code": "st remy l honore"
+  },
+  {
+    "zip_code": "78850",
+    "city_code": "thiverval grignon"
+  },
+  {
+    "zip_code": "78510",
+    "city_code": "triel sur seine"
+  },
+  {
+    "zip_code": "78480",
+    "city_code": "verneuil sur seine"
+  },
+  {
+    "zip_code": "78320",
+    "city_code": "la verriere"
+  },
+  {
+    "zip_code": "78930",
+    "city_code": "vert"
+  },
+  {
+    "zip_code": "78490",
+    "city_code": "vicq"
+  },
+  {
+    "zip_code": "78930",
+    "city_code": "villette"
+  },
+  {
+    "zip_code": "75001",
+    "city_code": "paris 01"
+  },
+  {
+    "zip_code": "75004",
+    "city_code": "paris 04"
+  },
+  {
+    "zip_code": "75006",
+    "city_code": "paris 06"
+  },
+  {
+    "zip_code": "75007",
+    "city_code": "paris 07"
+  },
+  {
+    "zip_code": "75014",
+    "city_code": "paris 14"
+  },
+  {
+    "zip_code": "75017",
+    "city_code": "paris 17"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "annet sur marne"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "argentieres"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "armentieres en brie"
+  },
+  {
+    "zip_code": "77720",
+    "city_code": "aubepierre ozouer le repos"
+  },
+  {
+    "zip_code": "77167",
+    "city_code": "bagneaux sur loing"
+  },
+  {
+    "zip_code": "77700",
+    "city_code": "bailly romainvilliers"
+  },
+  {
+    "zip_code": "77130",
+    "city_code": "barbey"
+  },
+  {
+    "zip_code": "77118",
+    "city_code": "bazoches les bray"
+  },
+  {
+    "zip_code": "77890",
+    "city_code": "beaumont du gatinais"
+  },
+  {
+    "zip_code": "77540",
+    "city_code": "bernay vilbert"
+  },
+  {
+    "zip_code": "77970",
+    "city_code": "boisdon"
+  },
+  {
+    "zip_code": "77350",
+    "city_code": "boissettes"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "bouleurs"
+  },
+  {
+    "zip_code": "77780",
+    "city_code": "bourron marlotte"
+  },
+  {
+    "zip_code": "77177",
+    "city_code": "brou sur chantereine"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "burcy"
+  },
+  {
+    "zip_code": "77600",
+    "city_code": "bussy st martin"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "cerneux"
+  },
+  {
+    "zip_code": "77260",
+    "city_code": "chamigny"
+  },
+  {
+    "zip_code": "77540",
+    "city_code": "la chapelle iger"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "chartronges"
+  },
+  {
+    "zip_code": "77570",
+    "city_code": "chateau landon"
+  },
+  {
+    "zip_code": "77126",
+    "city_code": "chatenay sur seine"
+  },
+  {
+    "zip_code": "77500",
+    "city_code": "chelles"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "clos fontaine"
+  },
+  {
+    "zip_code": "77450",
+    "city_code": "conde ste libiaire"
+  },
+  {
+    "zip_code": "77840",
+    "city_code": "coulombs en valois"
+  },
+  {
+    "zip_code": "77126",
+    "city_code": "courcelles en bassee"
+  },
+  {
+    "zip_code": "77580",
+    "city_code": "coutevroult"
+  },
+  {
+    "zip_code": "77190",
+    "city_code": "dammarie les lys"
+  },
+  {
+    "zip_code": "77940",
+    "city_code": "diant"
+  },
+  {
+    "zip_code": "77940",
+    "city_code": "esmans"
+  },
+  {
+    "zip_code": "77166",
+    "city_code": "evry gregy sur yerre"
+  },
+  {
+    "zip_code": "77150",
+    "city_code": "ferolles attilly"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "fromont"
+  },
+  {
+    "zip_code": "77470",
+    "city_code": "fublaines"
+  },
+  {
+    "zip_code": "77370",
+    "city_code": "gastins"
+  },
+  {
+    "zip_code": "77840",
+    "city_code": "germigny sous coulombs"
+  },
+  {
+    "zip_code": "77890",
+    "city_code": "gironville"
+  },
+  {
+    "zip_code": "77880",
+    "city_code": "grez sur loing"
+  },
+  {
+    "zip_code": "77600",
+    "city_code": "guermantes"
+  },
+  {
+    "zip_code": "77390",
+    "city_code": "guignes"
+  },
+  {
+    "zip_code": "77440",
+    "city_code": "isles les meldeuses"
+  },
+  {
+    "zip_code": "77230",
+    "city_code": "juilly"
+  },
+  {
+    "zip_code": "77650",
+    "city_code": "lizines"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "louan villegruis fontaine"
+  },
+  {
+    "zip_code": "77570",
+    "city_code": "maisoncelles en gatinais"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "les marets"
+  },
+  {
+    "zip_code": "77130",
+    "city_code": "marolles sur seine"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "meilleray"
+  },
+  {
+    "zip_code": "77000",
+    "city_code": "melun"
+  },
+  {
+    "zip_code": "77410",
+    "city_code": "messy"
+  },
+  {
+    "zip_code": "77570",
+    "city_code": "mondreville"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "mons en montois"
+  },
+  {
+    "zip_code": "77470",
+    "city_code": "montceaux les meaux"
+  },
+  {
+    "zip_code": "77140",
+    "city_code": "montcourt fromonville"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "montdauphin"
+  },
+  {
+    "zip_code": "77130",
+    "city_code": "montereau fault yonne"
+  },
+  {
+    "zip_code": "77450",
+    "city_code": "montry"
+  },
+  {
+    "zip_code": "77250",
+    "city_code": "moret loing et orvanne"
+  },
+  {
+    "zip_code": "77250",
+    "city_code": "moret loing et orvanne"
+  },
+  {
+    "zip_code": "77250",
+    "city_code": "moret loing et orvanne"
+  },
+  {
+    "zip_code": "77160",
+    "city_code": "mortery"
+  },
+  {
+    "zip_code": "77710",
+    "city_code": "nanteau sur lunain"
+  },
+  {
+    "zip_code": "77830",
+    "city_code": "pamfou"
+  },
+  {
+    "zip_code": "77930",
+    "city_code": "perthes"
+  },
+  {
+    "zip_code": "77540",
+    "city_code": "le plessis feu aussoux"
+  },
+  {
+    "zip_code": "77160",
+    "city_code": "poigny"
+  },
+  {
+    "zip_code": "77470",
+    "city_code": "poincy"
+  },
+  {
+    "zip_code": "77167",
+    "city_code": "poligny"
+  },
+  {
+    "zip_code": "77135",
+    "city_code": "pontcarre"
+  },
+  {
+    "zip_code": "77160",
+    "city_code": "provins"
+  },
+  {
+    "zip_code": "77550",
+    "city_code": "reau"
+  },
+  {
+    "zip_code": "77710",
+    "city_code": "remauville"
+  },
+  {
+    "zip_code": "77260",
+    "city_code": "reuil en brie"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "st barthelemy"
+  },
+  {
+    "zip_code": "77160",
+    "city_code": "st brice"
+  },
+  {
+    "zip_code": "77650",
+    "city_code": "ste colombe"
+  },
+  {
+    "zip_code": "77510",
+    "city_code": "st denis les rebais"
+  },
+  {
+    "zip_code": "77470",
+    "city_code": "st fiacre"
+  },
+  {
+    "zip_code": "77169",
+    "city_code": "st germain sous doue"
+  },
+  {
+    "zip_code": "77930",
+    "city_code": "st germain sur ecole"
+  },
+  {
+    "zip_code": "77650",
+    "city_code": "st loup de naud"
+  },
+  {
+    "zip_code": "77320",
+    "city_code": "st mars vieux maisons"
+  },
+  {
+    "zip_code": "77720",
+    "city_code": "st ouen en brie"
+  },
+  {
+    "zip_code": "77120",
+    "city_code": "beautheil saints"
+  },
+  {
+    "zip_code": "77930",
+    "city_code": "st sauveur sur ecole"
+  },
+  {
+    "zip_code": "77260",
+    "city_code": "sept sorts"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "sigy"
+  },
+  {
+    "zip_code": "77111",
+    "city_code": "solers"
+  },
+  {
+    "zip_code": "77171",
+    "city_code": "sourdun"
+  },
+  {
+    "zip_code": "77520",
+    "city_code": "thenisy"
+  },
+  {
+    "zip_code": "77131",
+    "city_code": "touquin"
+  },
+  {
+    "zip_code": "77123",
+    "city_code": "tousson"
+  },
+  {
+    "zip_code": "77510",
+    "city_code": "la tretoire"
+  },
+  {
+    "zip_code": "77710",
+    "city_code": "treuzy levelay"
+  },
+  {
+    "zip_code": "77760",
+    "city_code": "ury"
+  },
+  {
+    "zip_code": "77130",
+    "city_code": "varennes sur seine"
+  },
+  {
+    "zip_code": "77910",
+    "city_code": "varreddes"
+  },
+  {
+    "zip_code": "77141",
+    "city_code": "vaudoy en brie"
+  },
+  {
+    "zip_code": "77510",
+    "city_code": "verdelot"
+  },
+  {
+    "zip_code": "77670",
+    "city_code": "vernou la celle sur seine"
+  },
+  {
+    "zip_code": "77470",
+    "city_code": "villemareuil"
+  },
+  {
+    "zip_code": "77154",
+    "city_code": "villeneuve les bordes"
+  },
+  {
+    "zip_code": "77510",
+    "city_code": "villeneuve sur bellot"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "villiers st georges"
+  },
+  {
+    "zip_code": "77114",
+    "city_code": "villiers sur seine"
+  },
+  {
+    "zip_code": "77139",
+    "city_code": "vincy manoeuvre"
+  },
+  {
+    "zip_code": "77560",
+    "city_code": "voulton"
+  }
+]
