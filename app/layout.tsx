@@ -2,10 +2,12 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
+import dynamic from "next/dynamic";
 import { Inter, Spline_Sans, Space_Grotesk } from "next/font/google";
 
 import { Navbar } from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";
+import { PostHogProvider } from "../components/posthog/PostHogProvider";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tcaweb.fr"),
@@ -32,6 +34,11 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+const PostHogPageView = dynamic(
+  () => import("../components/posthog/PostHogPageview"),
+  { ssr: false },
+);
+
 export default function RootLayout({
   children,
 }: {
@@ -42,12 +49,15 @@ export default function RootLayout({
       lang="en"
       className={`scroll-smooth font-sans antialiased ${inter.variable} ${splineSans.variable} ${spaceGrotesk.variable}`}
     >
-      <body className="min-h-screen bg-white">
-        <Navbar />
-        {children}
-        <Footer />
-        <Analytics />
-      </body>
+      <PostHogProvider>
+        <body className="min-h-screen bg-white">
+          <Navbar />
+          {children}
+          <Footer />
+          <Analytics />
+          <PostHogPageView />
+        </body>
+      </PostHogProvider>
     </html>
   );
 }
