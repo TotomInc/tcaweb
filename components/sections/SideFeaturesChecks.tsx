@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Balancer from "react-wrap-balancer";
 import cx from "classnames";
 import { CheckIcon } from "@heroicons/react/20/solid";
 
@@ -50,12 +49,12 @@ export function SideFeaturesChecks({
             invert ? "order-1" : "lg:pl-16",
           )}
         >
-          <h2 className="text-3xl font-bold text-gray-950">
-            <Balancer>{title}</Balancer>
+          <h2 className="text-balance text-3xl font-bold text-gray-950">
+            {title}
           </h2>
 
-          <p className="mt-8 max-w-xl text-base leading-snug text-gray-800">
-            <Balancer>{description}</Balancer>
+          <p className="mt-8 max-w-xl text-balance text-base leading-snug text-gray-800">
+            {description}
           </p>
 
           <dl className="mt-8 flex max-w-xl flex-col space-y-6">
@@ -71,8 +70,8 @@ export function SideFeaturesChecks({
                   </h3>
                 </dt>
 
-                <dd className="mt-2 pl-9 text-sm text-gray-600">
-                  <Balancer>{feature.description}</Balancer>
+                <dd className="mt-2 text-balance pl-9 text-sm text-gray-600">
+                  {feature.description}
                 </dd>
               </div>
             ))}

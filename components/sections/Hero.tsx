@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Balancer from "react-wrap-balancer";
 import { CheckBadgeIcon } from "@heroicons/react/24/outline";
 import cx from "classnames";
 
@@ -37,12 +36,12 @@ export function Hero({
     <main className="relative mb-12 bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500">
       <div className="relative mx-auto max-w-7xl pb-32 pt-24 lg:pb-56 lg:pt-32">
         <div className="flex flex-col items-start px-8 sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl">
-          <h1 className="font-spline text-3xl font-bold text-white lg:text-5xl 2xl:text-6xl">
-            <Balancer>{title}</Balancer>
+          <h1 className="text-balance font-spline text-3xl font-bold text-white lg:text-5xl 2xl:text-6xl">
+            {title}
           </h1>
 
-          <p className="mt-8 text-lg text-white lg:text-xl">
-            <Balancer>{description}</Balancer>
+          <p className="mt-8 text-balance text-lg text-white lg:text-xl">
+            {description}
           </p>
 
           {cta ? (

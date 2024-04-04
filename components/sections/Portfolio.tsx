@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Balancer from "react-wrap-balancer";
 import cx from "classnames";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/20/solid";
 
@@ -58,8 +57,8 @@ export function Portfolio({ className, titleClassName }: PortfolioProps) {
                 {item.subtitle}
               </p>
 
-              <p className="mt-4 text-sm text-gray-900">
-                <Balancer>{item.content}</Balancer>
+              <p className="mt-4 text-balance text-sm text-gray-900">
+                {item.content}
               </p>
 
               <Link

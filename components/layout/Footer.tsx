@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Balancer from "react-wrap-balancer";
 import { EnvelopeIcon } from "@heroicons/react/20/solid";
 
 import { Logo } from "../ui/Logo";
@@ -21,15 +20,13 @@ export function Footer() {
             <Logo textColorVariant="white" />
           </Link>
 
-          <p className="mt-2 max-w-lg text-sm font-medium text-blue-200">
-            <Balancer>
-              <span className="bg-gradient-to-br from-blue-50 via-amber-200 to-red-300 bg-clip-text font-heading font-bold text-transparent">
-                TCA Web
-              </span>
-              , l&apos;agence web qui vous accompagne dans votre stratégie web
-              et e-commerce, création ou refonte de site Internet, design et
-              maquettes digitales.
-            </Balancer>
+          <p className="mt-2 max-w-lg text-balance text-sm font-medium text-blue-200">
+            <span className="bg-gradient-to-br from-blue-50 via-amber-200 to-red-300 bg-clip-text font-heading font-bold text-transparent">
+              TCA Web
+            </span>
+            , l&apos;agence web qui vous accompagne dans votre stratégie web et
+            e-commerce, création ou refonte de site Internet, design et
+            maquettes digitales.
           </p>
 
           <ul className="mt-6">

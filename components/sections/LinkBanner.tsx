@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Balancer from "react-wrap-balancer";
 import cx from "classnames";
 
 export type LinkBannerProps = {
@@ -47,8 +46,8 @@ export function LinkBanner({
           {title}
         </h3>
 
-        <p className="mt-4 text-blue-50 lg:mt-6 lg:max-w-xl lg:text-lg">
-          <Balancer>{description}</Balancer>
+        <p className="mt-4 text-balance text-blue-50 lg:mt-6 lg:max-w-xl lg:text-lg">
+          {description}
         </p>
 
         <span className="ml-auto mt-8 flex items-center justify-center rounded-lg bg-blue-50 px-6 py-3 font-spline font-medium text-blue-700">
