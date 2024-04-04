@@ -50,7 +50,7 @@ export default function Page() {
         image={{
           width: 768,
           height: 414,
-          alt: "",
+          alt: "Portfolio de sites vitrines",
           src: "/_static/images/landing/vitrine-mockup.png",
           className: "w-72",
         }}

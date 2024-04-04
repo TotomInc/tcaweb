@@ -34,6 +34,8 @@ export function LinkBanner({
           src={coverImage.src}
           alt={coverImage.alt}
           fill
+          sizes="(max-width: 1023px) 75vw, 33vw"
+          quality={75}
           className="pointer-events-none absolute inset-0 object-cover opacity-[0.125] transition-transform duration-500 ease-out group-hover:scale-105"
         />
       ) : null}

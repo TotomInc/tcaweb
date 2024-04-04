@@ -31,7 +31,7 @@ export default function ContactPage() {
         image={{
           width: 500,
           height: 300,
-          alt: "",
+          alt: "Développement web",
           src: "/_static/images/web-development.svg",
           className: "w-64 lg:max-w-xl",
         }}

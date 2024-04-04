@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `Agence web spécialiste dans la création de site internet à ${city}`,
-    description: `Notre petite agence web experte en création de site internet, vous accompagne de A à Z dans la conception de votre site web à ${city}. Tarifs évolutifs et adaptés à vos besoins.`,
+    title: `Agence web création de site internet à ${city}`,
+    description: `Notre agence web experte en création de site internet, vous accompagne dans la conception de votre site à ${city}. Tarifs évolutifs et adaptés à vos besoins.`,
   };
 }
 

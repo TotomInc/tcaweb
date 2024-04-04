@@ -37,7 +37,7 @@ export default function Home() {
         image={{
           width: 768,
           height: 650,
-          alt: "",
+          alt: "Portfolio de sites web réalisés par TCA Web",
           src: "/_static/images/landing/landing-mockup.png",
         }}
         checks={[
@@ -134,7 +134,7 @@ export default function Home() {
         link="/sites-ecommerces"
         coverImage={{
           src: "/_static/images/landing/ecommerce-grid-mockup.png",
-          alt: "",
+          alt: "Portfolio de sites e-commerces",
         }}
       />
 
@@ -177,7 +177,7 @@ export default function Home() {
         link="/sites-internet"
         coverImage={{
           src: "/_static/images/landing/vitrine-grid-mockup.png",
-          alt: "",
+          alt: "Portfolio de sites vitrines",
         }}
       />
 

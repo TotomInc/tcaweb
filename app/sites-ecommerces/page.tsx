@@ -47,7 +47,7 @@ export default function Page() {
         image={{
           width: 768,
           height: 414,
-          alt: "",
+          alt: "Portfolio de sites e-commerces",
           src: "/_static/images/landing/ecommerce-mockup.png",
           className: "w-64",
         }}
