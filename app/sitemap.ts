@@ -24,7 +24,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const citiesRoutes = cities.map(
     (city) =>
       ({
-        url: `${BASE_URL}/creation-site-internet-sur-mesure/${slugify(city)}`,
+        url: `${BASE_URL}/creation-site-internet/${slugify(city)}`,
         changeFrequency: "monthly",
         priority: 1,
       }) satisfies SitemapItem,

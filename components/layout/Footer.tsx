@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { EnvelopeIcon } from "@heroicons/react/20/solid";
+import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/20/solid";
 
 import { Logo } from "../ui/Logo";
 
@@ -9,6 +9,11 @@ const CONTACT_LINKS = [
     href: "mailto:thomas@tcaweb.fr",
     icon: EnvelopeIcon,
   },
+  {
+    label: "+33 6 42 87 19 66",
+    href: "tel:+33642871966",
+    icon: PhoneIcon,
+  },
 ];
 
 export function Footer() {
@@ -16,8 +21,8 @@ export function Footer() {
     <>
       <footer className="bg-gradient-to-br from-blue-900 to-blue-800 py-8">
         <div className="mx-auto max-w-7xl px-8">
-          <Link href="/" className="inline-flex">
-            <Logo textColorVariant="white" />
+          <Link href="/" title="Retour vers l'accueil" className="inline-flex">
+            <Logo variant="white" />
           </Link>
 
           <p className="mt-2 max-w-lg text-balance text-sm font-medium text-blue-200">
@@ -29,7 +34,7 @@ export function Footer() {
             maquettes digitales.
           </p>
 
-          <ul className="mt-6">
+          <ul className="mt-6 space-y-2">
             {CONTACT_LINKS.map((link) => (
               <li
                 key={link.href}
@@ -49,9 +54,8 @@ export function Footer() {
       <div className="bg-blue-950 py-4">
         <div className="mx-auto max-w-7xl px-8">
           <p className="text-xs text-blue-200/75">
-            Copyright © {new Date().getFullYear()} —{" "}
-            <span className="font-heading text-sm font-bold">TCA Web</span> —
-            Tous droits réservés
+            <span className="font-heading text-sm font-bold">TCA Web</span>{" "}
+            Copyright © {new Date().getFullYear()} — Tous droits réservés
           </p>
         </div>
       </div>

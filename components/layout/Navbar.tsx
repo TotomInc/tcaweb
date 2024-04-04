@@ -36,9 +36,20 @@ export function Navbar() {
       )}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-8">
-        <Link href="/" className="flex" onClick={() => setIsOpen(false)}>
+        <Link
+          href="/"
+          title="Retour vers l'accueil"
+          className="flex"
+          onClick={() => setIsOpen(false)}
+        >
           <Logo
-            textColorVariant={hasScrolled || isOpen ? "blue-gradient" : "white"}
+            variant="white"
+            className={hasScrolled ? "hidden" : undefined}
+          />
+
+          <Logo
+            variant="blue"
+            className={!hasScrolled ? "hidden" : undefined}
           />
         </Link>
 
@@ -47,6 +58,7 @@ export function Navbar() {
             <Link
               key={`desktop-${href}`}
               href={href}
+              title={label}
               className={cx(
                 "font-spline text-base font-medium hover:underline",
                 hasScrolled
@@ -83,6 +95,7 @@ export function Navbar() {
           <Link
             key={`mobile-${href}`}
             href={href}
+            title={label}
             className={cx(
               "font-spline text-base font-medium text-gray-900 ease-out",
             )}

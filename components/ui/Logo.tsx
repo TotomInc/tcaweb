@@ -1,31 +1,24 @@
 import Image from "next/image";
-import cx from "classnames";
+import { twMerge } from "tailwind-merge";
 
 export type LogoProps = {
-  textColorVariant: "white" | "blue-gradient";
+  variant: "white" | "blue";
+  className?: string;
 };
 
-export function Logo({ textColorVariant }: LogoProps) {
+export function Logo({ variant, className }: LogoProps) {
   return (
-    <>
-      <Image
-        src="/_static/images/logo.svg"
-        alt="TCA Web"
-        width={32}
-        height={32}
-      />
-
-      <span
-        className={cx("ml-1.5 font-heading text-2xl font-bold", {
-          "bg-gradient-to-br from-blue-900 to-blue-500 bg-clip-text text-transparent":
-            textColorVariant === "blue-gradient",
-          "text-white": textColorVariant === "white",
-        })}
-      >
-        TCA Web
-      </span>
-
-      <span className="sr-only">TCA Web, agence de développement web</span>
-    </>
+    <Image
+      src={
+        variant === "blue"
+          ? "/_static/images/logo-blue.png"
+          : "/_static/images/logo.png"
+      }
+      alt="TCA Web"
+      width={130}
+      height={32}
+      quality={75}
+      className={twMerge(className)}
+    />
   );
 }

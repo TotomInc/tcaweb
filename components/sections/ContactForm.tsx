@@ -87,9 +87,8 @@ export function ContactForm({ title }: Props) {
         </h3>
 
         <p className="mt-4 text-base text-gray-800">
-          Vous avez un projet web et vous souhaitez en discuter&nbsp;?
-          <br />
-          Contactez-nous via le formulaire ci-dessous.
+          Discutons ensemble de votre projet web. Contactez-nous via le
+          formulaire ci-dessous.
         </p>
 
         <div className="mt-4 flex flex-col space-y-4">
