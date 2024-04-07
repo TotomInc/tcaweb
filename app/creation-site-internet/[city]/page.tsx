@@ -14,6 +14,7 @@ import { cities, slugify } from "@/lib/geo";
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
 import { ContactForm } from "@/components/sections/ContactForm";
+import * as TwoSidedContent from "@/components/sections/TwoSidedContent";
 
 type Props = {
   params: { city: string };
@@ -149,72 +150,57 @@ export default function Page({ params }: Props) {
         </div>
       </section>
 
-      <section className="relative mx-auto mb-24 w-full max-w-7xl px-8">
-        <h2 className="mx-auto max-w-3xl text-balance text-center text-2xl font-bold text-gray-950 sm:text-3xl">
-          Notre agence web basée en Seine-et-Marne est spécialisée dans la
-          création de site internet.
-        </h2>
+      <TwoSidedContent.Container
+        title="Notre agence web basée en Seine-et-Marne est spécialisée dans la création de site internet."
+        image={{
+          src: "/_static/images/illustrations/web-development.jpg",
+          alt: "Développement web, outils de développement",
+          quality: 50,
+        }}
+      >
+        <TwoSidedContent.Paragraph>
+          Que vous soyez{" "}
+          <span className="font-medium">
+            un individu, une petite entreprise (TPE/PME), une startup, un
+            organisateur d&apos;événements ou même une administration locale
+          </span>
+          , notre agence est prête à prendre en charge la conception de votre
+          site web, que ce soit dans sa totalité ou seulement une partie ! Notre
+          équipe d&apos;experts du web est là pour vous guider dans la création
+          de votre présence en ligne.
+        </TwoSidedContent.Paragraph>
 
-        <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
-          <div className="relative min-h-[500px] w-full sm:min-h-[unset]">
-            <Image
-              src="/_static/images/illustrations/web-development.jpg"
-              alt="Développement web, outils de développement"
-              quality={50}
-              fill
-              sizes="(max-width: 1023px) 75vw, 50vw"
-              className="rounded-xl object-cover shadow-sm"
-            />
-          </div>
+        <TwoSidedContent.Paragraph>
+          Vous vous demandez{" "}
+          <span className="font-medium">
+            quel type de site web choisir entre un site vitrine, un site
+            e-commerce ou un forum
+          </span>{" "}
+          ? Pas de souci, nous sommes là pour vous aider. En se basant sur vos
+          besoins et spécifications techniques, nous collaborons avec vous pour
+          élaborer une stratégie adaptée, vous permettant de décider du type de
+          site web, de sa structure, de son design et de son référencement.
+        </TwoSidedContent.Paragraph>
 
-          <div className="flex flex-col space-y-4">
-            <p className="text-balance text-gray-800 lg:text-lg">
-              Que vous soyez{" "}
-              <span className="font-medium">
-                un individu, une petite entreprise (TPE/PME), une startup, un
-                organisateur d&apos;événements ou même une administration locale
-              </span>
-              , notre agence est prête à prendre en charge la conception de
-              votre site web, que ce soit dans sa totalité ou seulement une
-              partie ! Notre équipe d&apos;experts du web est là pour vous
-              guider dans la création de votre présence en ligne.
-            </p>
+        <TwoSidedContent.Heading>
+          Un accompagnement personnalisé afin de mener à bien votre projet web
+        </TwoSidedContent.Heading>
 
-            <p className="text-balance text-gray-800 lg:text-lg">
-              Vous vous demandez{" "}
-              <span className="font-medium">
-                quel type de site web choisir entre un site vitrine, un site
-                e-commerce ou un forum
-              </span>{" "}
-              ? Pas de souci, nous sommes là pour vous aider. En se basant sur
-              vos besoins et spécifications techniques, nous collaborons avec
-              vous pour élaborer une stratégie adaptée, vous permettant de
-              décider du type de site web, de sa structure, de son design et de
-              son référencement.
-            </p>
+        <TwoSidedContent.Paragraph>
+          TCA Web est une petite agence web indépendante, à taille humaine
+          située en Seine et Marne. Design, développement, référencement,
+          hébergement, maintenance, nous vous accompagnons et conseillons à
+          chaque étape de votre projet de création de site internet. Tout est
+          étudié en fonction de vos objectifs et besoins pour attirer de
+          nouveaux contacts et clients.
+        </TwoSidedContent.Paragraph>
 
-            <h3 className="text-xl font-semibold text-blue-800">
-              Un accompagnement personnalisé afin de mener à bien votre projet
-              web
-            </h3>
-
-            <p className="text-balance text-gray-800 lg:text-lg">
-              TCA Web est une petite agence web indépendante, à taille humaine
-              située près en Seine et Marne. Design, développement,
-              référencement, hébergement, maintenance, nous vous accompagnons et
-              conseillons à chaque étape de votre projet de création de site
-              internet. Tout est étudié en fonction de vos objectifs et besoins
-              pour attirer de nouveaux contacts et clients.
-            </p>
-
-            <p className="text-balance text-gray-800 lg:text-lg">
-              A chaque étape de votre projet de création de site internet, un
-              interlocuteur unique est à votre disposition pour vous proposer
-              les solutions les plus adaptées à vos exigences !
-            </p>
-          </div>
-        </div>
-      </section>
+        <TwoSidedContent.Paragraph>
+          A chaque étape de votre projet de création de site internet, un
+          interlocuteur unique est à votre disposition pour vous proposer les
+          solutions les plus adaptées à vos exigences !
+        </TwoSidedContent.Paragraph>
+      </TwoSidedContent.Container>
 
       <ContactForm title="Contactez-nous et nous reviendrons vers vous pour établir un devis personnalisé adapté à vos besoins" />
     </>
