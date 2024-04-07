@@ -21,13 +21,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       }) satisfies SitemapItem,
   );
 
-  const citiesRoutes = cities.map(
+  const citiesRoutes = cities.flatMap(
     (city) =>
-      ({
-        url: `${BASE_URL}/creation-site-internet/${slugify(city)}`,
-        changeFrequency: "monthly",
-        priority: 1,
-      }) satisfies SitemapItem,
+      [
+        {
+          url: `${BASE_URL}/creation-site-internet/${slugify(city)}`,
+          changeFrequency: "monthly",
+          priority: 1,
+        },
+        {
+          url: `${BASE_URL}/referencement-site-internet/${slugify(city)}`,
+          changeFrequency: "monthly",
+          priority: 1,
+        },
+      ] satisfies SitemapItem[],
   );
 
   return [...staticRoutes, ...citiesRoutes];
