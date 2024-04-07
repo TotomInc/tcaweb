@@ -75,6 +75,7 @@ export function Navbar() {
           type="button"
           className="flex h-8 w-8 items-center justify-center rounded-md bg-white lg:hidden"
           onClick={() => setIsOpen(!isOpen)}
+          title="Ouvrir le menu de navigation"
         >
           {!isOpen ? (
             <Bars3Icon className="h-auto w-6 text-black" />
