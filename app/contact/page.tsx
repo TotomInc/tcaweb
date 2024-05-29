@@ -13,21 +13,24 @@ export default function ContactPage() {
   return (
     <>
       <Hero
-        title={
+        title={(
           <>
             <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
               Travaillons ensemble
-            </span>{" "}
+            </span>
+            {" "}
             sur votre nouveau projet web.
           </>
-        }
-        description={
+        )}
+        description={(
           <>
             Discutons de votre prochain projet web. Nous vous accompagnons dans
-            la conception de votre site web afin d&apos;en{" "}
-            <span className="font-semibold">garantir le succès</span>.
+            la conception de votre site web afin d&apos;en
+            {" "}
+            <span className="font-semibold">garantir le succès</span>
+            .
           </>
-        }
+        )}
         image={{
           width: 500,
           height: 300,

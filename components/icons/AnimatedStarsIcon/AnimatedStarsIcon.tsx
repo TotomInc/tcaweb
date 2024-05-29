@@ -2,9 +2,9 @@ import cn from "classnames";
 
 import styles from "./AnimatedStarsIcon.module.css";
 
-type AnimatedStarsIconProps = {
+interface AnimatedStarsIconProps {
   className?: string;
-};
+}
 
 export function AnimatedStarsIcon({ className }: AnimatedStarsIconProps) {
   return (

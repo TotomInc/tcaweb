@@ -35,7 +35,7 @@ export function Footer() {
           </p>
 
           <ul className="mt-6 space-y-2">
-            {CONTACT_LINKS.map((link) => (
+            {CONTACT_LINKS.map(link => (
               <li
                 key={link.href}
                 className="flex items-center text-sm font-medium text-blue-50"
@@ -54,8 +54,13 @@ export function Footer() {
       <div className="bg-blue-950 py-4">
         <div className="mx-auto max-w-7xl px-8">
           <p className="text-xs text-blue-200/75">
-            <span className="font-heading text-sm font-bold">TCA Web</span>{" "}
-            Copyright © {new Date().getFullYear()} — Tous droits réservés
+            <span className="font-heading text-sm font-bold">TCA Web</span>
+            {" "}
+            Copyright ©
+            {" "}
+            {new Date().getFullYear()}
+            {" "}
+            — Tous droits réservés
           </p>
         </div>
       </div>

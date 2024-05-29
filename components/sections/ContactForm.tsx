@@ -4,9 +4,9 @@
 
 import { useState } from "react";
 
-type Props = {
+interface Props {
   title?: string;
-};
+}
 
 function Label({
   children,
@@ -26,7 +26,7 @@ function Input({ ...inputProps }: React.InputHTMLAttributes<HTMLInputElement>) {
   return (
     <input
       {...inputProps}
-      className="block w-full rounded-md border border-gray-200 px-3 py-2.5 text-base font-medium text-gray-950 placeholder-gray-400 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-200"
+      className="block w-full rounded-md border border-gray-200 px-3 py-2.5 text-base font-medium text-gray-950 placeholder:text-gray-400 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-200"
     />
   );
 }
@@ -37,7 +37,7 @@ function Textarea({
   return (
     <textarea
       {...inputProps}
-      className="block w-full rounded-md border border-gray-200 px-3 py-2 text-base font-medium text-gray-950 placeholder-gray-400 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-200"
+      className="block w-full rounded-md border border-gray-200 px-3 py-2 text-base font-medium text-gray-950 placeholder:text-gray-400 focus:border-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-200"
     />
   );
 }
@@ -52,9 +52,9 @@ export function ContactForm({ title }: Props) {
   const [activite, setActivite] = useState("");
   const [message, setMessage] = useState("");
 
+  // eslint-disable-next-line ts/no-misused-promises
   const handleOnSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
-
     setIsLoading(true);
 
     const response = await fetch("/api/contact", {
@@ -99,7 +99,7 @@ export function ContactForm({ title }: Props) {
               name="nom"
               id="nom"
               placeholder="Votre nom"
-              onChange={(e) => setNom(e.target.value)}
+              onChange={e => setNom(e.target.value)}
               required
             />
           </div>
@@ -111,7 +111,7 @@ export function ContactForm({ title }: Props) {
               name="email"
               id="email"
               placeholder="Votre adresse e-mail"
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={e => setEmail(e.target.value)}
               required
             />
           </div>
@@ -123,7 +123,7 @@ export function ContactForm({ title }: Props) {
               name="email"
               id="email"
               placeholder="Votre numéro de téléphone"
-              onChange={(e) => setPhone(e.target.value)}
+              onChange={e => setPhone(e.target.value)}
               required
             />
           </div>
@@ -135,7 +135,7 @@ export function ContactForm({ title }: Props) {
               name="activite"
               id="activite"
               placeholder="Votre activité"
-              onChange={(e) => setActivite(e.target.value)}
+              onChange={e => setActivite(e.target.value)}
               required
             />
           </div>
@@ -147,18 +147,20 @@ export function ContactForm({ title }: Props) {
               name="message"
               id="message"
               placeholder="Expliquez brièvement votre projet web"
-              onChange={(e) => setMessage(e.target.value)}
+              onChange={e => setMessage(e.target.value)}
               required
             />
           </div>
         </div>
 
-        {success ? (
-          <p className="mt-6 text-center text-sm font-medium text-gray-950">
-            Merci ! Nous vous recontacterons le plus rapidement possible afin de
-            prendre connaissance de votre projet.
-          </p>
-        ) : null}
+        {success
+          ? (
+            <p className="mt-6 text-center text-sm font-medium text-gray-950">
+              Merci ! Nous vous recontacterons le plus rapidement possible afin de
+              prendre connaissance de votre projet.
+            </p>
+            )
+          : null}
 
         <button
           type="submit"

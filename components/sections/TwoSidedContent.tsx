@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-type ContainerProps = {
+interface ContainerProps {
   children: React.ReactNode;
   title: string;
   image: {
@@ -8,7 +8,7 @@ type ContainerProps = {
     alt: string;
     quality: number;
   };
-};
+}
 
 export function Heading({ children }: { children: React.ReactNode }) {
   return <h3 className="text-xl font-semibold text-blue-800">{children}</h3>;

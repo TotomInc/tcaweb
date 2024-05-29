@@ -1,8 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
 import cx from "classnames";
+import Link from "next/link";
+import Image from "next/image";
 
-export type LinkBannerProps = {
+export interface LinkBannerProps {
   className?: string;
   title: string;
   description: string;
@@ -12,7 +12,7 @@ export type LinkBannerProps = {
     src: string;
     alt: string;
   };
-};
+}
 
 export function LinkBanner({
   className,
@@ -29,16 +29,18 @@ export function LinkBanner({
         className,
       )}
     >
-      {coverImage ? (
-        <Image
-          src={coverImage.src}
-          alt={coverImage.alt}
-          fill
-          sizes="(max-width: 1023px) 75vw, 33vw"
-          quality={75}
-          className="pointer-events-none absolute inset-0 object-cover opacity-[0.125] transition-transform duration-500 ease-out group-hover:scale-105"
-        />
-      ) : null}
+      {coverImage
+        ? (
+          <Image
+            src={coverImage.src}
+            alt={coverImage.alt}
+            fill
+            sizes="(max-width: 1023px) 75vw, 33vw"
+            quality={75}
+            className="pointer-events-none absolute inset-0 object-cover opacity-[0.125] transition-transform duration-500 ease-out group-hover:scale-105"
+          />
+          )
+        : null}
 
       <Link
         href={link}

@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import cx from "classnames";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import { Logo } from "../ui/Logo";
 
@@ -73,15 +73,17 @@ export function Navbar() {
 
         <button
           type="button"
-          className="flex h-8 w-8 items-center justify-center rounded-md bg-white lg:hidden"
+          className="flex size-8 items-center justify-center rounded-md bg-white lg:hidden"
           onClick={() => setIsOpen(!isOpen)}
           title="Ouvrir le menu de navigation"
         >
-          {!isOpen ? (
-            <Bars3Icon className="h-auto w-6 text-black" />
-          ) : (
-            <XMarkIcon className="h-auto w-6 text-black" />
-          )}
+          {!isOpen
+            ? (
+              <Bars3Icon className="h-auto w-6 text-black" />
+              )
+            : (
+              <XMarkIcon className="h-auto w-6 text-black" />
+              )}
         </button>
       </div>
 

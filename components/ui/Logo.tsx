@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
-export type LogoProps = {
+export interface LogoProps {
   variant: "white" | "blue";
   className?: string;
-};
+}
 
 export function Logo({ variant, className }: LogoProps) {
   return (

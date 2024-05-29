@@ -1,38 +1,43 @@
 import {
-  KeyIcon,
-  PaintBrushIcon,
   ArrowTrendingUpIcon,
   ChartBarIcon,
-  WrenchScrewdriverIcon,
+  KeyIcon,
+  PaintBrushIcon,
   UserIcon,
+  WrenchScrewdriverIcon,
 } from "@heroicons/react/24/outline";
 
-import { Portfolio } from "@/components/sections/Portfolio";
 import { Hero } from "@/components/sections/Hero";
 import { Features } from "@/components/sections/Features";
-import { SideFeaturesChecks } from "@/components/sections/SideFeaturesChecks";
+import { Portfolio } from "@/components/sections/Portfolio";
 import { LinkBanner } from "@/components/sections/LinkBanner";
+import { SideFeaturesChecks } from "@/components/sections/SideFeaturesChecks";
 
 export default function Home() {
   return (
     <>
       <Hero
-        title={
+        title={(
           <>
             <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
               TCA Web
             </span>
             , création & refonte de sites Internet.
           </>
-        }
-        description={
+        )}
+        description={(
           <>
-            Notre équipe d’expert est{" "}
-            <span className="font-semibold">à votre écoute</span> pour vous
-            proposer la meilleure solution{" "}
-            <span className="font-semibold">à vos besoins</span>.
+            Notre équipe d’expert est
+            {" "}
+            <span className="font-semibold">à votre écoute</span>
+            {" "}
+            pour vous
+            proposer la meilleure solution
+            {" "}
+            <span className="font-semibold">à vos besoins</span>
+            .
           </>
-        }
+        )}
         cta={{ href: "/contact", label: "Contactez-nous" }}
         image={{
           width: 768,

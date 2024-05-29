@@ -1,5 +1,13 @@
-import { NextResponse } from "next/server";
 import { z } from "zod";
+import { NextResponse } from "next/server";
+
+interface RequestData {
+  nom: string;
+  email: string;
+  phone: string;
+  activite: string;
+  message: string;
+}
 
 const schema = z.object({
   nom: z.string().min(2).max(50),
@@ -11,13 +19,13 @@ const schema = z.object({
 
 export async function POST(request: Request) {
   if (
-    !request.body ||
-    request.headers.get("content-type") !== "application/json"
+    !request.body
+    || request.headers.get("content-type") !== "application/json"
   ) {
     return NextResponse.json({ message: "Bad request" }, { status: 400 });
   }
 
-  const { activite, nom, email, phone, message } = await request.json();
+  const { activite, nom, email, phone, message } = await request.json() as RequestData;
 
   const validated = schema.safeParse({
     nom,
@@ -46,7 +54,8 @@ export async function POST(request: Request) {
     });
 
     return NextResponse.json({ message: "Sent" }, { status: 200 });
-  } catch (error) {
+  }
+  catch (error) {
     return NextResponse.json(
       { message: "Something went wrong" },
       { status: 500 },

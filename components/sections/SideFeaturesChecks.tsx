@@ -1,8 +1,8 @@
-import Image from "next/image";
 import cx from "classnames";
+import Image from "next/image";
 import { CheckIcon } from "@heroicons/react/20/solid";
 
-export type SideFeaturesChecksProps = {
+export interface SideFeaturesChecksProps {
   className?: string;
   invert?: boolean;
   image: {
@@ -18,7 +18,7 @@ export type SideFeaturesChecksProps = {
     title: string;
     description: string;
   }[];
-};
+}
 
 export function SideFeaturesChecks({
   className,
@@ -58,10 +58,10 @@ export function SideFeaturesChecks({
           </p>
 
           <dl className="mt-8 flex max-w-xl flex-col space-y-6">
-            {features.map((feature) => (
+            {features.map(feature => (
               <div key={feature.title}>
                 <dt className="flex items-center">
-                  <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-800 to-blue-600">
+                  <div className="flex size-6 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-blue-800 to-blue-600">
                     <CheckIcon className="block h-auto w-4 shrink-0 text-white" />
                   </div>
 

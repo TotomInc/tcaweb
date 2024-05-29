@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
 import {
-  FlagIcon,
-  Cog8ToothIcon,
   CodeBracketIcon,
-  TrophyIcon,
+  Cog8ToothIcon,
+  FlagIcon,
   MagnifyingGlassIcon,
   ServerStackIcon,
+  TrophyIcon,
 } from "@heroicons/react/24/outline";
 
 import { cities, slugify } from "@/lib/geo";
@@ -15,16 +15,16 @@ import { Features } from "@/components/sections/Features";
 import { ContactForm } from "@/components/sections/ContactForm";
 import * as TwoSidedContent from "@/components/sections/TwoSidedContent";
 
-type Props = {
+interface Props {
   params: { city: string };
-};
+}
 
 export async function generateStaticParams() {
-  return cities.map((city) => ({ city: slugify(city) }));
+  return cities.map(city => ({ city: slugify(city) }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const city = cities.find((c) => slugify(c) === params.city);
+  const city = cities.find(c => slugify(c) === params.city);
 
   if (!city) {
     redirect("/");
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function Page({ params }: Props) {
-  const city = cities.find((c) => slugify(c) === params.city);
+  const city = cities.find(c => slugify(c) === params.city);
 
   if (!city) {
     redirect("/");
@@ -46,25 +46,28 @@ export default function Page({ params }: Props) {
   return (
     <>
       <Hero
-        title={
+        title={(
           <>
-            Référencement de site internet à{" "}
+            Référencement de site internet à
+            {" "}
             <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
               {city}
             </span>
             .
           </>
-        }
-        description={
+        )}
+        description={(
           <>
             Nous vous accompagnons de A à Z dans votre projet web. Notre
-            objectif,{" "}
+            objectif,
+            {" "}
             <span className="font-semibold">
               vous positionner en première page des moteurs de recherche
-            </span>{" "}
+            </span>
+            {" "}
             et améliorer votre visibilité en ligne.
           </>
-        }
+        )}
         checks={[
           "Un référencement naturel optimisé pour les moteurs de recherche",
           "Un audit technique pour améliorer la performance de votre site",
@@ -131,14 +134,18 @@ export default function Page({ params }: Props) {
         }}
       >
         <TwoSidedContent.Paragraph>
-          Que vous soyez{" "}
+          Que vous soyez
+          {" "}
           <span className="font-medium">
             un individu, une petite entreprise (TPE/PME), une startup, un
             organisateur d&apos;événements ou même une administration locale
           </span>
           , bien référencer son site internet est un enjeu majeur pour augmenter
-          sa visibilité et attirer de nouveaux clients. Près de{" "}
-          <span className="font-medium">91% des internautes</span> ne vont
+          sa visibilité et attirer de nouveaux clients. Près de
+          {" "}
+          <span className="font-medium">91% des internautes</span>
+          {" "}
+          ne vont
           au-delà de la première page de résultats sur Google. C&apos;est
           pourquoi il est important de bien positionner son site internet sur
           les moteurs de recherche.
@@ -146,8 +153,10 @@ export default function Page({ params }: Props) {
 
         <TwoSidedContent.Paragraph>
           L&apos;algorithme de référencement de Google est en constante
-          évolution, il contient{" "}
-          <span className="font-medium">de nombreux critères et facteurs</span>{" "}
+          évolution, il contient
+          {" "}
+          <span className="font-medium">de nombreux critères et facteurs</span>
+          {" "}
           à respecter afin d&apos;être bien positionné sur certains mots clés.
         </TwoSidedContent.Paragraph>
 

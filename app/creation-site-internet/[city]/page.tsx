@@ -1,11 +1,11 @@
+import Image from "next/image";
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
-import Image from "next/image";
 import {
-  FlagIcon,
-  DocumentCheckIcon,
   CheckBadgeIcon,
   DevicePhoneMobileIcon,
+  DocumentCheckIcon,
+  FlagIcon,
   MagnifyingGlassIcon,
   ServerStackIcon,
 } from "@heroicons/react/24/outline";
@@ -16,16 +16,16 @@ import { Features } from "@/components/sections/Features";
 import { ContactForm } from "@/components/sections/ContactForm";
 import * as TwoSidedContent from "@/components/sections/TwoSidedContent";
 
-type Props = {
+interface Props {
   params: { city: string };
-};
+}
 
 export async function generateStaticParams() {
-  return cities.map((city) => ({ city: slugify(city) }));
+  return cities.map(city => ({ city: slugify(city) }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const city = cities.find((c) => slugify(c) === params.city);
+  const city = cities.find(c => slugify(c) === params.city);
 
   if (!city) {
     redirect("/");
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function Page({ params }: Props) {
-  const city = cities.find((c) => slugify(c) === params.city);
+  const city = cities.find(c => slugify(c) === params.city);
 
   if (!city) {
     redirect("/");
@@ -47,25 +47,28 @@ export default function Page({ params }: Props) {
   return (
     <>
       <Hero
-        title={
+        title={(
           <>
-            Création de site internet sur-mesure à{" "}
+            Création de site internet sur-mesure à
+            {" "}
             <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
               {city}
             </span>
             .
           </>
-        }
-        description={
+        )}
+        description={(
           <>
             Nous vous accompagnons de A à Z dans la création de votre site.
-            Notre objectif,{" "}
+            Notre objectif,
+            {" "}
             <span className="font-semibold">
               transformer vos visiteurs en clients
-            </span>{" "}
+            </span>
+            {" "}
             et augmenter votre présence en ligne.
           </>
-        }
+        )}
         checks={[
           "Un design unique, adapté à l'identité de votre entreprise",
           "Un tarif évolutif et adapté à vos besoins",
@@ -141,7 +144,8 @@ export default function Page({ params }: Props) {
 
           <p className="text-white">
             Nous proposons la gestion de votre nom de domaine et de votre
-            hébergement. Les noms de domaine sont enregistrés et gérés{" "}
+            hébergement. Les noms de domaine sont enregistrés et gérés
+            {" "}
             <span className="font-semibold">
               auprès d&apos;OVH (société française)
             </span>
@@ -159,7 +163,8 @@ export default function Page({ params }: Props) {
         }}
       >
         <TwoSidedContent.Paragraph>
-          Que vous soyez{" "}
+          Que vous soyez
+          {" "}
           <span className="font-medium">
             un individu, une petite entreprise (TPE/PME), une startup, un
             organisateur d&apos;événements ou même une administration locale
@@ -171,11 +176,13 @@ export default function Page({ params }: Props) {
         </TwoSidedContent.Paragraph>
 
         <TwoSidedContent.Paragraph>
-          Vous vous demandez{" "}
+          Vous vous demandez
+          {" "}
           <span className="font-medium">
             quel type de site web choisir entre un site vitrine, un site
             e-commerce ou un forum
-          </span>{" "}
+          </span>
+          {" "}
           ? Pas de souci, nous sommes là pour vous aider. En se basant sur vos
           besoins et spécifications techniques, nous collaborons avec vous pour
           élaborer une stratégie adaptée, vous permettant de décider du type de

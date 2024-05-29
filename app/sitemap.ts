@@ -13,7 +13,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "sites-internet",
     "contact",
   ].map(
-    (route) =>
+    route =>
       ({
         url: `${BASE_URL}/${route}`,
         changeFrequency: "weekly",
@@ -22,7 +22,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   );
 
   const citiesRoutes = cities.flatMap(
-    (city) =>
+    city =>
       [
         {
           url: `${BASE_URL}/creation-site-internet/${slugify(city)}`,

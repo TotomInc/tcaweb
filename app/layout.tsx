@@ -2,7 +2,7 @@ import "./globals.css";
 
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { Inter, Spline_Sans, Space_Grotesk } from "next/font/google";
+import { Inter, Space_Grotesk, Spline_Sans } from "next/font/google";
 
 import { Navbar } from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";

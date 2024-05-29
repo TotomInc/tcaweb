@@ -1,15 +1,16 @@
 import idfCities from "@/data/77.json";
 
-const capitalizeEachWord = (str: string) =>
-  str
+function capitalizeEachWord(str: string) {
+  return str
     .split(" ")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
+}
 
 export const cities = idfCities
-  .map((city) => capitalizeEachWord(city.city_code))
+  .map(city => capitalizeEachWord(city.city_code))
   .filter((value, index, self) => self.indexOf(value) === index);
 
-export const slugify = (str: string) => {
+export function slugify(str: string) {
   return str.toLowerCase().replaceAll(" ", "-");
-};
+}
