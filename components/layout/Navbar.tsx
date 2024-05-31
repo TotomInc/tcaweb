@@ -74,8 +74,8 @@ export function Navbar() {
         <button
           type="button"
           className="flex size-8 items-center justify-center rounded-md bg-white lg:hidden"
-          onClick={() => setIsOpen(!isOpen)}
           title="Ouvrir le menu de navigation"
+          onClick={() => setIsOpen(!isOpen)}
         >
           {!isOpen
             ? (
@@ -88,11 +88,11 @@ export function Navbar() {
       </div>
 
       <nav
+        style={{ marginTop: "calc(4.5rem + 1px)" }}
         className={cx(
           "absolute left-0 right-0 top-0 flex flex-col space-y-2 border-b border-b-gray-200 bg-white px-8 py-4 transition duration-300 ease-out lg:hidden",
           isOpen ? "opacity-100" : "pointer-events-none opacity-0",
         )}
-        style={{ marginTop: "calc(4.5rem + 1px)" }}
       >
         {links.map(({ href, label }) => (
           <Link

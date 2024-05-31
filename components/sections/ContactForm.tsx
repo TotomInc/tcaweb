@@ -52,7 +52,6 @@ export function ContactForm({ title }: Props) {
   const [activite, setActivite] = useState("");
   const [message, setMessage] = useState("");
 
-  // eslint-disable-next-line ts/no-misused-promises
   const handleOnSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
     setIsLoading(true);
@@ -79,8 +78,8 @@ export function ContactForm({ title }: Props) {
   return (
     <section className="relative mb-8 px-8">
       <form
-        onSubmit={handleOnSubmit}
         className="mx-auto flex w-full max-w-2xl flex-col rounded-md border border-gray-200 bg-white p-6 shadow-md lg:p-12"
+        onSubmit={handleOnSubmit}
       >
         <h3 className="font-spline text-xl font-medium text-gray-950">
           {title ?? "Contact"}
@@ -96,11 +95,11 @@ export function ContactForm({ title }: Props) {
             <Label htmlFor="nom">Nom</Label>
 
             <Input
+              required
               name="nom"
               id="nom"
               placeholder="Votre nom"
-              onChange={e => setNom(e.target.value)}
-              required
+              onChange={(e) => setNom(e.target.value)}
             />
           </div>
 
@@ -108,11 +107,11 @@ export function ContactForm({ title }: Props) {
             <Label htmlFor="email">Adresse e-mail</Label>
 
             <Input
+              required
               name="email"
               id="email"
               placeholder="Votre adresse e-mail"
-              onChange={e => setEmail(e.target.value)}
-              required
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
 
@@ -120,11 +119,11 @@ export function ContactForm({ title }: Props) {
             <Label htmlFor="email">Numéro de téléphone</Label>
 
             <Input
+              required
               name="email"
               id="email"
               placeholder="Votre numéro de téléphone"
-              onChange={e => setPhone(e.target.value)}
-              required
+              onChange={(e) => setPhone(e.target.value)}
             />
           </div>
 
@@ -132,11 +131,11 @@ export function ContactForm({ title }: Props) {
             <Label htmlFor="email">Activité</Label>
 
             <Input
+              required
               name="activite"
               id="activite"
               placeholder="Votre activité"
-              onChange={e => setActivite(e.target.value)}
-              required
+              onChange={(e) => setActivite(e.target.value)}
             />
           </div>
 
@@ -144,11 +143,11 @@ export function ContactForm({ title }: Props) {
             <Label htmlFor="message">Votre projet</Label>
 
             <Textarea
+              required
               name="message"
               id="message"
               placeholder="Expliquez brièvement votre projet web"
-              onChange={e => setMessage(e.target.value)}
-              required
+              onChange={(e) => setMessage(e.target.value)}
             />
           </div>
         </div>

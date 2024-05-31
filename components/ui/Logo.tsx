@@ -9,16 +9,16 @@ export interface LogoProps {
 export function Logo({ variant, className }: LogoProps) {
   return (
     <Image
-      src={
-        variant === "blue"
-          ? "/_static/images/logo-blue.png"
-          : "/_static/images/logo.png"
-      }
       alt="TCA Web"
       width={130}
       height={32}
       quality={75}
       className={twMerge(className)}
+      src={
+        variant === "blue"
+          ? "/_static/images/logo-blue.png"
+          : "/_static/images/logo.png"
+      }
     />
   );
 }

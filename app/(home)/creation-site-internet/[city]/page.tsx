@@ -21,11 +21,11 @@ interface Props {
 }
 
 export async function generateStaticParams() {
-  return cities.map(city => ({ city: slugify(city) }));
+  return cities.map((city) => ({ city: slugify(city) }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const city = cities.find(c => slugify(c) === params.city);
+  const city = cities.find((c) => slugify(c) === params.city);
 
   if (!city) {
     redirect("/");
@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function Page({ params }: Props) {
-  const city = cities.find(c => slugify(c) === params.city);
+  const city = cities.find((c) => slugify(c) === params.city);
 
   if (!city) {
     redirect("/");

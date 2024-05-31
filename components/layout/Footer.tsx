@@ -35,7 +35,7 @@ export function Footer() {
           </p>
 
           <ul className="mt-6 space-y-2">
-            {CONTACT_LINKS.map(link => (
+            {CONTACT_LINKS.map((link) => (
               <li
                 key={link.href}
                 className="flex items-center text-sm font-medium text-blue-50"

@@ -65,7 +65,7 @@ export function Hero({
           {checks
             ? (
               <div className="my-6 flex flex-col space-y-2">
-                {checks.map(check => (
+                {checks.map((check) => (
                   <div key={check} className="flex items-center justify-start">
                     <CheckBadgeIcon className="mr-1.5 h-auto w-5 shrink-0 fill-blue-600 text-blue-200" />
                     <p className="text-sm font-medium text-blue-100">{check}</p>
@@ -81,11 +81,11 @@ export function Hero({
         {image
           ? (
             <Image
+              priority
               src={image.src}
               alt={image.alt}
               width={image.width}
               height={image.height}
-              priority
               className={cx(
                 "absolute bottom-0 right-0 z-10 -mb-8 mr-4 block h-auto w-48 sm:w-72 md:w-full md:max-w-md lg:max-w-2xl 2xl:max-w-3xl",
                 image.className,

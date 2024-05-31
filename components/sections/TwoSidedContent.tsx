@@ -28,10 +28,10 @@ export function Container({ children, title, image }: ContainerProps) {
       <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div className="relative min-h-[500px] w-full sm:min-h-[unset]">
           <Image
+            fill
             src={image.src}
             alt={image.alt}
             quality={image.quality}
-            fill
             sizes="(max-width: 1023px) 75vw, 50vw"
             className="rounded-xl object-cover shadow-sm"
           />

@@ -58,12 +58,12 @@ export default function Page() {
       >
         <div className="flex items-center justify-center">
           <Image
+            unoptimized
             src="/_static/images/shopify-partners.png"
             alt="Partenaire Shopify"
             width="192"
             height="32"
             className="block h-[24px] w-auto lg:h-[32px]"
-            unoptimized
           />
 
           <p className="ml-2 rounded-full bg-white px-3 py-1 text-xs font-semibold text-gray-900 shadow-md lg:ml-4 lg:px-4 lg:text-sm">
@@ -118,6 +118,8 @@ export default function Page() {
 
       <SideFeaturesChecks
         className="pb-24"
+        title="Gérez votre site e-commerce facilement"
+        description="Grâce à une interface de gestion simple et intuitive, vous pouvez ajouter, modifier et supprimer vos produits en quelques clics."
         image={{
           src: "/_static/images/ecommerce/shopify-product.png",
           alt: "Interface de gestion de produits, édition du nom, description, prix, image, et bien d'autres paramètres.",
@@ -126,8 +128,6 @@ export default function Page() {
           className:
             "max-w-md mx-auto lg:max-w-lg rounded-lg border border-gray-200",
         }}
-        title="Gérez votre site e-commerce facilement"
-        description="Grâce à une interface de gestion simple et intuitive, vous pouvez ajouter, modifier et supprimer vos produits en quelques clics."
         features={[
           {
             title: "Création et édition de produits intuitive",
@@ -155,6 +155,8 @@ export default function Page() {
       <SideFeaturesChecks
         invert
         className="pb-24"
+        title="Gestion des commandes, paiements & modes de livraison"
+        description="Grâce à votre site e-commerce, acceptez les paiements en ligne et proposez différentes options de livraison à vos clients."
         image={{
           src: "/_static/images/ecommerce/shopify-order.png",
           alt: "Interface de gestion des commandes.",
@@ -163,8 +165,6 @@ export default function Page() {
           className:
             "max-w-md mx-auto lg:max-w-lg rounded-lg border border-gray-200",
         }}
-        title="Gestion des commandes, paiements & modes de livraison"
-        description="Grâce à votre site e-commerce, acceptez les paiements en ligne et proposez différentes options de livraison à vos clients."
         features={[
           {
             title: "Gestion des commandes et clients",

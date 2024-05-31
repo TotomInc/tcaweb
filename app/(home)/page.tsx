@@ -17,6 +17,7 @@ export default function Home() {
   return (
     <>
       <Hero
+        cta={{ href: "/contact", label: "Contactez-nous" }}
         title={(
           <>
             <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
@@ -38,7 +39,6 @@ export default function Home() {
             .
           </>
         )}
-        cta={{ href: "/contact", label: "Contactez-nous" }}
         image={{
           width: 768,
           height: 650,
@@ -98,6 +98,8 @@ export default function Home() {
 
       <SideFeaturesChecks
         className="pb-24"
+        title="Un site web de qualité professionnelle"
+        description="Optez pour un site web unique et performant, conçu avec soin et expertise. Un site sur-mesure permettra de vous démarquer de vos concurrents."
         image={{
           src: "/_static/images/web-development.svg",
           alt: "Développement web",
@@ -105,8 +107,6 @@ export default function Home() {
           width: 347,
           className: "max-w-md mx-auto lg:max-w-lg",
         }}
-        title="Un site web de qualité professionnelle"
-        description="Optez pour un site web unique et performant, conçu avec soin et expertise. Un site sur-mesure permettra de vous démarquer de vos concurrents."
         features={[
           {
             title: "Des sites web performants",
@@ -144,8 +144,10 @@ export default function Home() {
       />
 
       <SideFeaturesChecks
-        className="pb-24"
         invert
+        className="pb-24"
+        title="Un accompagnement personnalisé"
+        description="Nous vous accompagnons de bout-en-bout dans la réalisation de votre projet web."
         image={{
           src: "/_static/images/services.svg",
           alt: "Accompagnement personnalisé",
@@ -153,8 +155,6 @@ export default function Home() {
           width: 347,
           className: "max-w-md mx-auto lg:max-w-lg",
         }}
-        title="Un accompagnement personnalisé"
-        description="Nous vous accompagnons de bout-en-bout dans la réalisation de votre projet web."
         features={[
           {
             title: "Tarif annoncé",

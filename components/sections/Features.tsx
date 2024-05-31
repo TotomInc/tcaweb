@@ -29,7 +29,7 @@ export function Features({
         </p>
 
         <dl className="mt-16 grid grid-cols-1 gap-y-12 md:grid-cols-2 md:gap-x-12 lg:grid-cols-3">
-          {features.map(feature => (
+          {features.map((feature) => (
             <div
               key={feature.title}
               className="relative w-full rounded-md bg-gradient-to-br from-gray-50 to-gray-100 px-6 py-10"
