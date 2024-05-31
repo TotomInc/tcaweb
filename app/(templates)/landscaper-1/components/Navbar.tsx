@@ -7,16 +7,32 @@ import { Bars3Icon, PhoneIcon } from "@heroicons/react/20/solid";
 
 import { Logo } from "./Logo";
 
+const PHONE = "+33 6 12 23 34 45";
 const LINKS = [
-  { label: "Accueil", href: "/" },
-  { label: "Services", href: "/services" },
-  { label: "À propos", href: "/a-propos" },
-  { label: "Contact", href: "/contact" },
+  { href: "/", label: "Accueil" },
+  { href: "#prestations", label: "Prestations" },
+  { href: "#realisations", label: "Réalisations" },
+  { href: "#contact", label: "Contact" },
 ];
 
-function NavbarLink({ label, href }: { label: string; href: string }) {
+function MobileLink({ href, label }: { href: string; label: string }) {
   return (
-    <Link href={href} className="w-full text-base font-semibold text-green-700 sm:w-auto">{label}</Link>
+    <Link href={href} className="flex items-center justify-between text-base font-bold">
+      {label}
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="size-5">
+        <defs />
+        <path d="M511.986 165.404C511.986 293.264 441.934 400.756 336.693 435.559C316.651 443.497 294.874 448.002 272.008 448.002H271.994V448.029C203.725 448.029 144.664 409.081 115.478 352.253C158.107 310.137 224.875 272.017 327.992 272.017C341.242 272.017 351.992 261.266 351.992 248.015S341.242 224.014 327.992 224.014C222.177 224.014 149.088 260.227 98.975 303.55C97.117 293.303 96 282.799 96 272.017C96 174.807 174.796 96.005 271.994 96.005V95.731C285.838 95.731 299.292 97.325 312.188 100.396C368.186 113.721 430.428 92.985 461.513 39.157C467.177 29.328 481.53 29.641 486.169 39.985C502.657 76.761 511.986 121.897 511.986 165.404Z" className="fill-green-700 opacity-40" />
+        <path d="M24.016 480C21.954 480 19.829 479.719 17.704 479.156C4.954 475.687 -2.608 462.561 0.829 449.779C1.454 447.529 64.671 224.014 328.006 224.014C341.256 224.014 352.005 234.764 352.005 248.015S341.256 272.017 328.006 272.017C102.232 272.017 49.328 454.561 47.172 462.343C44.234 473 34.578 480 24.016 480Z" className="fill-green-950" />
+      </svg>
+    </Link>
+  );
+}
+
+function DesktopLink({ href, label }: { href: string; label: string }) {
+  return (
+    <Link href={href} className="text-base font-medium hover:underline">
+      {label}
+    </Link>
   );
 }
 
@@ -25,61 +41,53 @@ export function Navbar() {
 
   return (
     <>
-      {/* Mobile menu overlay */}
-      <span
-        className={twMerge(
-          "fixed inset-0 bg-black/50 transition-opacity duration-300 ease-out sm:hidden",
-          isOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none",
-        )}
-      />
+      <header className="flex h-16 w-full bg-white">
+        <div className="container mx-auto flex size-full items-center justify-between px-4">
+          <button
+            type="button"
+            className="relative flex items-center justify-center p-2 sm:hidden"
+            aria-label={!isOpen ? "Ouvrir le menu" : "Fermer le menu"}
+            onClick={() => setIsOpen(!isOpen)}
+          >
+            <Bars3Icon className="size-6" />
+          </button>
 
-      <header className="fixed inset-x-0 top-0 z-10 flex items-center bg-white">
-        <div className="container mx-auto flex h-20 items-center justify-between px-6">
           <Logo />
 
           <div className="flex items-center gap-6">
             <ul className="hidden gap-4 sm:flex">
-              {LINKS.map((link) => (
-                <li key={link.href}>
-                  <NavbarLink href={link.href} label={link.label} />
+              {LINKS.map(({ href, label }) => (
+                <li key={href}>
+                  <DesktopLink href={href} label={label} />
                 </li>
               ))}
             </ul>
 
-            <a href="tel:+33612121212" className="flex items-center gap-2">
-              <span className="font-landscaper-1-heading text-lg font-semibold text-gray-900">+33 6 12 12 12 12</span>
-              <PhoneIcon className="size-5 text-gray-900" />
-            </a>
-
-            {/* Mobile menu button */}
-            <button
-              type="button"
-              className="flex items-center justify-center rounded border border-gray-200 bg-white p-2 sm:hidden"
-              aria-label={isOpen ? "Fermer le menu" : "Ouvrir le menu"}
-              onClick={() => setIsOpen(!isOpen)}
+            <Link
+              href={`tel:${PHONE}`}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="flex items-center justify-center gap-2 p-2 sm:p-0"
             >
-              <Bars3Icon className="size-5 text-gray-900" />
-            </button>
+              <span className="hidden text-base font-bold hover:underline sm:flex">{PHONE}</span>
+              <PhoneIcon className="size-6" />
+            </Link>
           </div>
         </div>
-
-        {/* Mobile menu */}
-        <div
-          className={twMerge(
-            "absolute inset-x-0 top-20 w-full bg-white transition-all duration-300 ease-out sm:hidden",
-            isOpen && "opacity-100 translate-y-0",
-            !isOpen && "opacity-0 -translate-y-3 pointer-events-none",
-          )}
-        >
-          <ul className="flex flex-col gap-2 px-6 pb-4">
-            {LINKS.map((link) => (
-              <li key={link.href}>
-                <NavbarLink href={link.href} label={link.label} />
-              </li>
-            ))}
-          </ul>
-        </div>
       </header>
+
+      <div
+        className={twMerge(
+          "fixed top-16 bottom-0 w-screen bg-white transition-all duration-300 ease-out sm:hidden",
+          !isOpen ? "-translate-x-full pointer-events-none" : "translate-x-0",
+        )}
+      >
+        <div className="container mx-auto flex flex-col gap-3 px-6 py-4 font-landscaper-1-heading">
+          {LINKS.map(({ href, label }) => (
+            <MobileLink key={href} href={href} label={label} />
+          ))}
+        </div>
+      </div>
     </>
   );
 }
