@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { fontFamily } from "tailwindcss/defaultTheme";
 
 export default {
   content: [
@@ -10,9 +11,12 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["var(--font-inter)"],
-        spline: ["var(--font-spline-sans)"],
-        heading: ["var(--font-heading)"],
+        "sans": ["var(--font-inter)", ...fontFamily.sans],
+        "spline": ["var(--font-spline-sans)", ...fontFamily.sans],
+        "heading": ["var(--font-heading)", ...fontFamily.sans],
+
+        "landscaper-1": ["var(--font-nunito)", ...fontFamily.sans],
+        "landscaper-1-heading": ["var(--font-poppins)", ...fontFamily.sans],
       },
     },
   },
