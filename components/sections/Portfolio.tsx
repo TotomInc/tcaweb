@@ -32,9 +32,7 @@ export function Portfolio({ className, titleClassName }: PortfolioProps) {
     <section className={cx("relative w-full", className)}>
       <div className="mx-auto max-w-7xl px-8">
         <h2 className={cx("text-3xl font-bold text-gray-950", titleClassName)}>
-          Portfolio
-          {" "}
-          <span className="h-px w-12" />
+          Portfolio <span className="h-px w-12" />
         </h2>
 
         <div className="mt-12 flex flex-col items-center justify-center space-y-8 sm:flex-row sm:space-x-12 sm:space-y-0">
@@ -68,8 +66,7 @@ export function Portfolio({ className, titleClassName }: PortfolioProps) {
                 target="_blank"
                 className="mx-auto mt-8 flex items-center justify-center rounded-lg bg-blue-50 px-6 py-3 font-spline font-medium text-blue-700 hover:bg-blue-100"
               >
-                <ArrowTopRightOnSquareIcon className="mr-1.5 h-auto w-4 text-blue-500" />
-                {" "}
+                <ArrowTopRightOnSquareIcon className="mr-1.5 h-auto w-4 text-blue-500" />{" "}
                 Visiter le site
               </Link>
             </div>

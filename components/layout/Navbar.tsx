@@ -78,12 +78,12 @@ export function Navbar() {
           onClick={() => setIsOpen(!isOpen)}
         >
           {!isOpen
-            ? (
-              <Bars3Icon className="h-auto w-6 text-black" />
-              )
-            : (
-              <XMarkIcon className="h-auto w-6 text-black" />
-              )}
+? (
+            <Bars3Icon className="h-auto w-6 text-black" />
+          )
+: (
+                <XMarkIcon className="h-auto w-6 text-black" />
+          )}
         </button>
       </div>
 

@@ -46,28 +46,25 @@ export default function Page({ params }: Props) {
   return (
     <>
       <Hero
-        title={(
+        title={
           <>
-            Référencement de site internet à
-            {" "}
+            Référencement de site internet à{" "}
             <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
               {city}
             </span>
             .
           </>
-        )}
-        description={(
+        }
+        description={
           <>
             Nous vous accompagnons de A à Z dans votre projet web. Notre
-            objectif,
-            {" "}
+            objectif,{" "}
             <span className="font-semibold">
               vous positionner en première page des moteurs de recherche
-            </span>
-            {" "}
+            </span>{" "}
             et améliorer votre visibilité en ligne.
           </>
-        )}
+        }
         checks={[
           "Un référencement naturel optimisé pour les moteurs de recherche",
           "Un audit technique pour améliorer la performance de votre site",
@@ -134,18 +131,14 @@ export default function Page({ params }: Props) {
         }}
       >
         <TwoSidedContent.Paragraph>
-          Que vous soyez
-          {" "}
+          Que vous soyez{" "}
           <span className="font-medium">
             un individu, une petite entreprise (TPE/PME), une startup, un
             organisateur d&apos;événements ou même une administration locale
           </span>
           , bien référencer son site internet est un enjeu majeur pour augmenter
-          sa visibilité et attirer de nouveaux clients. Près de
-          {" "}
-          <span className="font-medium">91% des internautes</span>
-          {" "}
-          ne vont
+          sa visibilité et attirer de nouveaux clients. Près de{" "}
+          <span className="font-medium">91% des internautes</span> ne vont
           au-delà de la première page de résultats sur Google. C&apos;est
           pourquoi il est important de bien positionner son site internet sur
           les moteurs de recherche.
@@ -153,10 +146,8 @@ export default function Page({ params }: Props) {
 
         <TwoSidedContent.Paragraph>
           L&apos;algorithme de référencement de Google est en constante
-          évolution, il contient
-          {" "}
-          <span className="font-medium">de nombreux critères et facteurs</span>
-          {" "}
+          évolution, il contient{" "}
+          <span className="font-medium">de nombreux critères et facteurs</span>{" "}
           à respecter afin d&apos;être bien positionné sur certains mots clés.
         </TwoSidedContent.Paragraph>
 

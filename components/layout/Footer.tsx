@@ -54,13 +54,8 @@ export function Footer() {
       <div className="bg-blue-950 py-4">
         <div className="mx-auto max-w-7xl px-8">
           <p className="text-xs text-blue-200/75">
-            <span className="font-heading text-sm font-bold">TCA Web</span>
-            {" "}
-            Copyright ©
-            {" "}
-            {new Date().getFullYear()}
-            {" "}
-            — Tous droits réservés
+            <span className="font-heading text-sm font-bold">TCA Web</span>{" "}
+            Copyright © {new Date().getFullYear()} — Tous droits réservés
           </p>
         </div>
       </div>

@@ -23,30 +23,26 @@ export default function Page() {
   return (
     <>
       <Hero
-        title={(
+        title={
           <>
             <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
               Création de site web
-            </span>
-            {" "}
+            </span>{" "}
             professionnel pour votre activité.
           </>
-        )}
-        description={(
+        }
+        description={
           <>
             Concevoir un site internet est facile. Mais concevoir un site
-            internet efficace demande
-            {" "}
-            <span className="font-semibold">de l&apos;expérience</span>
-            . Notre
-            objectif,
-            {" "}
+            internet efficace demande{" "}
+            <span className="font-semibold">de l&apos;expérience</span>. Notre
+            objectif,{" "}
             <span className="font-semibold">
               transformer vos visiteurs en clients
             </span>
             .
           </>
-        )}
+        }
         checks={[
           "Un design unique, adapté à l'identité de votre entreprise",
           "Nous travaillerons sur une structure efficace et un message clair",

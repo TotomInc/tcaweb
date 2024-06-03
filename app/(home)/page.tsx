@@ -18,27 +18,22 @@ export default function Home() {
     <>
       <Hero
         cta={{ href: "/contact", label: "Contactez-nous" }}
-        title={(
+        title={
           <>
             <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
               TCA Web
             </span>
             , création & refonte de sites Internet.
           </>
-        )}
-        description={(
+        }
+        description={
           <>
-            Notre équipe d’expert est
-            {" "}
-            <span className="font-semibold">à votre écoute</span>
-            {" "}
-            pour vous
-            proposer la meilleure solution
-            {" "}
-            <span className="font-semibold">à vos besoins</span>
-            .
+            Notre équipe d’expert est{" "}
+            <span className="font-semibold">à votre écoute</span> pour vous
+            proposer la meilleure solution{" "}
+            <span className="font-semibold">à vos besoins</span>.
           </>
-        )}
+        }
         image={{
           width: 768,
           height: 650,

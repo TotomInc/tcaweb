@@ -19,13 +19,14 @@ const schema = z.object({
 
 export async function POST(request: Request) {
   if (
-    !request.body
-    || request.headers.get("content-type") !== "application/json"
+    !request.body ||
+    request.headers.get("content-type") !== "application/json"
   ) {
     return NextResponse.json({ message: "Bad request" }, { status: 400 });
   }
 
-  const { activite, nom, email, phone, message } = await request.json() as RequestData;
+  const { activite, nom, email, phone, message } =
+    (await request.json()) as RequestData;
 
   const validated = schema.safeParse({
     nom,

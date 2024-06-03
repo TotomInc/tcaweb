@@ -152,14 +152,12 @@ export function ContactForm({ title }: Props) {
           </div>
         </div>
 
-        {success
-          ? (
-            <p className="mt-6 text-center text-sm font-medium text-gray-950">
-              Merci ! Nous vous recontacterons le plus rapidement possible afin de
-              prendre connaissance de votre projet.
-            </p>
-            )
-          : null}
+        {success ? (
+          <p className="mt-6 text-center text-sm font-medium text-gray-950">
+            Merci ! Nous vous recontacterons le plus rapidement possible afin de
+            prendre connaissance de votre projet.
+          </p>
+        ) : null}
 
         <button
           type="submit"

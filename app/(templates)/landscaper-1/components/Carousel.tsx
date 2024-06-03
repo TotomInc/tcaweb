@@ -18,9 +18,14 @@ export function Carousel() {
       />
 
       <div className="relative flex w-full max-w-3xl flex-col items-center justify-center gap-6 px-6 lg:gap-10">
-        <p className="text-balance text-center font-landscaper-1-heading text-3xl font-semibold tracking-tight text-white lg:text-7xl">Une équipe experte et à votre écoute</p>
+        <p className="text-balance text-center font-landscaper-1-heading text-3xl font-semibold tracking-tight text-white lg:text-7xl">
+          Une équipe experte et à votre écoute
+        </p>
 
-        <p className="text-balance text-center text-sm font-medium text-white lg:text-xl">Fort de plus de 10 années d&apos;expérience, nous réalisons tous vos projets d&apos;aménagements extérieurs et jardins.</p>
+        <p className="text-balance text-center text-sm font-medium text-white lg:text-xl">
+          Fort de plus de 10 années d&apos;expérience, nous réalisons tous vos
+          projets d&apos;aménagements extérieurs et jardins.
+        </p>
 
         <Link
           href="/landscaper-1/contact"

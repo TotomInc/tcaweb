@@ -44,55 +44,48 @@ export function Hero({
             {description}
           </p>
 
-          {cta
-            ? (
-              <Link
-                href={cta.href}
-                className={cx(
-                  "group mt-6 inline-flex items-center justify-center rounded-md bg-white px-6 py-3 font-spline font-medium transition-shadow duration-300 ease-out hover:bg-blue-50 hover:shadow-lg hover:shadow-blue-800",
-                  animatedStarsIconStyles["button-hover-animate-stars"],
-                )}
-              >
-                <span className="flex items-center justify-center bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">
-                  {cta.label}
-                  {" "}
-                  <AnimatedStarsIcon className="ml-2 h-auto w-6 text-blue-700" />
-                </span>
-              </Link>
-              )
-            : null}
+          {cta ? (
+            <Link
+              href={cta.href}
+              className={cx(
+                "group mt-6 inline-flex items-center justify-center rounded-md bg-white px-6 py-3 font-spline font-medium transition-shadow duration-300 ease-out hover:bg-blue-50 hover:shadow-lg hover:shadow-blue-800",
+                animatedStarsIconStyles["button-hover-animate-stars"],
+              )}
+            >
+              <span className="flex items-center justify-center bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent">
+                {cta.label}{" "}
+                <AnimatedStarsIcon className="ml-2 h-auto w-6 text-blue-700" />
+              </span>
+            </Link>
+          ) : null}
 
-          {checks
-            ? (
-              <div className="my-6 flex flex-col space-y-2">
-                {checks.map((check) => (
-                  <div key={check} className="flex items-center justify-start">
-                    <CheckBadgeIcon className="mr-1.5 h-auto w-5 shrink-0 fill-blue-600 text-blue-200" />
-                    <p className="text-sm font-medium text-blue-100">{check}</p>
-                  </div>
-                ))}
-              </div>
-              )
-            : null}
+          {checks ? (
+            <div className="my-6 flex flex-col space-y-2">
+              {checks.map((check) => (
+                <div key={check} className="flex items-center justify-start">
+                  <CheckBadgeIcon className="mr-1.5 h-auto w-5 shrink-0 fill-blue-600 text-blue-200" />
+                  <p className="text-sm font-medium text-blue-100">{check}</p>
+                </div>
+              ))}
+            </div>
+          ) : null}
 
           {children}
         </div>
 
-        {image
-          ? (
-            <Image
-              priority
-              src={image.src}
-              alt={image.alt}
-              width={image.width}
-              height={image.height}
-              className={cx(
-                "absolute bottom-0 right-0 z-10 -mb-8 mr-4 block h-auto w-48 sm:w-72 md:w-full md:max-w-md lg:max-w-2xl 2xl:max-w-3xl",
-                image.className,
-              )}
-            />
-            )
-          : null}
+        {image ? (
+          <Image
+            priority
+            src={image.src}
+            alt={image.alt}
+            width={image.width}
+            height={image.height}
+            className={cx(
+              "absolute bottom-0 right-0 z-10 -mb-8 mr-4 block h-auto w-48 sm:w-72 md:w-full md:max-w-md lg:max-w-2xl 2xl:max-w-3xl",
+              image.className,
+            )}
+          />
+        ) : null}
       </div>
 
       <ShapeDivider />

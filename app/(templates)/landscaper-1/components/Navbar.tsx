@@ -18,7 +18,10 @@ const LINKS = [
 
 function MobileLink({ href, label }: { href: string; label: string }) {
   return (
-    <Link href={href} className="flex items-center justify-between text-base font-bold">
+    <Link
+      href={href}
+      className="flex items-center justify-between text-base font-bold"
+    >
       {label}
       <LeafIcon />
     </Link>
@@ -66,7 +69,9 @@ export function Navbar() {
               rel="noreferrer noopener"
               className="flex items-center justify-center gap-2 p-2 sm:p-0"
             >
-              <span className="hidden text-base font-bold hover:underline sm:flex">{PHONE}</span>
+              <span className="hidden text-base font-bold hover:underline sm:flex">
+                {PHONE}
+              </span>
               <PhoneIcon className="size-6" />
             </Link>
           </div>
@@ -75,8 +80,8 @@ export function Navbar() {
 
       <div
         className={twMerge(
-          "fixed top-16 bottom-0 w-screen bg-white transition-all duration-300 ease-out sm:hidden z-10",
-          !isOpen ? "-translate-x-full pointer-events-none" : "translate-x-0",
+          "fixed bottom-0 top-16 z-10 w-screen bg-white transition-all duration-300 ease-out sm:hidden",
+          !isOpen ? "pointer-events-none -translate-x-full" : "translate-x-0",
         )}
       >
         <div className="container mx-auto flex flex-col gap-3 px-6 py-4 font-landscaper-1-heading">

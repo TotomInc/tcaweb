@@ -34,9 +34,7 @@ export default function RootLayout({
       <body className="relative min-h-screen bg-white text-neutral-900">
         <Navbar />
 
-        <div className="pt-16">
-          {children}
-        </div>
+        <div className="pt-16">{children}</div>
       </body>
     </html>
   );

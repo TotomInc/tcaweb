@@ -24,26 +24,23 @@ export default function Page() {
   return (
     <>
       <Hero
-        title={(
+        title={
           <>
             <span className="bg-gradient-to-br from-blue-50 via-amber-300 to-red-400 bg-clip-text font-heading font-bold text-transparent">
               Création de site ecommerce
             </span>
             , vendez vos produits en ligne facilement.
           </>
-        )}
-        description={(
+        }
+        description={
           <>
-            Concevoir et gérer un site e-commerce
-            {" "}
-            <span className="font-semibold">est complexe</span>
-            . Nous vous
+            Concevoir et gérer un site e-commerce{" "}
+            <span className="font-semibold">est complexe</span>. Nous vous
             accompagnons dans la conception de votre site e-commerce afin
             d&apos;en
-            <span className="font-semibold">garantir le succès</span>
-            .
+            <span className="font-semibold">garantir le succès</span>.
           </>
-        )}
+        }
         checks={[
           "Démarrez la vente en ligne facilement et rapidement.",
           "Un nouveau canal de vente pour votre entreprise.",

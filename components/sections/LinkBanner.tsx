@@ -25,22 +25,20 @@ export function LinkBanner({
   return (
     <section
       className={cx(
-        "group relative w-full overflow-hidden bg-gradient-to-br from-blue-800 to-blue-600  lg:mx-auto lg:max-w-4xl lg:rounded-2xl lg:shadow-lg 2xl:max-w-7xl",
+        "group relative w-full overflow-hidden bg-gradient-to-br from-blue-800 to-blue-600 lg:mx-auto lg:max-w-4xl lg:rounded-2xl lg:shadow-lg 2xl:max-w-7xl",
         className,
       )}
     >
-      {coverImage
-        ? (
-          <Image
-            fill
-            src={coverImage.src}
-            alt={coverImage.alt}
-            sizes="(max-width: 1023px) 75vw, 33vw"
-            quality={75}
-            className="pointer-events-none absolute inset-0 object-cover opacity-[0.125] transition-transform duration-500 ease-out group-hover:scale-105"
-          />
-          )
-        : null}
+      {coverImage ? (
+        <Image
+          fill
+          src={coverImage.src}
+          alt={coverImage.alt}
+          sizes="(max-width: 1023px) 75vw, 33vw"
+          quality={75}
+          className="pointer-events-none absolute inset-0 object-cover opacity-[0.125] transition-transform duration-500 ease-out group-hover:scale-105"
+        />
+      ) : null}
 
       <Link
         href={link}
