@@ -14,9 +14,9 @@ import { Portfolio } from "@/components/sections/Portfolio";
 import { ContactForm } from "@/components/sections/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Création de site Internet | TCA Web",
+  title: "Création de site vitrine | TCA Web",
   description:
-    "Boostez la visibilité de votre entreprise et gagnez de nouveaux clients grâce à une portée augmentée. TCA Web vous accompagne dans la conception de votre site Internet.",
+    "Boostez la visibilité de votre entreprise et gagnez de nouveaux clients grâce à une portée augmentée. TCA Web vous accompagne dans la conception de votre site vitrine.",
 };
 
 export default function Page() {
@@ -33,8 +33,8 @@ export default function Page() {
         }
         description={
           <>
-            Concevoir un site internet est facile. Mais concevoir un site
-            internet efficace demande{" "}
+            Concevoir un site vitrine est facile. Mais concevoir un site
+            vitrine <span className="font-semibold">efficace</span> demande{" "}
             <span className="font-semibold">de l&apos;expérience</span>. Notre
             objectif,{" "}
             <span className="font-semibold">

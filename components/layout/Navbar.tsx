@@ -5,11 +5,11 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
-import { Logo } from "../ui/Logo";
+import { Logo } from "@/components/ui/Logo";
 
 const links = [
-  { href: "/sites-internet", label: "Création de site" },
-  { href: "/sites-ecommerces", label: "Création de site e-commerce" },
+  { href: "/sites-vitrine", label: "Site vitrine" },
+  { href: "/sites-ecommerces", label: "Site e-commerce" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -77,13 +77,7 @@ export function Navbar() {
           title="Ouvrir le menu de navigation"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {!isOpen
-? (
-            <Bars3Icon className="h-auto w-6 text-black" />
-          )
-: (
-                <XMarkIcon className="h-auto w-6 text-black" />
-          )}
+          {!isOpen ? <Bars3Icon className="h-auto w-6 text-black" /> : <XMarkIcon className="h-auto w-6 text-black" />}
         </button>
       </div>
 

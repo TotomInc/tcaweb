@@ -1,4 +1,4 @@
-import idfCities from "@/data/77.json";
+import rawCities from "@/data/cities.json";
 
 function capitalizeEachWord(str: string) {
   return str
@@ -7,7 +7,7 @@ function capitalizeEachWord(str: string) {
     .join(" ");
 }
 
-export const cities = idfCities
+export const cities = rawCities
   .map((city) => capitalizeEachWord(city.city_code))
   .filter((value, index, self) => self.indexOf(value) === index);
 

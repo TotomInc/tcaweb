@@ -8,32 +8,8 @@
     "city_code": "combs la ville"
   },
   {
-    "zip_code": "77184",
-    "city_code": "emerainville"
-  },
-  {
-    "zip_code": "77350",
-    "city_code": "le mee sur seine"
-  },
-  {
-    "zip_code": "77550",
-    "city_code": "moissy cramayel"
-  },
-  {
     "zip_code": "77140",
     "city_code": "nemours"
-  },
-  {
-    "zip_code": "77340",
-    "city_code": "pontault combault"
-  },
-  {
-    "zip_code": "77310",
-    "city_code": "st fargeau ponthierry"
-  },
-  {
-    "zip_code": "77920",
-    "city_code": "samois sur seine"
   },
   {
     "zip_code": "77210",
@@ -64,20 +40,8 @@
     "city_code": "fontainebleau"
   },
   {
-    "zip_code": "77100",
-    "city_code": "meaux"
-  },
-  {
     "zip_code": "77250",
     "city_code": "moret loing et orvanne"
-  },
-  {
-    "zip_code": "77370",
-    "city_code": "nangis"
-  },
-  {
-    "zip_code": "77340",
-    "city_code": "pontault combault"
   },
   {
     "zip_code": "77140",
@@ -88,20 +52,12 @@
     "city_code": "avon"
   },
   {
-    "zip_code": "77170",
-    "city_code": "brie comte robert"
-  },
-  {
     "zip_code": "77690",
     "city_code": "montigny sur loing"
   },
   {
     "zip_code": "77460",
     "city_code": "souppes sur loing"
-  },
-  {
-    "zip_code": "77200",
-    "city_code": "torcy"
   },
   {
     "zip_code": "77190",
@@ -114,5 +70,21 @@
   {
     "zip_code": "77130",
     "city_code": "varennes sur seine"
+  },
+  {
+    "zip_code": "89140",
+    "city_code": "pont sur yonne"
+  },
+  {
+    "zip_code": "89100",
+    "city_code": "sens"
+  },
+  {
+    "zip_code": "89000",
+    "city_code": "auxerre"
+  },
+  {
+    "zip_code": "10000",
+    "city_code": "troyes"
   }
 ]

@@ -10,7 +10,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticRoutes = [
     "",
     "sites-ecommerces",
-    "sites-internet",
+    "sites-vitrine",
     "contact",
   ].map(
     (route) =>
@@ -26,11 +26,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       [
         {
           url: `${BASE_URL}/creation-site-internet/${slugify(city)}`,
-          changeFrequency: "monthly",
-          priority: 1,
-        },
-        {
-          url: `${BASE_URL}/referencement-site-internet/${slugify(city)}`,
           changeFrequency: "monthly",
           priority: 1,
         },
