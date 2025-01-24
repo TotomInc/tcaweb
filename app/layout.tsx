@@ -1,21 +1,26 @@
-import "./globals.css";
+import "./tailwind.css";
 
 import type { Metadata } from "next";
+import { Inter, Spline_Sans } from "next/font/google";
+
+import { Header } from "@/components/sections/Header";
 
 export const metadata: Metadata = {
-  metadataBase:
-    process.env.NODE_ENV === "production"
-      ? new URL("https://tcaweb.fr")
-      : new URL("http://localhost:3000"),
-  title: "Agence web création site internet et e-commerce | TCA Web",
-  description:
-    "TCA Web, l'agence web qui vous accompagne dans votre stratégie web et e-commerce, création ou refonte de site Internet, design et maquettes.",
+  title: "TCA Web | L'Agence Web des PME",
+  description: "",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return children;
+const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const heading = Spline_Sans({ subsets: ["latin"], variable: "--font-heading" });
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="fr" className="scroll-smooth">
+      <body className={`text-primary font-sans antialiased ${sans.variable} ${heading.variable}`}>
+        <Header />
+
+        {children}
+      </body>
+    </html>
+  );
 }

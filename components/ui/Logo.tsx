@@ -10,15 +10,11 @@ export function Logo({ variant, className }: LogoProps) {
   return (
     <Image
       alt="TCA Web"
-      width={130}
-      height={32}
-      quality={75}
-      className={twMerge(className)}
-      src={
-        variant === "blue"
-          ? "/_static/images/logo-blue.png"
-          : "/_static/images/logo.png"
-      }
+      width={780}
+      height={192}
+      quality={90}
+      className={twMerge(className, "h-8 w-auto object-contain")}
+      src={variant === "white" ? "/_static/images/logo-white.png" : "/_static/images/logo-blue.png"}
     />
   );
 }
