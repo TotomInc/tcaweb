@@ -35,7 +35,7 @@ export function Header() {
         ref={headerRef}
         className={twMerge(
           "fixed inset-x-0 top-0 z-10 flex h-16 items-stretch bg-white transition duration-150 ease-out",
-          hasScrolled ? "bg-white/100" : "border-transparent bg-white/0",
+          hasScrolled ? "bg-white/60 backdrop-blur-lg" : "border-transparent bg-white/0",
         )}
       >
         <div className="mx-auto flex w-full max-w-7xl items-center justify-between px-6">
