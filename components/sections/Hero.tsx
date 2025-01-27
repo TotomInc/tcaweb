@@ -2,6 +2,7 @@ import { CheckBadgeIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
+import { AuroraText } from "@/components/ui/AuroraText";
 import { ContactCta } from "@/components/ui/ContactCta";
 
 interface Props {
@@ -44,9 +45,12 @@ export function Hero({ className }: Props) {
         <div className="flex flex-col items-start gap-6 px-6 sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:gap-8">
           <h1 className="font-heading text-3xl font-bold text-balance lg:text-5xl 2xl:text-6xl">
             Développez votre{" "}
-            <span className="bg-gradient-to-br from-blue-100 via-amber-300 to-orange-300 bg-clip-text text-transparent">
+            <AuroraText
+              as="span"
+              className="text-primary rotate-[-2deg] rounded-lg bg-white px-3 py-2 shadow-xl"
+            >
               présence digitale
-            </span>
+            </AuroraText>
           </h1>
 
           <p className="text-base text-balance lg:text-xl">
