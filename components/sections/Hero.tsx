@@ -40,10 +40,10 @@ export function Hero({ className }: Props) {
         className,
       )}
     >
-      <div className="relative mx-auto max-w-7xl pt-24 pb-48 lg:pt-32 lg:pb-56">
+      <div className="relative mx-auto max-w-7xl pt-24 pb-48 xl:pt-32 xl:pb-56">
         <div className="flex flex-col items-start gap-6 px-6 sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:gap-8">
           <h1 className="font-heading text-3xl font-bold text-balance lg:text-5xl 2xl:text-6xl">
-            Développez efficacement votre{" "}
+            Développez votre{" "}
             <span className="bg-gradient-to-br from-blue-100 via-amber-300 to-orange-300 bg-clip-text text-transparent">
               présence digitale
             </span>
@@ -69,11 +69,11 @@ export function Hero({ className }: Props) {
 
         <Image
           priority
-          src="/_static/images/landing-mockup.png"
+          src="/_static/images/multi-device-mockup.png"
           alt="Site web réalisé pour notre client Inyda (Data Science)"
-          width={3011}
-          height={2552}
-          className="pointer-events-none absolute right-0 bottom-0 z-1 -mb-6 block h-auto w-60 sm:mb-0 sm:w-72 md:w-full md:max-w-md lg:max-w-2xl"
+          width={2218}
+          height={1854}
+          className="pointer-events-none absolute right-0 bottom-0 z-1 -mb-6 block h-auto w-60 sm:mb-0 sm:w-72 md:w-full md:max-w-md lg:max-w-xl xl:max-w-2xl"
           quality={90}
         />
       </div>
