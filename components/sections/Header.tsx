@@ -2,7 +2,7 @@
 
 import { Bars3Icon } from "@heroicons/react/16/solid";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 import { Drawer } from "vaul";
 
@@ -11,12 +11,15 @@ import { Logo } from "@/components/ui/Logo";
 const links = [{ href: "/contact", label: "Contact" }];
 
 export function Header() {
+  const headerRef = useRef<HTMLHeadElement | null>(null);
+
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setHasScrolled(window.scrollY > 80);
+      const headerHeight = headerRef.current?.clientHeight ?? 64;
+      setHasScrolled(window.scrollY > headerHeight);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -29,6 +32,7 @@ export function Header() {
   return (
     <Drawer.Root open={isOpen} onOpenChange={setIsOpen}>
       <header
+        ref={headerRef}
         className={twMerge(
           "fixed inset-x-0 top-0 z-10 flex h-16 items-stretch bg-white transition duration-150 ease-out",
           hasScrolled ? "bg-white/100" : "border-transparent bg-white/0",
