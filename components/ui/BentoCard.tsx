@@ -3,18 +3,29 @@ import { twMerge } from "tailwind-merge";
 
 interface Props {
   className?: string;
+  children?: React.ReactNode;
+  label?: React.ReactNode;
   title: string;
   description: string;
-  image: {
+  image?: {
     src: string;
     alt: string;
     width: number;
     height: number;
+    className?: string;
   };
   gradientSide?: "left" | "right";
 }
 
-export function BentoCard({ className, title, description, image, gradientSide }: Props) {
+export function BentoCard({
+  className,
+  children,
+  label,
+  title,
+  description,
+  image,
+  gradientSide,
+}: Props) {
   return (
     <div
       className={twMerge(
@@ -33,19 +44,28 @@ export function BentoCard({ className, title, description, image, gradientSide }
       ) : null}
 
       <div className="relative flex h-fit flex-col gap-2.5">
+        {label}
+
         <h3 className="font-heading text-xl font-medium tracking-tight">{title}</h3>
 
         <p className="text-secondary text-base/relaxed text-balance">{description}</p>
       </div>
 
-      <Image
-        src={image.src}
-        alt={image.alt}
-        width={image.width}
-        height={image.height}
-        quality={90}
-        className="relative mx-auto mt-auto block h-auto w-full max-w-sm"
-      />
+      {image ? (
+        <Image
+          src={image.src}
+          alt={image.alt}
+          width={image.width}
+          height={image.height}
+          quality={90}
+          className={twMerge(
+            "relative mx-auto mt-auto block h-auto w-full max-w-sm",
+            image.className,
+          )}
+        />
+      ) : null}
+
+      {children}
     </div>
   );
 }

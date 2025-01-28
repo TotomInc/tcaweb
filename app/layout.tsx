@@ -1,5 +1,6 @@
 import "./tailwind.css";
 
+import { GeistMono } from "geist/font/mono";
 import type { Metadata } from "next";
 import { Inter, Spline_Sans } from "next/font/google";
 
@@ -16,7 +17,9 @@ const heading = Spline_Sans({ subsets: ["latin"], variable: "--font-heading" });
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body className={`text-primary font-sans antialiased ${sans.variable} ${heading.variable}`}>
+      <body
+        className={`text-primary font-sans antialiased ${sans.variable} ${heading.variable} ${GeistMono.variable}`}
+      >
         <Header />
 
         {children}

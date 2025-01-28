@@ -4,7 +4,7 @@ import { BentoCard } from "@/components/ui/BentoCard";
 export function Expertise() {
   return (
     <section className="relative text-black">
-      <div className="relative mx-auto max-w-7xl px-6 pt-24 pb-32">
+      <div className="relative mx-auto max-w-7xl px-6 pt-24 pb-16 lg:pt-16">
         <div className="mx-auto mb-16 flex max-w-lg flex-col items-center">
           <Badge>Services</Badge>
 
