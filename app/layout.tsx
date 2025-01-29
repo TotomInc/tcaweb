@@ -1,5 +1,6 @@
 import "./tailwind.css";
 
+import { Analytics } from "@vercel/analytics/next";
 import { GeistMono } from "geist/font/mono";
 import type { Metadata } from "next";
 import { Inter, Spline_Sans } from "next/font/google";
@@ -23,6 +24,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
 
         {children}
+
+        <Analytics />
       </body>
     </html>
   );
