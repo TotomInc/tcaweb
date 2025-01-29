@@ -19,9 +19,11 @@ export function Expertise() {
 
         <div className="grid gap-6 sm:grid-cols-2">
           <BentoCard
-            title="Création site internet"
-            description="Un site web professionnel sur-mesure pour votre entreprise. Un unique point d'entrée pour tous vos clients afin de découvrir vos services."
-            gradientSide="left"
+            content={{
+              title: "Création site internet",
+              description:
+                "Un site web professionnel sur-mesure pour votre entreprise. Un unique point d'entrée pour tous vos clients afin de découvrir vos services.",
+            }}
             image={{
               src: "/_static/images/creation-site-internet.png",
               alt: "Sites web réalisés pour nos clients",
@@ -31,9 +33,11 @@ export function Expertise() {
           />
 
           <BentoCard
-            title="Création site e-commerce"
-            description="Vendez vos produits en ligne grâce à une boutique en ligne performante et sécurisée. Un site e-commerce qui vous ressemble."
-            gradientSide="right"
+            content={{
+              title: "Création site e-commerce",
+              description:
+                "Vendez vos produits en ligne grâce à une boutique en ligne performante et sécurisée. Un site e-commerce qui vous ressemble.",
+            }}
             image={{
               src: "/_static/images/creation-site-ecommerce.png",
               alt: "Site e-commerce réalisé pour un client",
@@ -43,9 +47,11 @@ export function Expertise() {
           />
 
           <BentoCard
-            title="Référencement web"
-            description="Améliorez votre visibilité sur les moteurs de recherche et augmentez votre trafic. Un site web optimisé pour le référencement naturel."
-            gradientSide="left"
+            content={{
+              title: "Référencement web",
+              description:
+                "Améliorez votre visibilité sur les moteurs de recherche et augmentez votre trafic. Un site web optimisé pour le référencement naturel.",
+            }}
             image={{
               src: "/_static/images/referencement-web.png",
               alt: "Page d'accueil de Google",
@@ -55,9 +61,11 @@ export function Expertise() {
           />
 
           <BentoCard
-            title="Graphisme & branding"
-            description="Une identité visuelle unique pour votre entreprise. Un logo, des couleurs et une typographie qui vous ressemblent."
-            gradientSide="right"
+            content={{
+              title: "Graphisme & branding",
+              description:
+                "Une identité visuelle unique pour votre entreprise. Un logo, des couleurs et une typographie qui vous ressemblent.",
+            }}
             image={{
               src: "/_static/images/graphisme.png",
               alt: "Logiciel de création graphique",

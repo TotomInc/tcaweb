@@ -30,25 +30,34 @@ export function How() {
 
         <div className="grid gap-6 lg:grid-cols-3">
           <BentoCard
-            title="Analyse de vos besoins"
-            description="Nous définissons ensemble vos objectifs et vos besoins afin d'utiliser les outils et solutions les plus adaptés."
-            label={<BentoCardLabel>01</BentoCardLabel>}
+            content={{
+              title: "Analyse de vos besoins",
+              description:
+                "Nous définissons ensemble vos objectifs et vos besoins afin d'utiliser les outils et solutions les plus adaptés.",
+              label: <BentoCardLabel>01</BentoCardLabel>,
+            }}
           >
             <Item1 />
           </BentoCard>
 
           <BentoCard
-            title="Conception du site web"
-            description="Nous créons un site web sur-mesure de A à Z en accord avec votre identité visuelle et vos attentes."
-            label={<BentoCardLabel>02</BentoCardLabel>}
+            content={{
+              title: "Conception du site web",
+              description:
+                "Nous créons un site web sur-mesure de A à Z en accord avec votre identité visuelle et vos attentes.",
+              label: <BentoCardLabel>02</BentoCardLabel>,
+            }}
           >
             <Item2 />
           </BentoCard>
 
           <BentoCard
-            title="Lancement de votre site"
-            description="Nous assurons le suivi et la maintenance de votre site web pour garantir son bon fonctionnement."
-            label={<BentoCardLabel>03</BentoCardLabel>}
+            content={{
+              title: "Lancement de votre site",
+              description:
+                "Nous assurons le suivi et la maintenance de votre site web pour garantir son bon fonctionnement.",
+              label: <BentoCardLabel>03</BentoCardLabel>,
+            }}
             image={{
               src: "/_static/images/lancement-site-internet.png",
               alt: "Lancement du site internet d'un client",

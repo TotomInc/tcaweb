@@ -8,9 +8,11 @@ import { twMerge } from "tailwind-merge";
 interface Props {
   className?: string;
   children?: React.ReactNode;
-  label?: React.ReactNode;
-  title: string;
-  description: string;
+  content?: {
+    label?: React.ReactNode;
+    title: string;
+    description: string;
+  };
   image?: {
     src: string;
     alt: string;
@@ -18,18 +20,9 @@ interface Props {
     height: number;
     className?: string;
   };
-  gradientSide?: "left" | "right";
 }
 
-export function BentoCard({
-  className,
-  children,
-  label,
-  title,
-  description,
-  image,
-  gradientSide,
-}: Props) {
+export function BentoCard({ className, children, content, image }: Props) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref);
@@ -42,30 +35,24 @@ export function BentoCard({
         className,
       )}
     >
-      {gradientSide ? (
-        <span
-          className={twMerge(
-            "pointer-events-none absolute inset-0 from-blue-400/10 to-white to-90%",
-            gradientSide === "left" && "bg-radial-[at_1%_99%]",
-            gradientSide === "right" && "bg-radial-[at_99%_1%]",
-          )}
-        />
+      {content ? (
+        <div className="relative flex h-fit flex-col gap-2.5">
+          {content.label}
+
+          <h3 className="font-heading text-xl font-medium tracking-tight">{content.title}</h3>
+
+          <p className="text-secondary text-base/relaxed text-balance">{content.description}</p>
+        </div>
       ) : null}
 
-      <div className="relative flex h-fit flex-col gap-2.5">
-        {label}
-
-        <h3 className="font-heading text-xl font-medium tracking-tight">{title}</h3>
-
-        <p className="text-secondary text-base/relaxed text-balance">{description}</p>
-      </div>
+      {children}
 
       {image ? (
         <AnimatePresence>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
-            animate={imageLoaded && isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.5 }}
+            animate={imageLoaded && isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 32 }}
+            transition={{ duration: 0.5, ease: "easeOut", delay: 0.75 }}
             className="relative"
           >
             <Image
@@ -83,8 +70,6 @@ export function BentoCard({
           </motion.div>
         </AnimatePresence>
       ) : null}
-
-      {children}
     </div>
   );
 }
