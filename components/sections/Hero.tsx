@@ -76,20 +76,20 @@ export function Hero({ className }: Props) {
 
         <Image
           priority
-          src="/_static/images/multi-device-mockup-alt.png"
-          alt="Site web réalisé pour notre client Inyda (Data Science)"
-          width={2972}
-          height={2319}
+          src="/_static/images/hero/hero-mobile.png"
+          alt="Site web réalisé pour nos clients"
+          width={2048}
+          height={1598}
           className="pointer-events-none absolute bottom-0 left-1/2 z-1 -mb-10 block h-auto w-68 translate-x-[-50%] sm:hidden"
           quality={90}
         />
 
         <Image
           priority
-          src="/_static/images/multi-device-mockup.png"
-          alt="Site web réalisé pour notre client Inyda (Data Science)"
-          width={2218}
-          height={1854}
+          src="/_static/images/hero/hero-desktop.png"
+          alt="Site web réalisé pour nos clients"
+          width={2396}
+          height={1925}
           className="pointer-events-none absolute right-0 bottom-0 z-1 hidden h-auto sm:block sm:w-80 md:w-full md:max-w-md lg:block lg:max-w-xl xl:max-w-2xl"
           quality={90}
         />
