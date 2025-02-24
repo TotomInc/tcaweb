@@ -12,7 +12,7 @@ export function ContactCta({ className, ...props }: Props) {
       {...props}
       href="/contact"
       className={twMerge(
-        "group text-primary font-heading relative flex items-center gap-2.5 rounded-full border border-blue-700 bg-white px-7 py-3 text-base font-semibold tracking-tight inset-shadow-sm shadow-md inset-shadow-blue-800/60 focus:ring-2 focus:ring-blue-600/75 focus:outline-none",
+        "group text-primary font-heading relative flex items-center gap-2.5 rounded-full border border-blue-700 bg-white px-7 py-3 text-base font-semibold tracking-tight shadow-md inset-shadow-sm inset-shadow-blue-800/60 focus:ring-2 focus:ring-blue-600/75 focus:outline-none",
         className,
       )}
     >
