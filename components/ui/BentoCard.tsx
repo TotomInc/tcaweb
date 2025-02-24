@@ -32,6 +32,7 @@ export function BentoCard({ className, children, content, image }: Props) {
       ref={ref}
       className={twMerge(
         "relative flex w-full flex-col flex-nowrap gap-8 overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 pb-0 shadow-xl shadow-gray-900/5 transition-all duration-300 ease-out hover:border-gray-300/75 hover:shadow-gray-900/10",
+        image && "justify-between",
         className,
       )}
     >
