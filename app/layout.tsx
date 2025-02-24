@@ -9,7 +9,8 @@ import { Header } from "@/components/sections/Header";
 
 export const metadata: Metadata = {
   title: "TCA Web | L'Agence Web des PME",
-  description: "",
+  description:
+    "TCA Web est une agence web basée à Sens (89), spécialisée dans la création de sites internet pour les PMEs.",
 };
 
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
