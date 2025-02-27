@@ -64,7 +64,7 @@ export function ContactUs() {
   };
 
   return (
-    <section className="relative text-black">
+    <section id="contact" className="relative text-black">
       <div className="relative mx-auto max-w-7xl px-6 pt-24 pb-16 lg:pt-16">
         <div className="mx-auto mb-8 flex max-w-lg flex-col items-center">
           <Badge>Un projet ?</Badge>

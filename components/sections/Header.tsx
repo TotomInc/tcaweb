@@ -8,7 +8,7 @@ import { Drawer } from "vaul";
 
 import { Logo } from "@/components/ui/Logo";
 
-const links = [{ href: "/contact", label: "Contact" }];
+const links = [{ href: "#contact", label: "Contact" }];
 
 export function Header() {
   const headerRef = useRef<HTMLHeadElement | null>(null);

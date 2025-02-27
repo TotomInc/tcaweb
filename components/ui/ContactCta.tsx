@@ -10,7 +10,7 @@ export function ContactCta({ className, ...props }: Props) {
   return (
     <Link
       {...props}
-      href="/contact"
+      href="#contact"
       className={twMerge(
         "group text-primary font-heading relative flex items-center gap-2.5 rounded-full border border-blue-700 bg-white px-7 py-3 text-base font-semibold tracking-tight shadow-md inset-shadow-sm inset-shadow-blue-800/60 transition-all duration-150 ease-out hover:ring-2 hover:ring-blue-500/75 focus:ring-2 focus:ring-blue-600/75 focus:outline-none",
         className,

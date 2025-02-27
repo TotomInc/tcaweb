@@ -3,10 +3,7 @@ import Link from "next/link";
 
 import { Logo } from "@/components/ui/Logo";
 
-const LINKS = [
-  { label: "Accueil", href: "/" },
-  { label: "Contact", href: "/contact" },
-];
+const LINKS = [{ label: "Accueil", href: "/" }];
 
 export function Footer() {
   return (
