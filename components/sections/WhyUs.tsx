@@ -1,11 +1,18 @@
 "use client";
 
 import {
+  BookOpenIcon,
   ChevronDownIcon,
+  CurrencyEuroIcon,
+  EyeIcon,
+  MagnifyingGlassIcon,
+  MapPinIcon,
+  PaintBrushIcon,
   SparklesIcon,
   StarIcon,
   TrophyIcon,
   UserIcon,
+  WrenchScrewdriverIcon,
 } from "@heroicons/react/24/outline";
 import { motion, useInView } from "motion/react";
 import { Accordion } from "radix-ui";
@@ -28,45 +35,59 @@ export function WhyUs() {
   const accordionItems = [
     {
       id: "budget",
+      icon: CurrencyEuroIcon,
       name: "Optimisez votre budget",
       description:
-        "Nous vous aidons à définir un budget réaliste pour votre projet web tout en respectant vos contraintes.",
+        "Notre expertise vous permet de définir un budget réaliste et adapté pour votre projet web. Nous analysons vos besoins spécifiques et vous proposons des solutions qui respectent scrupuleusement vos contraintes financières, sans compromettre la qualité du résultat final.",
     },
     {
       id: "interlocuteur",
+      icon: UserIcon,
       name: "Interlocteur unique",
       description:
-        "Un seul interlocuteur pour votre projet web, c'est plus simple et plus efficace pour vous.",
+        "Bénéficiez d'un interlocuteur unique pour l'ensemble de votre projet web. Cette approche simplifie considérablement la communication et vous permet de gagner un temps précieux. Vous aurez toujours la même personne qui connaît parfaitement votre dossier et vos objectifs.",
     },
     {
       id: "sur-mesure",
+      icon: PaintBrushIcon,
       name: "Sites internet sur-mesure",
       description:
-        "Parce que chaque entreprise est unique, nous créeons des sites web sur-mesure pour répondre à vos besoins et qui mettent en valeur votre entreprise.",
+        "Parce que chaque entreprise possède son identité propre et ses objectifs spécifiques, notre approche sur-mesure garantit que votre présence en ligne reflète fidèlement les valeurs et l'essence de votre entreprise, tout en maximisant son impact auprès de votre clientèle cible.",
     },
     {
       id: "referencement",
-      name: "Référencement web Google",
+      icon: MagnifyingGlassIcon,
+      name: "Référencement web Google (SEO)",
       description:
-        "Nous optimisons votre site web pour le référencement naturel afin d'augmenter votre visibilité sur Google et autres moteurs de recherche.",
+        "Notre expertise en SEO nous permet d'optimiser méticuleusement votre site web pour le référencement naturel, améliorant ainsi significativement votre visibilité sur Google et les autres moteurs de recherche.",
     },
     {
       id: "service-local",
+      icon: MapPinIcon,
       name: "Service local (89)",
       description:
-        "Basé près de Sens (89100), nous aidons les PMEs locales à se développer sur internet.",
+        "Basé à proximité de Sens (89100) dans l'Yonne, nous nous engageons à accompagner les petites et moyennes entreprises dans leur développement numérique. Notre ancrage local nous permet de comprendre les spécificités du territoire et d'offrir un service personnalisé et réactif pour votre présence en ligne.",
     },
     {
       id: "maintenance",
+      icon: WrenchScrewdriverIcon,
       name: "Maintenance et suivi",
       description:
-        "Nous assurons la maintenance de votre site web pour vous permettre de vous concentrer sur votre activité.",
+        "Notre équipe prend en charge la maintenance complète et régulière de votre site web, gérant les mises à jour techniques, la sécurité et les optimisations nécessaires, vous permettant ainsi de vous consacrer pleinement à votre cœur de métier sans vous soucier des aspects techniques de votre présence en ligne.",
     },
     {
       id: "formation-support",
+      icon: BookOpenIcon,
       name: "Formation et support",
       description:
-        "Nous vous formons à l'utilisation de votre site web et vous apportons un support technique en cas de besoin.",
+        "Nous vous proposons une formation personnalisée afin de maîtriser parfaitement l'utilisation de votre site web, et restons à votre disposition pour vous apporter un support technique réactif et efficace à chaque fois que vous en avez besoin.",
+    },
+    {
+      id: "transparence",
+      icon: EyeIcon,
+      name: "Transparence",
+      description:
+        "Nous nous engageons à maintenir une transparence totale tout au long de notre collaboration, en vous communiquant clairement chaque action entreprise et en vous proposant des tarifs détaillés sans frais cachés. Cette approche honnête et directe vous permet de suivre l'évolution de votre projet en toute confiance.",
     },
   ];
 
@@ -112,7 +133,7 @@ export function WhyUs() {
             type="single"
             className="w-full rounded-lg border border-gray-200 bg-white shadow-xl shadow-gray-900/5 sm:w-1/2 lg:w-2/3"
           >
-            {accordionItems.map(({ id, name, description }, i) => (
+            {accordionItems.map(({ id, icon: Icon, name, description }, i) => (
               <Accordion.Item key={id} value={id} className="group flex w-full flex-col">
                 <Accordion.Trigger
                   className={twMerge(
@@ -120,12 +141,17 @@ export function WhyUs() {
                     i > 0 && "border-t border-gray-200",
                   )}
                 >
-                  {name}
+                  <div className="flex items-center gap-3">
+                    <Icon className="size-7 text-blue-700" />
+                    {name}
+                  </div>
                   <ChevronDownIcon className="size-5 transition-transform duration-300 ease-out group-data-[state=open]:rotate-180" />
                 </Accordion.Trigger>
 
-                <Accordion.Content className="border-t border-gray-200 px-4 py-5">
-                  <p className="text-secondary text-base">{description}</p>
+                <Accordion.Content className="data-[state=closed]:animate-accordion-slide-up data-[state=open]:animate-accordion-slide-down overflow-hidden">
+                  <div className="border-t border-gray-200 px-4 py-5">
+                    <p className="text-secondary text-base">{description}</p>
+                  </div>
                 </Accordion.Content>
               </Accordion.Item>
             ))}
