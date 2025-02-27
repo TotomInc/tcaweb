@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono";
 import type { Metadata } from "next";
 import { Inter, Spline_Sans } from "next/font/google";
 
+import { Footer } from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 
 export const metadata: Metadata = {
@@ -27,6 +28,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         {children}
 
         <Analytics />
+
+        <Footer />
       </body>
     </html>
   );
