@@ -1,4 +1,7 @@
+"use client";
+
 import { CheckBadgeIcon } from "@heroicons/react/24/outline";
+import { motion } from "motion/react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
@@ -46,7 +49,12 @@ export function Hero({ className }: Props) {
 
       <div className="relative mx-auto max-w-7xl pt-24 pb-48 xl:pt-32 xl:pb-56">
         <div className="flex flex-col items-start gap-6 px-6 sm:max-w-md md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:gap-8">
-          <h1 className="font-heading text-3xl font-bold text-balance lg:text-5xl 2xl:text-6xl">
+          <motion.h1
+            className="font-heading text-3xl font-bold text-balance lg:text-5xl 2xl:text-6xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             Développez votre{" "}
             <AuroraText
               as="span"
@@ -54,27 +62,46 @@ export function Hero({ className }: Props) {
             >
               présence digitale
             </AuroraText>
-          </h1>
+          </motion.h1>
 
-          <p className="text-base text-balance lg:text-xl">
+          <motion.p
+            className="text-base text-balance lg:text-xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             <span className="font-heading font-bold">TCA Web</span>, votre agence web spécialiste{" "}
             <span className="font-heading font-bold">des PME</span>. Des sites web de qualité
             professionnelle, qui vous démarquent de la concurrence à{" "}
             <span className="font-heading font-bold">un prix abordable</span>.
-          </p>
+          </motion.p>
 
-          <ContactCta />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            <ContactCta />
+          </motion.div>
 
-          <ul className="flex flex-col gap-2">
-            {items.map((item) => (
-              <li
+          <motion.ul
+            className="flex flex-col gap-2"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
+            {items.map((item, index) => (
+              <motion.li
                 key={item}
                 className="flex items-center gap-1.5 font-medium sm:text-sm lg:text-base"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.7 + index * 0.1 }}
               >
                 <CheckBadgeIcon className="size-6 fill-blue-600 text-blue-200" /> {item}
-              </li>
+              </motion.li>
             ))}
-          </ul>
+          </motion.ul>
         </div>
 
         <Image
