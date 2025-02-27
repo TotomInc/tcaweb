@@ -11,14 +11,15 @@ const LINKS = [
 export function Footer() {
   return (
     <>
-      <footer className="flex flex-col gap-8 bg-blue-950 py-8 text-blue-50">
+      <footer className="flex flex-col gap-8 bg-gradient-to-br from-blue-900 to-blue-950 py-8 text-blue-50">
         <div className="mx-auto grid max-w-7xl grid-cols-1 flex-col gap-8 px-6 lg:grid-cols-5">
           <div className="flex flex-col items-start gap-4 lg:col-span-2">
             <Logo variant="white" />
 
-            <p className="text-sm font-medium text-balance text-blue-50/80">
-              TCA Web est une agence web basée à Sens (89), spécialisée dans la création de sites
-              internet pour les PMEs.
+            <p className="text-sm font-medium text-balance text-blue-50">
+              TCA Web est une agence web basée près de Sens{" "}
+              <span className="text-blue-50/80">(89100)</span>, spécialisée dans la création de
+              sites internet pour les PMEs.
             </p>
 
             <div className="flex flex-col gap-2">
