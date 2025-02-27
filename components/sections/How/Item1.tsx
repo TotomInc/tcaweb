@@ -12,7 +12,7 @@ export function Item1() {
   const TOTAL_DURATION = items.length * ITEM_DELAY;
 
   const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, amount: 1 });
   const controls = useAnimationControls();
 
   const itemVariants = {

@@ -41,7 +41,7 @@ export function Portfolio() {
   ];
 
   const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, amount: 0.5 });
 
   return (
     <section className="relative text-black">

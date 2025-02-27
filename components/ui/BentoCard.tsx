@@ -25,7 +25,7 @@ interface Props {
 export function BentoCard({ className, children, content, image }: Props) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true, amount: 1 });
 
   return (
     <div
