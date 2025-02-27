@@ -107,7 +107,7 @@ export function WhyUs() {
             {numbers.map(({ icon: Icon, label, value }, index) => (
               <motion.li
                 key={label}
-                className="flex items-center gap-4"
+                className="group flex items-center gap-4"
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                 transition={{
@@ -117,7 +117,7 @@ export function WhyUs() {
                 }}
               >
                 <span className="flex size-14 items-center justify-center rounded-full bg-gradient-to-br from-white to-blue-100 shadow-lg">
-                  <Icon className="size-8 text-blue-800" />
+                  <Icon className="size-8 text-blue-800 duration-300 ease-out group-hover:scale-125" />
                 </span>
 
                 <p aria-label={`${value} ${label}`} className="flex flex-col text-blue-50">
@@ -137,20 +137,26 @@ export function WhyUs() {
               <Accordion.Item key={id} value={id} className="group flex w-full flex-col">
                 <Accordion.Trigger
                   className={twMerge(
-                    "font-heading flex w-full cursor-pointer items-center justify-between p-4 text-lg font-medium tracking-tight",
+                    "group font-heading flex w-full cursor-pointer items-center justify-between bg-white px-5 py-4 text-lg font-medium tracking-tight transition-colors duration-150 ease-out hover:bg-gray-50 data-[state=open]:bg-gray-50",
                     i > 0 && "border-t border-gray-200",
+                    i === 0 && "rounded-t-lg",
+                    i === accordionItems.length - 1 && "rounded-b-lg",
                   )}
                 >
                   <div className="flex items-center gap-3">
                     <Icon className="size-7 text-blue-700" />
-                    {name}
+
+                    <span className="group-hover:underline group-data-[state=open]:no-underline">
+                      {name}
+                    </span>
                   </div>
+
                   <ChevronDownIcon className="size-5 transition-transform duration-300 ease-out group-data-[state=open]:rotate-180" />
                 </Accordion.Trigger>
 
                 <Accordion.Content className="data-[state=closed]:animate-accordion-slide-up data-[state=open]:animate-accordion-slide-down overflow-hidden">
                   <div className="border-t border-gray-200 px-4 py-5">
-                    <p className="text-secondary text-base">{description}</p>
+                    <p className="text-secondary text-base/relaxed">{description}</p>
                   </div>
                 </Accordion.Content>
               </Accordion.Item>
