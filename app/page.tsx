@@ -1,3 +1,4 @@
+import { ContactUs } from "@/components/sections/ContactUs";
 import { Expertise } from "@/components/sections/Expertise";
 import { Hero } from "@/components/sections/Hero";
 import { How } from "@/components/sections/How";
@@ -12,6 +13,7 @@ export default function Home() {
       <How />
       <Portfolio />
       <WhyUs />
+      <ContactUs />
     </main>
   );
 }
