@@ -78,7 +78,7 @@ export function Portfolio() {
 
                 <p className="text-secondary text-base/relaxed text-balance">{item.description}</p>
 
-                <ul className="flex items-center gap-2.5">
+                <ul className="flex flex-wrap items-center gap-2.5">
                   {item.tags.map((tag, i) => (
                     <motion.span
                       key={tag}
