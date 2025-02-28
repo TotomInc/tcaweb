@@ -53,7 +53,7 @@ export function BentoCard({ className, children, content, image }: Props) {
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={imageLoaded && isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 32 }}
-            transition={{ duration: 0.5, ease: "easeOut", delay: 0.75 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
             className="relative"
           >
             <Image
