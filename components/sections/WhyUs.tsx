@@ -57,7 +57,7 @@ export function WhyUs() {
     {
       id: "referencement",
       icon: MagnifyingGlassIcon,
-      name: "Référencement web Google (SEO)",
+      name: "Référencement web (SEO)",
       description:
         "Notre expertise en SEO nous permet d'optimiser méticuleusement votre site web pour le référencement naturel, améliorant ainsi significativement votre visibilité sur Google et les autres moteurs de recherche.",
     },
@@ -137,7 +137,7 @@ export function WhyUs() {
               <Accordion.Item key={id} value={id} className="group flex w-full flex-col">
                 <Accordion.Trigger
                   className={twMerge(
-                    "group font-heading flex w-full cursor-pointer items-center justify-between bg-white px-5 py-4 text-lg font-medium tracking-tight transition-colors duration-150 ease-out hover:bg-gray-50 data-[state=open]:bg-gray-50",
+                    "group font-heading flex w-full cursor-pointer items-center justify-between gap-4 bg-white px-5 py-4 text-lg font-medium tracking-tight transition-colors duration-150 ease-out hover:bg-gray-50 data-[state=open]:bg-gray-50",
                     i > 0 && "border-t border-gray-200",
                     i === 0 && "rounded-t-lg",
                     i === accordionItems.length - 1 && "rounded-b-lg",
@@ -146,7 +146,7 @@ export function WhyUs() {
                   <div className="flex items-center gap-3">
                     <Icon className="size-7 text-blue-700" />
 
-                    <span className="group-hover:underline group-data-[state=open]:no-underline">
+                    <span className="text-left group-hover:underline group-data-[state=open]:no-underline">
                       {name}
                     </span>
                   </div>
