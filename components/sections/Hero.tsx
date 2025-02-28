@@ -58,7 +58,7 @@ export function Hero({ className }: Props) {
       <div className="relative mx-auto max-w-7xl pt-24 pb-48 xl:pt-32 xl:pb-56">
         <div className="flex flex-col items-start gap-6 px-6 sm:max-w-md md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:gap-8">
           <motion.h1
-            className="font-heading text-3xl font-bold text-balance lg:text-5xl 2xl:text-6xl"
+            className="font-heading text-3xl font-bold lg:text-5xl 2xl:text-6xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
