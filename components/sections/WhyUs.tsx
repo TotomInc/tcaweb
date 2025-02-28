@@ -19,11 +19,11 @@ import { Accordion } from "radix-ui";
 import { useRef } from "react";
 import { twMerge } from "tailwind-merge";
 
-import { Badge } from "@/components/ui/Badge";
+import { Section } from "@/components/ui/Section";
 
 export function WhyUs() {
   const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.3 });
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   const numbers = [
     { icon: TrophyIcon, value: "+10", label: "années d'expérience" },
@@ -92,78 +92,74 @@ export function WhyUs() {
   ];
 
   return (
-    <section className="relative text-black">
-      <div className="relative mx-auto max-w-7xl px-6 pt-24 pb-16 lg:pt-16">
-        <div className="mx-auto mb-16 flex max-w-lg flex-col items-center">
-          <Badge>Spécialiste</Badge>
+    <Section.Root>
+      <Section.Heading
+        badge="Spécialiste"
+        label="Pourquoi confier votre projet web à TCA Web ?"
+        description="Un accompagnement personnalisé et un service de qualité."
+      />
 
-          <h2 className="font-heading text-primary text-center text-3xl font-semibold tracking-tight text-balance">
-            Pourquoi confier votre projet web à TCA Web ?
-          </h2>
-        </div>
+      <div ref={ref} className="flex flex-col items-start gap-8 sm:flex-row">
+        <ul className="grid w-full grid-cols-1 gap-6 rounded-lg bg-linear-to-br from-blue-900 via-blue-800 to-blue-700 p-8 text-blue-50 shadow-md ring inset-shadow-sm inset-ring-2 ring-blue-600 inset-shadow-white/20 inset-ring-white/15 sm:w-1/2 lg:w-1/3">
+          {numbers.map(({ icon: Icon, label, value }, index) => (
+            <motion.li
+              key={label}
+              className="group flex items-center gap-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+              transition={{
+                duration: 0.4,
+                ease: "easeOut",
+                delay: index * 0.1,
+              }}
+            >
+              <span className="flex size-14 items-center justify-center rounded-full bg-gradient-to-br from-white to-blue-100 shadow-lg">
+                <Icon className="size-8 text-blue-800 duration-300 ease-out group-hover:scale-125" />
+              </span>
 
-        <div ref={ref} className="flex flex-col items-start gap-8 sm:flex-row">
-          <ul className="grid w-full grid-cols-1 gap-6 rounded-lg bg-linear-to-br from-blue-900 via-blue-800 to-blue-700 p-8 text-blue-50 shadow-md ring inset-shadow-sm inset-ring-2 ring-blue-600 inset-shadow-white/20 inset-ring-white/15 sm:w-1/2 lg:w-1/3">
-            {numbers.map(({ icon: Icon, label, value }, index) => (
-              <motion.li
-                key={label}
-                className="group flex items-center gap-4"
-                initial={{ opacity: 0, y: 20 }}
-                animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
-                transition={{
-                  duration: 0.4,
-                  ease: "easeOut",
-                  delay: index * 0.1,
-                }}
+              <p aria-label={`${value} ${label}`} className="flex flex-col text-blue-50">
+                <span className="font-heading text-2xl font-bold">{value}</span>
+                <span className="text-lg font-medium">{label}</span>
+              </p>
+            </motion.li>
+          ))}
+        </ul>
+
+        <Accordion.Root
+          collapsible
+          type="single"
+          className="w-full rounded-lg border border-gray-200 bg-white shadow-xl shadow-gray-900/5 sm:w-1/2 lg:w-2/3"
+        >
+          {accordionItems.map(({ id, icon: Icon, name, description }, i) => (
+            <Accordion.Item key={id} value={id} className="group flex w-full flex-col">
+              <Accordion.Trigger
+                className={twMerge(
+                  "group font-heading flex w-full cursor-pointer items-center justify-between gap-4 bg-white px-5 py-4 text-lg font-medium tracking-tight transition-colors duration-150 ease-out hover:bg-gray-50 data-[state=open]:bg-gray-50",
+                  i > 0 && "border-t border-gray-200",
+                  i === 0 && "rounded-t-lg",
+                  i === accordionItems.length - 1 && "rounded-b-lg",
+                )}
               >
-                <span className="flex size-14 items-center justify-center rounded-full bg-gradient-to-br from-white to-blue-100 shadow-lg">
-                  <Icon className="size-8 text-blue-800 duration-300 ease-out group-hover:scale-125" />
-                </span>
+                <div className="flex items-center gap-3">
+                  <Icon className="size-7 text-blue-700" />
 
-                <p aria-label={`${value} ${label}`} className="flex flex-col text-blue-50">
-                  <span className="font-heading text-2xl font-bold">{value}</span>
-                  <span className="text-lg font-medium">{label}</span>
-                </p>
-              </motion.li>
-            ))}
-          </ul>
+                  <span className="text-left group-hover:underline group-data-[state=open]:no-underline">
+                    {name}
+                  </span>
+                </div>
 
-          <Accordion.Root
-            collapsible
-            type="single"
-            className="w-full rounded-lg border border-gray-200 bg-white shadow-xl shadow-gray-900/5 sm:w-1/2 lg:w-2/3"
-          >
-            {accordionItems.map(({ id, icon: Icon, name, description }, i) => (
-              <Accordion.Item key={id} value={id} className="group flex w-full flex-col">
-                <Accordion.Trigger
-                  className={twMerge(
-                    "group font-heading flex w-full cursor-pointer items-center justify-between gap-4 bg-white px-5 py-4 text-lg font-medium tracking-tight transition-colors duration-150 ease-out hover:bg-gray-50 data-[state=open]:bg-gray-50",
-                    i > 0 && "border-t border-gray-200",
-                    i === 0 && "rounded-t-lg",
-                    i === accordionItems.length - 1 && "rounded-b-lg",
-                  )}
-                >
-                  <div className="flex items-center gap-3">
-                    <Icon className="size-7 text-blue-700" />
+                <ChevronDownIcon className="size-5 transition-transform duration-300 ease-out group-data-[state=open]:rotate-180" />
+              </Accordion.Trigger>
 
-                    <span className="text-left group-hover:underline group-data-[state=open]:no-underline">
-                      {name}
-                    </span>
-                  </div>
-
-                  <ChevronDownIcon className="size-5 transition-transform duration-300 ease-out group-data-[state=open]:rotate-180" />
-                </Accordion.Trigger>
-
-                <Accordion.Content className="data-[state=closed]:animate-accordion-slide-up data-[state=open]:animate-accordion-slide-down overflow-hidden">
-                  <div className="border-t border-gray-200 px-4 py-5">
-                    <p className="text-secondary text-base/relaxed">{description}</p>
-                  </div>
-                </Accordion.Content>
-              </Accordion.Item>
-            ))}
-          </Accordion.Root>
-        </div>
+              <Accordion.Content className="data-[state=closed]:animate-accordion-slide-up data-[state=open]:animate-accordion-slide-down overflow-hidden">
+                <div className="border-t border-gray-200 px-4 py-5">
+                  <p className="text-secondary text-base/relaxed">{description}</p>
+                </div>
+              </Accordion.Content>
+            </Accordion.Item>
+          ))}
+        </Accordion.Root>
       </div>
-    </section>
+    </Section.Root>
   );
 }

@@ -98,7 +98,7 @@ export function Hero({ className }: Props) {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.7 + index * 0.1 }}
               >
-                <CheckBadgeIcon className="size-6 fill-blue-600 text-blue-200" /> {item}
+                <CheckBadgeIcon className="size-6 shrink-0 fill-blue-600 text-blue-200" /> {item}
               </motion.li>
             ))}
           </motion.ul>
