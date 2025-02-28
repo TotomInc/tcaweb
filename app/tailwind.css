@@ -13,10 +13,11 @@
   --color-aurora-3: hsl(210 100% 61%);
   --color-aurora-4: hsl(195 100% 61%);
 
+  --aurora-background-duration: 30s;
   --aurora-background-gradient: repeating-linear-gradient(100deg, var(--color-aurora-1) 10%, var(--color-aurora-2) 15%, var(--color-aurora-3) 20%, var(--color-aurora-4) 25%);
   --white-aurora-background-gradient: repeating-linear-gradient(100deg, #fff 0%, #fff 7%, transparent 10%, transparent 12%, #fff 16%);
 
-  --animate-aurora-background: aurora-background 45s linear infinite;
+  --animate-aurora-background: aurora-background var(--aurora-background-duration) linear infinite;
   --animate-aurora-1: aurora-border 4s ease-in-out infinite, aurora-1 8s ease-in-out infinite alternate;
   --animate-aurora-2: aurora-border 4s ease-in-out infinite, aurora-2 8s ease-in-out infinite alternate;
   --animate-aurora-3: aurora-border 4s ease-in-out infinite, aurora-3 8s ease-in-out infinite alternate;
@@ -89,5 +90,17 @@
     to {
       height: 0;
     }
+  }
+}
+
+@media (min-width: 640px) {
+  :root {
+    --aurora-background-duration: 45s;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --aurora-background-duration: 60s;
   }
 }
