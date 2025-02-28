@@ -23,7 +23,7 @@ import { Badge } from "@/components/ui/Badge";
 
 export function WhyUs() {
   const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.5 });
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
 
   const numbers = [
     { icon: TrophyIcon, value: "+10", label: "années d'expérience" },
