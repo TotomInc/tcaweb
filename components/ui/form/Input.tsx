@@ -3,7 +3,7 @@
 import type { InputHTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
-import { Label } from "@/components/ui/Label";
+import { Label } from "@/components/ui/form/Label";
 
 export interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;

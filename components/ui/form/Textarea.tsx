@@ -3,7 +3,7 @@
 import type { TextareaHTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 
-import { Label } from "@/components/ui/Label";
+import { Label } from "@/components/ui/form/Label";
 
 export interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   label: string;

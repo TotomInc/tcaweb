@@ -1,10 +1,10 @@
+import { OrbitingCircles } from "@/components/ui/21st/OrbitingCircles";
 import { NextIcon } from "@/components/ui/icons/NextIcon";
 import { PrismaIcon } from "@/components/ui/icons/PrismaIcon";
 import { ReactIcon } from "@/components/ui/icons/ReactIcon";
 import { TailwindIcon } from "@/components/ui/icons/TailwindIcon";
 import { TypescriptIcon } from "@/components/ui/icons/TypescriptIcon";
 import { VercelIcon } from "@/components/ui/icons/VercelIcon";
-import { OrbitingCircles } from "@/components/ui/OrbitingCircles";
 
 export function Item2() {
   return (

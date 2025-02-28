@@ -8,11 +8,11 @@ import { useForm } from "react-hook-form";
 
 import { submitContactForm } from "@/app/actions";
 import { contactFormSchema, type ContactFormValues } from "@/app/schemas";
-import { Input } from "@/components/ui/Input";
-import { PhoneInput } from "@/components/ui/PhoneInput";
+import { Input } from "@/components/ui/form/Input";
+import { PhoneInput } from "@/components/ui/form/PhoneInput";
+import { Textarea } from "@/components/ui/form/Textarea";
 import { Section } from "@/components/ui/Section";
 import { Spinner } from "@/components/ui/spinner/Spinner";
-import { Textarea } from "@/components/ui/Textarea";
 
 export function ContactUs() {
   const {
