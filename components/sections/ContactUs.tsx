@@ -71,7 +71,7 @@ export function ContactUs() {
         description="Créons ensemble un site web qui reflète votre entreprise et attire de nouveaux clients."
       />
 
-      <div className="mx-auto flex w-full max-w-xl items-center rounded-lg border border-gray-200 bg-white p-6 shadow-xl shadow-gray-900/5 sm:p-8">
+      <div className="mx-auto flex w-full max-w-2xl items-center rounded-lg border border-gray-200 bg-white p-6 shadow-xl shadow-gray-900/5 sm:p-8">
         <form className="flex w-full flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
           {/* Honeypot field - hidden from real users but bots will fill it */}
           <div className="hidden" aria-hidden="true">
