@@ -99,7 +99,7 @@ export function WhyUs() {
         description="Un accompagnement personnalisé et un service de qualité."
       />
 
-      <div ref={ref} className="flex flex-col items-start gap-8 sm:flex-row">
+      <div ref={ref} className="flex w-full flex-col items-start gap-8 sm:flex-row">
         <ul className="grid w-full grid-cols-1 gap-6 rounded-lg bg-linear-to-br from-blue-900 via-blue-800 to-blue-700 p-8 text-blue-50 shadow-md ring inset-shadow-sm inset-ring-2 ring-blue-600 inset-shadow-white/20 inset-ring-white/15 sm:w-1/2 lg:w-1/3">
           {numbers.map(({ icon: Icon, label, value }, index) => (
             <motion.li
