@@ -7,7 +7,8 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 
 import { submitContactForm } from "@/app/actions";
-import { contactFormSchema, type ContactFormValues } from "@/app/schemas";
+import { contactFormSchema } from "@/app/schemas";
+import type { ContactFormValues } from "@/app/schemas";
 import { Input } from "@/components/ui/form/Input";
 import { PhoneInput } from "@/components/ui/form/PhoneInput";
 import { Textarea } from "@/components/ui/form/Textarea";

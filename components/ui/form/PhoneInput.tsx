@@ -1,9 +1,11 @@
 "use client";
 
-import { AsYouType, type CountryCode } from "libphonenumber-js";
+import { AsYouType } from "libphonenumber-js";
+import type { CountryCode } from "libphonenumber-js";
 import { useState } from "react";
 
-import { Input, type InputProps } from "@/components/ui/form/Input";
+import { Input } from "@/components/ui/form/Input";
+import type { InputProps } from "@/components/ui/form/Input";
 
 interface PhoneInputProps extends InputProps {
   defaultCountry?: CountryCode;
