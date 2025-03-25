@@ -124,7 +124,7 @@ export function Hero({ className }: Props) {
             {items.map((item, index) => (
               <motion.li
                 key={item}
-                className="flex items-center gap-1.5 font-medium sm:text-sm lg:text-base"
+                className="flex gap-1.5 leading-6 font-medium sm:text-sm lg:text-base"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.7 + index * 0.1 }}
