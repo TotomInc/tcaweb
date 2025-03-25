@@ -23,8 +23,8 @@
   --animate-aurora-3: aurora-border 4s ease-in-out infinite, aurora-3 8s ease-in-out infinite alternate;
   --animate-aurora-4: aurora-border 4s ease-in-out infinite, aurora-4 8s ease-in-out infinite alternate;
   --animate-orbit: orbit calc(var(--duration)*1s) linear infinite;
-  --animate-accordion-slide-down: accordion-slide-down 300ms ease-out;
-  --animate-accordion-slide-up: accordion-slide-up 300ms ease-out;
+  --animate-accordion-slide-down: accordion-slide-down 400ms ease-out;
+  --animate-accordion-slide-up: accordion-slide-up 400ms ease-out;
 
   @keyframes aurora-border {
     0%, 100% { border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%; }
