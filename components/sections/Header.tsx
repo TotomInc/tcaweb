@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
+import { SparklesParticles } from "@/components/ui/21st/SparklesParticles";
 import { Logo } from "@/components/ui/Logo";
 
 export function Header() {
@@ -56,7 +57,7 @@ export function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.3, delay: 1 }}
-            className="group flex cursor-pointer items-center justify-center gap-1.5 rounded-sm bg-blue-600 px-4 py-2 text-sm font-semibold tracking-tight text-white shadow-md ring inset-shadow-sm inset-ring ring-blue-600 inset-shadow-white/30 inset-ring-white/25 transition-colors duration-150 ease-out hover:bg-blue-700 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500"
+            className="group relative flex cursor-pointer items-center justify-center gap-1.5 rounded-sm bg-blue-600 px-4 py-2 text-sm font-semibold tracking-tight text-white shadow-md ring inset-shadow-sm inset-ring ring-blue-600 inset-shadow-white/30 inset-ring-white/25 transition-colors duration-150 ease-out hover:bg-blue-700 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500"
             onClick={() => moveToSection("contact")}
           >
             <motion.span
@@ -74,6 +75,15 @@ export function Header() {
             >
               <ArrowRightCircleIcon className="size-5 transition-transform duration-300 ease-out group-hover:rotate-90" />
             </motion.span>
+
+            <SparklesParticles
+              particleDensity={512}
+              background="transparent"
+              minSize={0.5}
+              maxSize={1.25}
+              particleColor="#9dbbfd"
+              className="pointer-events-none absolute inset-0 h-full w-full"
+            />
           </motion.button>
         </nav>
       </div>
