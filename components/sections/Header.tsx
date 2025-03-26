@@ -77,9 +77,9 @@ export function Header() {
             </motion.span>
 
             <SparklesParticles
-              particleDensity={512}
+              particleDensity={256}
               background="transparent"
-              minSize={0.5}
+              minSize={0.75}
               maxSize={1.25}
               particleColor="#9dbbfd"
               className="pointer-events-none absolute inset-0 h-full w-full"
