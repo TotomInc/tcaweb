@@ -19,6 +19,7 @@ import { Accordion } from "radix-ui";
 import { useRef } from "react";
 import { twMerge } from "tailwind-merge";
 
+import { SparklesParticles } from "@/components/ui/21st/SparklesParticles";
 import { Section } from "@/components/ui/Section";
 
 export function WhyUs() {
@@ -100,7 +101,7 @@ export function WhyUs() {
       />
 
       <div ref={ref} className="flex w-full flex-col items-start gap-8 sm:flex-row">
-        <ul className="grid w-full grid-cols-1 gap-6 rounded-lg bg-linear-to-br from-blue-900 via-blue-800 to-blue-700 p-8 text-blue-50 shadow-md ring inset-shadow-sm inset-ring-2 ring-blue-600 inset-shadow-white/20 inset-ring-white/15 sm:w-1/2 lg:w-1/3">
+        <ul className="relative grid w-full grid-cols-1 gap-6 rounded-lg bg-linear-to-br from-blue-900 via-blue-800 to-blue-700 p-8 text-blue-50 shadow-md ring inset-shadow-sm inset-ring-2 ring-blue-600 inset-shadow-white/20 inset-ring-white/15 sm:w-1/2 lg:w-1/3">
           {numbers.map(({ icon: Icon, label, value }, index) => (
             <motion.li
               key={label}
@@ -123,6 +124,15 @@ export function WhyUs() {
               </p>
             </motion.li>
           ))}
+
+          <SparklesParticles
+            particleDensity={32}
+            background="transparent"
+            minSize={0.75}
+            maxSize={1.25}
+            particleColor="#9dbbfd"
+            className="pointer-events-none absolute inset-0 h-full w-full"
+          />
         </ul>
 
         <Accordion.Root
