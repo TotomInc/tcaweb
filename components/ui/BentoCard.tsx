@@ -6,6 +6,7 @@ import { useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 import { GlowingEffect } from "@/components/ui/21st/GlowingEffect";
+import { useIsDesktop } from "@/hooks/use-is-desktop";
 
 interface Props {
   className?: string;
@@ -26,16 +27,20 @@ interface Props {
 }
 
 export function BentoCard({ className, children, content, image, hasGlowingEffect = true }: Props) {
-  const [imageLoaded, setImageLoaded] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   const isInView = useInView(ref, { once: true, amount: 0.75 });
+
+  const isDesktop = useIsDesktop();
 
   return (
     <div
       ref={ref}
       className="relative flex items-stretch rounded-2xl border border-gray-200 shadow-xl shadow-gray-900/5"
     >
-      {hasGlowingEffect ? (
+      {hasGlowingEffect && isDesktop ? (
         <GlowingEffect
           glow
           blur={4}
