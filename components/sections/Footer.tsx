@@ -14,9 +14,8 @@ export function Footer() {
             <Logo variant="white" />
 
             <p className="text-sm font-medium text-balance text-blue-50">
-              TCA Web est une agence web basée près de Sens{" "}
-              <span className="text-blue-50/80">(89100)</span>, spécialisée dans la création de
-              sites internet pour les PMEs.
+              TCA Web est une agence web spécialisée dans la création de sites internet pour les
+              PMEs.
             </p>
 
             <div className="flex flex-col gap-2">

@@ -65,9 +65,9 @@ export function WhyUs() {
     {
       id: "service-local",
       icon: MapPinIcon,
-      name: "Service local (89)",
+      name: "Service local (77 & 89)",
       description:
-        "Basé à proximité de Sens (89100) dans l'Yonne, nous nous engageons à accompagner les petites et moyennes entreprises dans leur développement numérique. Notre ancrage local nous permet de comprendre les spécificités du territoire et d'offrir un service personnalisé et réactif pour votre présence en ligne.",
+        "Nous nous engageons à accompagner les petites et moyennes entreprises du 77 et du 89 dans leur développement numérique. Notre ancrage local nous permet de comprendre les spécificités du territoire et d'offrir un service personnalisé et réactif pour votre présence en ligne.",
     },
     {
       id: "maintenance",
