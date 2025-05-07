@@ -5,6 +5,7 @@ import { GeistMono } from "geist/font/mono";
 import type { Metadata } from "next";
 import { Inter, Spline_Sans } from "next/font/google";
 
+import { PostHogProvider } from "@/components/PostHogProvider";
 import { Footer } from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 
@@ -20,17 +21,19 @@ const heading = Spline_Sans({ subsets: ["latin"], variable: "--font-heading" });
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body
-        className={`text-primary font-sans antialiased ${sans.variable} ${heading.variable} ${GeistMono.variable}`}
-      >
-        <Header />
+      <PostHogProvider>
+        <body
+          className={`text-primary font-sans antialiased ${sans.variable} ${heading.variable} ${GeistMono.variable}`}
+        >
+          <Header />
 
-        {children}
+          {children}
 
-        <Analytics />
+          <Analytics />
 
-        <Footer />
-      </body>
+          <Footer />
+        </body>
+      </PostHogProvider>
     </html>
   );
 }
