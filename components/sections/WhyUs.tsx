@@ -30,7 +30,7 @@ export function WhyUs() {
     { icon: TrophyIcon, value: "+10", label: "années d'expérience" },
     { icon: SparklesIcon, value: "4 domaines", label: "d'expertise" },
     { icon: UserIcon, value: "Interlocuteur", label: "unique" },
-    { icon: StarIcon, value: "Spécialiste", label: "des PMEs" },
+    { icon: StarIcon, value: "Spécialiste", label: "des PME" },
   ];
 
   const accordionItems = [

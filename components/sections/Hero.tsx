@@ -1,6 +1,5 @@
 "use client";
 
-import { ArrowRightIcon, EnvelopeOpenIcon } from "@heroicons/react/20/solid";
 import { CheckBadgeIcon } from "@heroicons/react/24/outline";
 import { motion } from "motion/react";
 import Image from "next/image";
@@ -8,27 +7,11 @@ import { twMerge } from "tailwind-merge";
 
 import { AuroraBackground } from "@/components/ui/21st/AuroraBackground";
 import { AuroraText } from "@/components/ui/21st/AuroraText";
+import { HeroCta } from "@/components/ui/HeroCta";
+import { WavesSeparator } from "@/components/ui/WavesSeparator";
 
 interface Props {
   className?: string;
-}
-
-function Waves() {
-  return (
-    <svg
-      data-name="Layer 1"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1200 120"
-      preserveAspectRatio="none"
-      className="absolute inset-x-0 bottom-0 -mb-px -scale-100"
-    >
-      <path
-        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-        fill="#F3F4F6"
-        fillOpacity="1"
-      />
-    </svg>
-  );
 }
 
 export function Hero({ className }: Props) {
@@ -89,30 +72,9 @@ export function Hero({ className }: Props) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <button
-              type="button"
-              className="group text-primary font-heading relative flex cursor-pointer items-center gap-2.5 rounded-full border border-blue-700 bg-white px-7 py-3 text-base font-semibold tracking-tight shadow-md inset-shadow-sm inset-shadow-blue-800/60 transition-all duration-150 ease-out hover:ring-2 hover:ring-blue-500/75 focus:ring-2 focus:ring-blue-600/75 focus:outline-none"
-              onClick={() => moveToSection("contact")}
-            >
-              <motion.span
-                initial={{ opacity: 0, x: -16 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3, delay: 0.5 }}
-              >
-                Un projet ?
-              </motion.span>
-
-              <motion.span
-                aria-hidden
-                initial={{ opacity: 0, x: 16 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3, delay: 0.5 }}
-                className="relative size-5"
-              >
-                <ArrowRightIcon className="absolute size-5 duration-150 ease-out group-hover:translate-x-1 group-hover:opacity-0" />
-                <EnvelopeOpenIcon className="absolute size-5 -translate-x-1 opacity-0 duration-150 ease-out group-hover:translate-x-0 group-hover:opacity-100 group-hover:delay-150" />
-              </motion.span>
-            </button>
+            <HeroCta initialDelay={0.4} onClick={() => moveToSection("contact")}>
+              Un projet ?
+            </HeroCta>
           </motion.div>
 
           <motion.ul
@@ -156,7 +118,7 @@ export function Hero({ className }: Props) {
         />
       </div>
 
-      <Waves />
+      <WavesSeparator />
     </section>
   );
 }

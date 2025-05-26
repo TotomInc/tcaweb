@@ -3,9 +3,12 @@ import Link from "next/link";
 
 import { Logo } from "@/components/ui/Logo";
 
-const LINKS = [{ label: "Accueil", href: "/" }];
-
 export function Footer() {
+  const LINKS = [
+    { label: "Accueil", href: "/" },
+    { label: "Sites vitrines", href: "/sites-vitrines" },
+  ];
+
   return (
     <>
       <footer className="flex flex-col gap-8 bg-gradient-to-br from-blue-900 to-blue-950 py-8 text-blue-50">
@@ -14,8 +17,8 @@ export function Footer() {
             <Logo variant="white" />
 
             <p className="text-sm font-medium text-balance text-blue-50">
-              TCA Web est une agence web spécialisée dans la création de sites internet pour les
-              PMEs.
+              TCA Web est une agence web spécialisée dans la création de sites internet, e-commerce
+              et le marketing digital.
             </p>
 
             <div className="flex flex-col gap-2">
@@ -48,7 +51,7 @@ export function Footer() {
 
             <ul className="flex flex-col gap-1.5">
               {LINKS.map(({ label, href }) => (
-                <li key={href}>
+                <li key={label}>
                   <Link
                     href={href}
                     className="group flex items-center gap-1.5 text-base font-medium hover:underline"

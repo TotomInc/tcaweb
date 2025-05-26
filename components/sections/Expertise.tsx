@@ -55,7 +55,7 @@ export function Expertise() {
 
         <BentoCard
           content={{
-            title: "Graphisme & branding",
+            title: "Graphisme & identité visuelle",
             description:
               "Une identité visuelle unique pour votre entreprise. Un logo, des couleurs et une typographie qui vous ressemblent.",
           }}

@@ -63,7 +63,9 @@ export function BentoCard({ className, children, content, image, hasGlowingEffec
           <div className="relative flex h-fit flex-col gap-2.5">
             {content.label}
 
-            <h3 className="font-heading text-xl font-medium tracking-tight">{content.title}</h3>
+            <h3 className="font-heading text-xl font-medium tracking-tight text-balance">
+              {content.title}
+            </h3>
 
             <p className="text-secondary text-base/relaxed text-balance">{content.description}</p>
           </div>
