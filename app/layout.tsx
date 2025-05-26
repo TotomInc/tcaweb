@@ -12,7 +12,7 @@ import { Header } from "@/components/sections/Header";
 export const metadata: Metadata = {
   title: "Création de Sites Web pour les entreprises | Agence TCA Web",
   description:
-    "L'Agence TCA Web est spécialisée dans la création de sites internet, e-commerce et le marketing digital à Sens.",
+    "L'Agence TCA Web est spécialisée dans la création de sites internet, e-commerce et le marketing digital.",
 };
 
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     "@id": "https://tcaweb.fr/",
     name: "TCA Web",
     description:
-      "L'Agence TCA Web est spécialisée dans la création de sites internet, e-commerce et le marketing digital à Sens.",
+      "L'Agence TCA Web est spécialisée dans la création de sites internet, e-commerce et le marketing digital.",
     url: "https://tcaweb.fr",
     logo: "https://tcaweb.fr/_static/images/logo-blue.png",
     priceRange: "€€",
