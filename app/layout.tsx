@@ -10,6 +10,7 @@ import { Footer } from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://tcaweb.fr"),
   title: "Création de Sites Web pour les entreprises | Agence TCA Web",
   description:
     "L'Agence TCA Web est spécialisée dans la création de sites internet, e-commerce et le marketing digital.",
