@@ -10,9 +10,9 @@ import { BentoCard } from "@/components/ui/BentoCard";
 import { Section } from "@/components/ui/Section";
 
 export const metadata: Metadata = {
-  title: "Création de site internet pour entreprises | TCA Web",
+  title: "Création de site vitrine | TCA Web",
   description:
-    "L'Agence TCA Web crée des sites internet sur-mesure pour les PME, intuitifs et efficaces afin d'attirer de nouveaux clients.",
+    "Fabriquons ensemble l'identité visuelle unique de votre entreprise, afin d'attirer de nouveaux clients et de renforcer votre image.",
 };
 
 export default function Page() {
