@@ -21,8 +21,8 @@ import { twMerge } from "tailwind-merge";
 
 import { SparklesParticles } from "@/components/ui/21st/SparklesParticles";
 import { Section } from "@/components/ui/Section";
-import type { City } from "@/lib/cities";
-import { getPreposition } from "@/lib/cities";
+import type { City } from "@/lib/pseo/cities";
+import { getPreposition } from "@/lib/pseo/utils";
 
 interface Props {
   city?: City;
@@ -66,7 +66,7 @@ export function WhyUs({ city }: Props) {
       icon: MagnifyingGlassIcon,
       name: city ? `Référencement web optimisé à ${city.name}` : "Référencement web (SEO)",
       description: city
-        ? `Notre expertise en référencement web permet de positionner votre site vitrine en première page de Google sur les recherches locales près ${getPreposition(city)}${city.name}.`
+        ? `Notre expertise en référencement web permet de positionner votre site vitrine en première page de Google sur les recherches locales près ${getPreposition(city.name)}${city.name}.`
         : "Notre expertise en SEO nous permet d'optimiser méticuleusement votre site web pour le référencement naturel, améliorant ainsi significativement votre visibilité sur Google et les autres moteurs de recherche.",
     },
     {
@@ -74,7 +74,7 @@ export function WhyUs({ city }: Props) {
       icon: MapPinIcon,
       name: city ? `Service local ${city.demonym.masculine}` : "Service local (77 & 89)",
       description: city
-        ? `Nous nous engageons à accompagner les petites et moyennes entreprises ${getPreposition(city)}${city.name} et ses alentours dans leur développement numérique. Notre ancrage local nous permet de comprendre les spécificités du territoire et d'offrir un service personnalisé et réactif pour votre présence en ligne.`
+        ? `Nous nous engageons à accompagner les petites et moyennes entreprises ${getPreposition(city.name)}${city.name} et ses alentours dans leur développement numérique. Notre ancrage local nous permet de comprendre les spécificités du territoire et d'offrir un service personnalisé et réactif pour votre présence en ligne.`
         : "Nous nous engageons à accompagner les petites et moyennes entreprises du 77 et du 89 dans leur développement numérique. Notre ancrage local nous permet de comprendre les spécificités du territoire et d'offrir un service personnalisé et réactif pour votre présence en ligne.",
     },
     {

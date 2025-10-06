@@ -1,8 +1,4 @@
-interface Demonym {
-  masculine: string;
-  feminine: string;
-  plural: string;
-}
+import type { Demonym } from "./demonym";
 
 interface Region {
   name: string;
@@ -20,14 +16,6 @@ export interface City {
   slug: string;
   department: Department;
   demonym: Demonym;
-}
-
-export function getPreposition(city: City): string {
-  const vowels = ["a", "e", "i", "o", "u", "y", "â", "é", "è", "ê", "î", "ô", "û", "ï", "ü", "ë"];
-  const firstChar = city.name.trim()[0].toLowerCase();
-  const startsWithVowel = vowels.includes(firstChar);
-
-  return startsWithVowel ? "d'" : "de ";
 }
 
 const bourgogne: Region = {
@@ -84,9 +72,9 @@ export const cities: City[] = [
     slug: "pont-sur-yonne",
     department: yonne,
     demonym: {
-      masculine: "pointois",
-      feminine: "pointoise",
-      plural: "pointois",
+      masculine: "pontois",
+      feminine: "pontoise",
+      plural: "pontois",
     },
   },
   {

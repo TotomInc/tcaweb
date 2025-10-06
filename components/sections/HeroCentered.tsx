@@ -9,7 +9,7 @@ import { HeroCta } from "@/components/ui/HeroCta";
 import { WavesSeparator } from "@/components/ui/WavesSeparator";
 
 interface Props {
-  badge: string;
+  badge?: string;
   title: React.ReactNode;
   description: React.ReactNode;
   items: string[];
@@ -29,13 +29,15 @@ export function HeroCentered({ badge, title, description, items }: Props) {
       <AuroraBackground />
 
       <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-8 px-6 pt-24 pb-32 lg:gap-12 xl:pt-32">
-        <motion.span
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <Badge className="mb-0">{badge}</Badge>
-        </motion.span>
+        {badge ? (
+          <motion.span
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <Badge className="mb-0">{badge}</Badge>
+          </motion.span>
+        ) : null}
 
         <motion.h1
           className="font-heading mx-auto w-fit text-center text-3xl font-bold lg:text-5xl 2xl:text-6xl"

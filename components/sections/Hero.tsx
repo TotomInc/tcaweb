@@ -12,14 +12,19 @@ import { WavesSeparator } from "@/components/ui/WavesSeparator";
 
 interface Props {
   className?: string;
+  title: React.ReactNode;
+  description: React.ReactNode;
+  items?: string[];
 }
 
-export function Hero({ className }: Props) {
-  const items = [
-    "Spécialiste des petites entreprises",
-    "+10 années d'expérience dans le web",
-    "Moins cher qu'une agence web traditionnelle",
-  ];
+export function Hero({ className, title, description, items }: Props) {
+  const defaultItems = items?.length
+    ? items
+    : [
+        "Spécialiste des petites entreprises",
+        "+10 années d'expérience dans le web",
+        "Moins cher qu'une agence web traditionnelle",
+      ];
 
   const moveToSection = (section: string) => {
     const element = document.getElementById(section);
@@ -46,13 +51,17 @@ export function Hero({ className }: Props) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            Développez votre{" "}
-            <AuroraText
-              as="span"
-              className="text-primary rotate-[-2deg] rounded-lg bg-white px-3 py-2 shadow-xl"
-            >
-              présence digitale
-            </AuroraText>
+            {title || (
+              <>
+                Développez votre{" "}
+                <AuroraText
+                  as="span"
+                  className="text-primary rotate-[-2deg] rounded-lg bg-white px-3 py-2 shadow-xl"
+                >
+                  présence digitale
+                </AuroraText>
+              </>
+            )}
           </motion.h1>
 
           <motion.p
@@ -61,10 +70,14 @@ export function Hero({ className }: Props) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <span className="font-heading font-bold">TCA Web</span>, votre agence web spécialiste{" "}
-            <span className="font-heading font-bold">des PME</span>. Des sites web de qualité
-            professionnelle, qui vous démarquent de la concurrence à{" "}
-            <span className="font-heading font-bold">un prix abordable</span>.
+            {description || (
+              <>
+                <span className="font-heading font-bold">TCA Web</span>, votre agence web
+                spécialiste <span className="font-heading font-bold">des PME</span>. Des sites web
+                de qualité professionnelle, qui vous démarquent de la concurrence à{" "}
+                <span className="font-heading font-bold">un prix abordable</span>.
+              </>
+            )}
           </motion.p>
 
           <motion.div
@@ -83,7 +96,7 @@ export function Hero({ className }: Props) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            {items.map((item, index) => (
+            {defaultItems.map((item, index) => (
               <motion.li
                 key={item}
                 className="flex gap-1.5 leading-6 font-medium sm:text-sm lg:text-base"
