@@ -20,7 +20,7 @@
     "libphonenumber-js": "1.12.23",
     "motion": "12.23.22",
     "next": "15.5.4",
-    "posthog-js": "1.270.1",
+    "posthog-js": "1.271.0",
     "radix-ui": "1.4.3",
     "react": "19.2.0",
     "react-dom": "19.2.0",
