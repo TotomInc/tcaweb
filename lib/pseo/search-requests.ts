@@ -42,4 +42,10 @@ export const searchRequests: SearchRequest[] = [
     title: "Création de site vitrine près",
     forCity: true,
   },
+  {
+    intent: "Agence web près",
+    slug: "agence-web-pres",
+    title: "Agence web près",
+    forCity: true,
+  },
 ];
