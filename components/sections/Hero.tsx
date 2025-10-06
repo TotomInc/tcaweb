@@ -12,8 +12,8 @@ import { WavesSeparator } from "@/components/ui/WavesSeparator";
 
 interface Props {
   className?: string;
-  title: React.ReactNode;
-  description: React.ReactNode;
+  title?: React.ReactNode;
+  description?: React.ReactNode;
   items?: string[];
 }
 
