@@ -1,4 +1,4 @@
-import slugify from "slugify";
+import _slugify from "slugify";
 
 import type { City } from "@/lib/pseo/cities";
 import { cities } from "@/lib/pseo/cities";
@@ -14,6 +14,14 @@ export interface SearchRequestBuilt {
   industry?: Industry;
   city?: City;
 }
+
+/**
+ * Slugify a text. Ensure to remove `'` which isn't handled by the default slugify.
+ *
+ * @param text The text to slugify
+ * @returns The slugified text
+ */
+const slugify = (text: string) => _slugify(text, { lower: true, remove: /'/g });
 
 /**
  * Get the preposition to use before a word if it starts with a vowel
@@ -37,7 +45,7 @@ export function buildSearchRequests(): SearchRequestBuilt[] {
     if (!searchRequest.forCity) {
       industries.forEach((industry) => {
         requests.push({
-          slug: slugify(`${searchRequest.slug} ${industry.slug}`, { lower: true }),
+          slug: slugify(`${searchRequest.slug} ${industry.slug}`),
           title: `${searchRequest.title} ${industry.name}`,
           intent: searchRequest,
           industry,
@@ -48,9 +56,7 @@ export function buildSearchRequests(): SearchRequestBuilt[] {
     if (searchRequest.forCity) {
       cities.forEach((city) => {
         requests.push({
-          slug: slugify(`${searchRequest.slug} ${getPreposition(city.name)}${city.slug}`, {
-            lower: true,
-          }),
+          slug: slugify(`${searchRequest.slug} ${getPreposition(city.name)}${city.slug}`),
           title: `${searchRequest.title} ${getPreposition(city.name)}${city.name}`,
           intent: searchRequest,
           city,
