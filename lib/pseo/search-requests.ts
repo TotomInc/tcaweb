@@ -65,6 +65,13 @@ export const searchRequests: SearchRequest[] = [
     cityPrepositionType: "de",
   },
   {
+    intent: "Agence communication près",
+    slug: "agence-communication-pres",
+    title: "Agence communication près",
+    forCity: true,
+    cityPrepositionType: "de",
+  },
+  {
     intent: "Prix site internet",
     slug: "prix-site-internet",
     title: "Prix site internet",
