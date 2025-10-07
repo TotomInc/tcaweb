@@ -3,6 +3,7 @@ export interface SearchRequest {
   slug: string;
   title: string;
   forCity?: boolean;
+  cityPrepositionType?: "de" | "a";
 }
 
 export const searchRequests: SearchRequest[] = [
@@ -16,6 +17,12 @@ export const searchRequests: SearchRequest[] = [
     intent: "création site vitrine",
     slug: "creation-site-vitrine",
     title: "Création de site vitrine",
+    forCity: false,
+  },
+  {
+    intent: "site internet pour",
+    slug: "site-internet-pour",
+    title: "Site internet pour",
     forCity: false,
   },
   {
@@ -35,17 +42,47 @@ export const searchRequests: SearchRequest[] = [
     slug: "creation-site-internet-pres",
     title: "Création de site internet près",
     forCity: true,
+    cityPrepositionType: "de",
   },
   {
     intent: "Création site vitrine près",
     slug: "creation-site-vitrine-pres",
     title: "Création de site vitrine près",
     forCity: true,
+    cityPrepositionType: "de",
   },
   {
     intent: "Agence web près",
     slug: "agence-web-pres",
     title: "Agence web près",
     forCity: true,
+  },
+  {
+    intent: "Agence SEO près",
+    slug: "agence-seo-pres",
+    title: "Agence SEO près",
+    forCity: true,
+    cityPrepositionType: "de",
+  },
+  {
+    intent: "Prix site internet",
+    slug: "prix-site-internet",
+    title: "Prix site internet",
+    forCity: true,
+    cityPrepositionType: "a",
+  },
+  {
+    intent: "Prix refonte site",
+    slug: "prix-refonte-site",
+    title: "Prix refonte site",
+    forCity: true,
+    cityPrepositionType: "a",
+  },
+  {
+    intent: "Devis site internet",
+    slug: "devis-site-internet",
+    title: "Devis site internet",
+    forCity: true,
+    cityPrepositionType: "a",
   },
 ];
