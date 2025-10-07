@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/next";
 import { GeistMono } from "geist/font/mono";
 import type { Metadata } from "next";
 import { Inter, Spline_Sans } from "next/font/google";
+import Script from "next/script";
 
 import { PostHogProvider } from "@/components/PostHogProvider";
 import { Footer } from "@/components/sections/Footer";
@@ -66,6 +67,15 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
 
   return (
     <html lang="fr" className="scroll-smooth">
+      <head>
+        <Script
+          data-website-id="dfid_x4sOJfbCO5Zf8v1JrTNcN"
+          data-domain="tcaweb.fr"
+          src="https://datafa.st/js/script.js"
+          strategy="afterInteractive"
+        />
+      </head>
+
       <PostHogProvider>
         <body
           className={`text-primary font-sans antialiased ${sans.variable} ${heading.variable} ${GeistMono.variable}`}
