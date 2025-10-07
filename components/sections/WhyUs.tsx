@@ -3,11 +3,13 @@
 import {
   BookOpenIcon,
   ChevronDownIcon,
+  ClockIcon,
   CurrencyEuroIcon,
   EyeIcon,
   MagnifyingGlassIcon,
   MapPinIcon,
   PaintBrushIcon,
+  ShieldCheckIcon,
   SparklesIcon,
   StarIcon,
   TrophyIcon,
@@ -43,9 +45,9 @@ export function WhyUs({ city }: Props) {
     {
       id: "budget",
       icon: CurrencyEuroIcon,
-      name: "Optimisez votre budget",
+      name: "Fourchettes indicatives",
       description:
-        "Notre expertise vous permet de définir un budget réaliste et adapté pour votre projet web. Nous analysons vos besoins spécifiques et vous proposons des solutions qui respectent scrupuleusement vos contraintes financières, sans compromettre la qualité du résultat final.",
+        "Notre expertise vous permet de définir un budget réaliste et adapté pour votre projet web. Afin de vous donner une idée, le tarif d'un site vitrine débute à 750€, un site vitrine multi-page avec CMS débute à 1500€ et un site e-commerce débute à 3500€.",
     },
     {
       id: "interlocuteur",
@@ -59,7 +61,7 @@ export function WhyUs({ city }: Props) {
       icon: PaintBrushIcon,
       name: "Sites internet sur-mesure",
       description:
-        "Parce que chaque entreprise possède son identité propre et ses objectifs spécifiques, notre approche sur-mesure garantit que votre présence en ligne reflète fidèlement les valeurs et l'essence de votre entreprise, tout en maximisant son impact auprès de votre clientèle cible.",
+        "Parce que chaque entreprise possède son identité propre et ses objectifs spécifiques, notre approche sur-mesure garantit que votre présence en ligne reflète les valeurs de votre entreprise. Nous n'utilisons pas de templates, ni WordPress ou autres solutions datées, qui ne vous démarquent pas de vos concurrents.",
     },
     {
       id: "referencement",
@@ -80,9 +82,23 @@ export function WhyUs({ city }: Props) {
     {
       id: "maintenance",
       icon: WrenchScrewdriverIcon,
-      name: "Maintenance et suivi",
+      name: "Forfait maintenance",
       description:
-        "Notre équipe prend en charge la maintenance complète et régulière de votre site web, gérant les mises à jour techniques, la sécurité et les optimisations nécessaires, vous permettant ainsi de vous consacrer pleinement à votre cœur de métier sans vous soucier des aspects techniques de votre présence en ligne.",
+        "Notre forfait maintenance débute à 150€/mois. Nous prenons en charge la maintenance complète et régulière de votre site web, gérant l'hébergement, les mises à jour de contenu, la sécurité et les optimisations nécessaires, vous permettant ainsi de vous consacrer pleinement à votre cœur de métier.",
+    },
+    {
+      id: "garantie-resultats",
+      icon: ShieldCheckIcon,
+      name: "Garantie des résultats",
+      description:
+        "Nous vous garantissons des résultats significatifs en termes de visibilité, de trafic et de conversion. Nous nous engageons à atteindre les objectifs fixés ensemble et à vous accompagner jusqu'à ce que vous soyez satisfait.",
+    },
+    {
+      id: "duree-projet",
+      icon: ClockIcon,
+      name: "Durée moyenne d'un projet",
+      description:
+        "Afin de vous donner une idée, le délai moyen pour un site vitrine avec une ou plusieurs pages est de 4 semaines, le délai moyen pour un site vitrine multi-page avec CMS est de 8 à 12 semaines et le délai moyen pour un site e-commerce est de 12 à 16 semaines.",
     },
     {
       id: "formation-support",
