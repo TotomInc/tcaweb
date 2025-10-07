@@ -171,6 +171,7 @@ export function WhyUs({ city }: Props) {
           {accordionItems.map(({ id, icon: Icon, name, description }, i) => (
             <Accordion.Item key={id} value={id} className="group flex w-full flex-col">
               <Accordion.Trigger
+                data-fast-goal={`why-us-${id}`}
                 className={twMerge(
                   "group font-heading flex w-full cursor-pointer items-center justify-between gap-4 bg-white px-5 py-4 text-lg font-medium tracking-tight transition-colors duration-150 ease-out hover:bg-gray-50 data-[state=open]:bg-gray-50",
                   i > 0 && "border-t border-gray-200",

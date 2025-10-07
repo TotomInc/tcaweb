@@ -85,7 +85,11 @@ export function Hero({ className, title, description, items }: Props) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
-            <HeroCta initialDelay={0.4} onClick={() => moveToSection("contact")}>
+            <HeroCta
+              initialDelay={0.4}
+              data-fast-goal="hero-cta-contact"
+              onClick={() => moveToSection("contact")}
+            >
               Un projet ?
             </HeroCta>
           </motion.div>

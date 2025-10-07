@@ -135,6 +135,7 @@ export function ContactUs() {
             type="submit"
             className="flex cursor-pointer items-center justify-center rounded-sm bg-blue-600 px-4 py-2 font-semibold tracking-tight text-white shadow-md ring inset-shadow-sm inset-ring ring-blue-600 inset-shadow-white/30 inset-ring-white/25 transition-colors duration-150 ease-out hover:bg-blue-700 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 disabled:cursor-not-allowed disabled:opacity-50"
             disabled={isLoading || !!success}
+            data-fast-goal="contact-us-submit"
           >
             <AnimatePresence mode="wait" initial={false}>
               {!isLoading && !success ? (
