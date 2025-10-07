@@ -27,12 +27,17 @@ const slugify = (text: string) => _slugify(text, { lower: true, remove: /'/g });
  * Get the preposition to use before a word if it starts with a vowel
  *
  * @param previousWord The word before the preposition
+ * @param type The type of preposition to use (default is "de").
  * @returns The preposition to use before the word
  */
-export function getPreposition(previousWord: string): string {
+export function getPreposition(previousWord: string, type: "de" | "a" = "de"): string {
   const vowels = ["a", "e", "i", "o", "u", "y", "â", "é", "è", "ê", "î", "ô", "û", "ï", "ü", "ë"];
   const firstChar = previousWord.trim()[0].toLowerCase();
   const startsWithVowel = vowels.includes(firstChar);
+
+  if (type === "a") {
+    return "à ";
+  }
 
   return startsWithVowel ? "d'" : "de ";
 }
@@ -53,11 +58,13 @@ export function buildSearchRequests(): SearchRequestBuilt[] {
       });
     }
 
-    if (searchRequest.forCity) {
+    if (searchRequest.forCity && searchRequest.cityPrepositionType) {
       cities.forEach((city) => {
         requests.push({
-          slug: slugify(`${searchRequest.slug} ${getPreposition(city.name)}${city.slug}`),
-          title: `${searchRequest.title} ${getPreposition(city.name)}${city.name}`,
+          slug: slugify(
+            `${searchRequest.slug} ${getPreposition(city.name, searchRequest.cityPrepositionType)}${city.slug}`,
+          ),
+          title: `${searchRequest.title} ${getPreposition(city.name, searchRequest.cityPrepositionType)}${city.name}`,
           intent: searchRequest,
           city,
         });
