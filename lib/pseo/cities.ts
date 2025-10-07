@@ -108,6 +108,16 @@ export const cities: City[] = [
     },
   },
   {
+    name: "Avon",
+    slug: "avon",
+    department: seineEtMarne,
+    demonym: {
+      masculine: "avonnais",
+      feminine: "avonnaise",
+      plural: "avonnais",
+    },
+  },
+  {
     name: "Moret-sur-Loing",
     slug: "moret-sur-loing",
     department: seineEtMarne,
@@ -125,6 +135,96 @@ export const cities: City[] = [
       masculine: "melunais",
       feminine: "melunaise",
       plural: "melunais",
+    },
+  },
+  {
+    name: "Nemours",
+    slug: "nemours",
+    department: seineEtMarne,
+    demonym: {
+      masculine: "nemourien",
+      feminine: "nemourienne",
+      plural: "nemouriens",
+    },
+  },
+  {
+    name: "Montereau-Fault-Yonne",
+    slug: "montereau-fault-yonne",
+    department: yonne,
+    demonym: {
+      masculine: "monterelais",
+      feminine: "monterelaise",
+      plural: "monterelais",
+    },
+  },
+  {
+    name: "Moissy-Cramayel",
+    slug: "moissy-cramayel",
+    department: seineEtMarne,
+    demonym: {
+      masculine: "moisséen",
+      feminine: "moisséenne",
+      plural: "moisséens",
+    },
+  },
+  {
+    name: "Combs-la-Ville",
+    slug: "combs-la-ville",
+    department: seineEtMarne,
+    demonym: {
+      masculine: "combslavillais",
+      feminine: "combslavillaises",
+      plural: "combslavillais",
+    },
+  },
+  {
+    name: "Chailly-en-Biere",
+    slug: "chailly-en-biere",
+    department: seineEtMarne,
+    demonym: {
+      masculine: "chaillotin",
+      feminine: "chaillotine",
+      plural: "chaillotins",
+    },
+  },
+  {
+    name: "Lieusaint",
+    slug: "lieusaint",
+    department: seineEtMarne,
+    demonym: {
+      masculine: "lieusaintais",
+      feminine: "lieusaintaise",
+      plural: "lieusaintais",
+    },
+  },
+  {
+    name: "Héricy",
+    slug: "hericy",
+    department: seineEtMarne,
+    demonym: {
+      masculine: "héricéen",
+      feminine: "héricéenne",
+      plural: "héricéens",
+    },
+  },
+  {
+    name: "Barbizon",
+    slug: "barbizon",
+    department: seineEtMarne,
+    demonym: {
+      masculine: "barbizonnais",
+      feminine: "barbizonnaises",
+      plural: "barbizonnais",
+    },
+  },
+  {
+    name: "Cesson",
+    slug: "cesson",
+    department: seineEtMarne,
+    demonym: {
+      masculine: "cessonnais",
+      feminine: "cessonnaise",
+      plural: "cessonnais",
     },
   },
 ];
