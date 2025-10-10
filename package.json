@@ -20,7 +20,7 @@
     "libphonenumber-js": "1.12.23",
     "motion": "12.23.22",
     "next": "15.5.4",
-    "posthog-js": "1.274.1",
+    "posthog-js": "1.274.2",
     "radix-ui": "1.4.3",
     "react": "19.2.0",
     "react-dom": "19.2.0",
@@ -32,7 +32,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "4.1.14",
     "@totominc/eslint-config-next": "1.0.1",
-    "@types/node": "22.18.8",
+    "@types/node": "22.18.9",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.1",
     "eslint": "9.37.0",
