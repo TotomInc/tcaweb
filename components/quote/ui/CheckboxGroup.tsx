@@ -65,7 +65,7 @@ export function CheckboxGroup<TFieldValues extends Record<string, unknown>>({
                     <div
                       aria-hidden
                       className={twMerge(
-                        "flex size-5 items-center justify-center rounded-md border text-white",
+                        "flex size-5 shrink-0 items-center justify-center rounded-md border text-white",
                         selected ? "border-blue-700 bg-blue-700" : "border-gray-300",
                       )}
                     >

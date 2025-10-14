@@ -56,7 +56,7 @@ export function RadioCardGroup<TFieldValues extends Record<string, unknown>>({
                   <div
                     aria-hidden
                     className={twMerge(
-                      "flex size-5 items-center justify-center rounded-full border text-blue-700",
+                      "flex size-5 shrink-0 items-center justify-center rounded-full border text-blue-700",
                       selected ? "border-blue-700" : "border-gray-300",
                     )}
                   >
