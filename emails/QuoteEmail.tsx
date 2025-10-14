@@ -1,7 +1,7 @@
 import { Button, Container, Head, Html, Preview, Section, Text } from "@react-email/components";
 
 import type { QuoteCalculationResult } from "@/lib/quote-pricing";
-import { formatEuro } from "@/lib/quote-pricing";
+import { formatEuro, HOSTING_MAINTENANCE_PRICE } from "@/lib/quote-pricing";
 import type { QuoteInput } from "@/lib/schemas";
 
 interface Props {
@@ -62,8 +62,9 @@ export default function QuoteEmail({ contact, priceOption, pricing }: Props) {
           <Section style={{ marginTop: 12 }}>
             {priceOption === "rent" ? (
               <Text style={{ margin: 0 }}>
-                Offre location à partir de {formatEuro(pricing.totals.total)}/mois (hébergement &
-                maintenance inclus)
+                Offre location à partir de{" "}
+                {formatEuro(pricing.totals.total / 12 + HOSTING_MAINTENANCE_PRICE)}/mois{" "}
+                (hébergement & maintenance inclus)
               </Text>
             ) : (
               <Text style={{ margin: 0 }}>

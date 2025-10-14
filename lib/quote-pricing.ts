@@ -18,18 +18,18 @@ export interface QuoteCalculationResult {
   items: QuoteBreakdownItem[];
 }
 
-const BASE_PRICE: Record<QuoteInput["websiteType"], number> = {
+export const BASE_PRICE: Record<QuoteInput["websiteType"], number> = {
   vitrine: 750,
   ecommerce: 2000,
 };
 
-const PAGES_PRICE: Record<QuoteInput["pages"], number> = {
+export const PAGES_PRICE: Record<QuoteInput["pages"], number> = {
   "1": 0,
   "4": 250,
   "7": 500,
 };
 
-const FEATURE_PRICE: Record<QuoteInput["features"][number], number> = {
+export const FEATURE_PRICE: Record<QuoteInput["features"][number], number> = {
   contact: 0,
   gmb: 0,
   maps: 0,
@@ -38,6 +38,9 @@ const FEATURE_PRICE: Record<QuoteInput["features"][number], number> = {
   faq: 150,
   testimonials: 150,
 };
+
+// Monthly price for hosting and maintenance.
+export const HOSTING_MAINTENANCE_PRICE = 75;
 
 export function calculateQuote(input: QuoteInput): QuoteCalculationResult {
   const base = BASE_PRICE[input.websiteType];
