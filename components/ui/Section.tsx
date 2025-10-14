@@ -39,14 +39,14 @@ function Heading({
 }: {
   label: string;
   description: string;
-  badge: string;
+  badge?: string;
   labelClassName?: string;
   descriptionClassName?: string;
   badgeClassName?: string;
 }) {
   return (
     <div className="mx-auto flex max-w-lg flex-col items-center">
-      <Badge className={badgeClassName}>{badge}</Badge>
+      {badge ? <Badge className={badgeClassName}>{badge}</Badge> : null}
 
       <h2
         data-content={label}

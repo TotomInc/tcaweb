@@ -7,6 +7,8 @@ export function Footer() {
   const LINKS = [
     { label: "Accueil", href: "/" },
     { label: "Sites vitrines", href: "/sites-vitrines" },
+    { label: "Recevoir mon devis", href: "/devis-site-internet-gratuit" },
+    { label: "Réserver un RDV", href: "/reservation-demo" },
   ];
 
   return (
@@ -54,9 +56,9 @@ export function Footer() {
                 <li key={label}>
                   <Link
                     href={href}
-                    className="group flex items-center gap-1.5 text-base font-medium hover:underline"
+                    className="group flex gap-1.5 text-base font-medium hover:underline"
                   >
-                    <ChevronRightIcon className="size-5 transition-transform duration-300 group-hover:translate-x-0.5" />
+                    <ChevronRightIcon className="mt-0.5 size-5 transition-transform duration-300 group-hover:translate-x-0.5" />
                     {label}
                   </Link>
                 </li>

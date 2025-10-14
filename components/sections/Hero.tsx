@@ -15,9 +15,10 @@ interface Props {
   title?: React.ReactNode;
   description?: React.ReactNode;
   items?: string[];
+  cta?: React.ReactNode;
 }
 
-export function Hero({ className, title, description, items }: Props) {
+export function Hero({ className, title, description, items, cta }: Props) {
   const defaultItems = items?.length
     ? items
     : [
@@ -90,7 +91,7 @@ export function Hero({ className, title, description, items }: Props) {
               data-fast-goal="hero-cta-contact"
               onClick={() => moveToSection("contact")}
             >
-              Un projet ?
+              {cta || "Un projet ?"}
             </HeroCta>
           </motion.div>
 

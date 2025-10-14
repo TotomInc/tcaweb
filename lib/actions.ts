@@ -1,8 +1,15 @@
 "use server";
 
 import { cookies } from "next/headers";
+import { Resend } from "resend";
+
+import QuoteEmail from "@/emails/QuoteEmail";
+import { calculateQuote } from "@/lib/quote-pricing";
+import { quoteSchema } from "@/lib/schemas";
 
 import { contactFormSchema } from "./schemas";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function submitContactForm(formData: FormData) {
   const cookieStore = await cookies();
@@ -79,4 +86,53 @@ export async function submitContactForm(formData: FormData) {
   }
 
   return { success: true };
+}
+
+export async function submitQuote(formData: unknown) {
+  const validatedFields = quoteSchema.safeParse(formData);
+
+  if (!validatedFields.success) {
+    return { ok: false, errors: validatedFields.error.flatten().fieldErrors };
+  }
+
+  try {
+    const response = await fetch("https://formcarry.com/s/6zbmtB69VVV", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        firstname: validatedFields.data.contact.firstName,
+        lastname: validatedFields.data.contact.lastName,
+        email: validatedFields.data.contact.email,
+        phone: validatedFields.data.contact.phone,
+        companyName: validatedFields.data.contact.companyName,
+        websiteType: validatedFields.data.websiteType,
+        pages: validatedFields.data.pages,
+        features: validatedFields.data.features || "none",
+        payments: validatedFields.data.payments || "none",
+        delivery: validatedFields.data.delivery || "none",
+        priceOption: validatedFields.data.priceOption,
+      }),
+    });
+
+    const pricing = calculateQuote(validatedFields.data);
+
+    const email = await resend.emails.send({
+      from: "thomas@updates.tcaweb.fr",
+      to: validatedFields.data.contact.email,
+      subject: "Votre devis est prêt !",
+      react: QuoteEmail({
+        contact: validatedFields.data.contact,
+        priceOption: validatedFields.data.priceOption,
+        pricing,
+      }),
+    });
+
+    if (!response.ok || email.error) {
+      return { ok: false, error: "Une erreur est survenue. Veuillez réessayer." };
+    }
+  } catch {
+    return { ok: false, error: "Une erreur est survenue. Veuillez réessayer." };
+  }
+
+  return { ok: true };
 }
