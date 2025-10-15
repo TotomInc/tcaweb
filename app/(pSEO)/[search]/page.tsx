@@ -2,9 +2,9 @@ import { CheckBadgeIcon } from "@heroicons/react/24/outline";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { ContactUs } from "@/components/sections/ContactUs";
 import { Hero } from "@/components/sections/Hero";
 import { Portfolio } from "@/components/sections/Portfolio";
+import { Quote } from "@/components/sections/Quote";
 import { WhyUs } from "@/components/sections/WhyUs";
 import { AuroraText } from "@/components/ui/21st/AuroraText";
 import { BentoCard } from "@/components/ui/BentoCard";
@@ -63,6 +63,8 @@ export default async function Page({ params }: Props) {
     <main className="bg-gray-100">
       {searchRequest.city && searchRequest.intent.forCity ? (
         <Hero
+          cta="Recevez votre devis"
+          ctaSection="generateur-devis"
           items={[
             "Tarifs adaptés à vos besoins",
             `Ciblez vos clients près ${getPreposition(searchRequest.city.name)}${searchRequest.city.name}`,
@@ -97,6 +99,8 @@ export default async function Page({ params }: Props) {
 
       {!searchRequest.city && searchRequest.industry && !searchRequest.intent.forCity ? (
         <Hero
+          cta="Recevez votre devis"
+          ctaSection="generateur-devis"
           items={[
             `Attirez de nouveaux clients`,
             "Tarifs adaptés à vos besoins",
@@ -255,7 +259,16 @@ export default async function Page({ params }: Props) {
 
       <WhyUs city={searchRequest.city} />
 
-      <ContactUs />
+      <Section.Root id="generateur-devis">
+        <Section.Heading
+          label="Votre devis personnalisé instantané"
+          description="Recevez en quelques clics dans votre boîte mail un devis sur-mesure adapté à vos besoins."
+        />
+
+        <Section.Container className="w-full px-0 sm:px-6">
+          <Quote />
+        </Section.Container>
+      </Section.Root>
     </main>
   );
 }
