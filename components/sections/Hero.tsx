@@ -16,9 +16,10 @@ interface Props {
   description?: React.ReactNode;
   items?: string[];
   cta?: React.ReactNode;
+  ctaSection?: string;
 }
 
-export function Hero({ className, title, description, items, cta }: Props) {
+export function Hero({ className, title, description, items, cta, ctaSection }: Props) {
   const defaultItems = items?.length
     ? items
     : [
@@ -27,8 +28,12 @@ export function Hero({ className, title, description, items, cta }: Props) {
         "Moins cher qu'une agence web traditionnelle",
       ];
 
-  const moveToSection = (section: string) => {
-    const element = document.getElementById(section);
+  const moveToSection = (section?: string) => {
+    if (!ctaSection || !section) {
+      return;
+    }
+
+    const element = document.getElementById(ctaSection || section);
 
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });

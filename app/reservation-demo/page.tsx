@@ -16,6 +16,7 @@ export default function Page() {
     <main className="bg-gray-100">
       <Hero
         cta="Réservez votre RDV"
+        ctaSection="reservation-demo"
         items={[
           "Sans engagement",
           "Recevez un devis personnalisé",

@@ -16,6 +16,7 @@ export default function Page() {
     <main className="bg-gray-100">
       <Hero
         cta="Recevoir mon devis"
+        ctaSection="generateur-devis"
         items={[
           "Devis ajusté à vos besoins",
           "Recevez votre devis en 5 minutes",
@@ -44,7 +45,7 @@ export default function Page() {
         }
       />
 
-      <Section.Root id="devis">
+      <Section.Root id="generateur-devis">
         <Section.Heading
           label="Votre devis personnalisé instantané"
           description="Recevez en quelques clics dans votre boîte mail un devis sur-mesure adapté à vos besoins."
