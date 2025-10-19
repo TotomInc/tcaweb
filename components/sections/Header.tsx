@@ -2,7 +2,7 @@
 
 import { ArrowRightCircleIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 import { SparklesParticles } from "@/components/ui/21st/SparklesParticles";
@@ -13,20 +13,18 @@ export function Header() {
 
   const [hasScrolled, setHasScrolled] = useState(false);
 
+  const handleScroll = useCallback(() => {
+    const headerHeight = headerRef.current?.clientHeight ?? 64;
+    setHasScrolled(window.scrollY > headerHeight);
+  }, [headerRef]);
+
   useEffect(() => {
-    const handleScroll = () => {
-      const headerHeight = headerRef.current?.clientHeight ?? 64;
-      setHasScrolled(window.scrollY > headerHeight);
-    };
-
     window.addEventListener("scroll", handleScroll);
-
-    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [handleScroll]);
 
   return (
     <header

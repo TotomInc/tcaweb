@@ -11,10 +11,10 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@calcom/atoms": "1.10.0",
+    "@calcom/atoms": "1.11.0",
     "@heroicons/react": "2.2.0",
     "@hookform/resolvers": "5.2.2",
-    "@react-email/components": "0.5.6",
+    "@react-email/components": "0.5.7",
     "@tsparticles/engine": "3.9.1",
     "@tsparticles/react": "3.0.0",
     "@tsparticles/slim": "3.9.1",
@@ -22,28 +22,28 @@
     "geist": "1.5.1",
     "libphonenumber-js": "1.12.24",
     "motion": "12.23.24",
-    "next": "15.5.5",
-    "posthog-js": "1.275.3",
+    "next": "15.5.6",
+    "posthog-js": "1.276.0",
     "radix-ui": "1.4.3",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "react-hook-form": "7.65.0",
-    "resend": "6.1.3",
+    "resend": "6.2.0",
     "slugify": "1.6.6",
     "tailwind-merge": "3.3.1",
     "zod": "4.1.12"
   },
   "devDependencies": {
-    "@react-email/preview-server": "4.3.0",
+    "@react-email/preview-server": "4.3.1",
     "@tailwindcss/postcss": "4.1.14",
-    "@totominc/eslint-config-next": "1.0.1",
-    "@types/node": "22.18.10",
+    "@totominc/eslint-config-next": "1.2.1",
+    "@types/node": "22.18.11",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
-    "eslint": "9.37.0",
+    "eslint": "9.38.0",
     "postcss": "8.5.6",
-    "react-email": "4.3.0",
+    "react-email": "4.3.1",
     "tailwindcss": "4.1.14",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   }
 }

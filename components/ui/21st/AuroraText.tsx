@@ -7,17 +7,11 @@ import { twMerge } from "tailwind-merge";
 type Props = Omit<React.HTMLAttributes<HTMLElement>, keyof MotionProps> & {
   className?: string;
   children: React.ReactNode;
-  as: React.ElementType;
 };
 
-export function AuroraText({ className, children, as: Component, ...props }: Props) {
-  const MotionComponent = motion.create(Component);
-
+export function AuroraText({ className, children, ...props }: Props) {
   return (
-    <MotionComponent
-      className={twMerge("relative inline-flex overflow-hidden", className)}
-      {...props}
-    >
+    <motion.span className={twMerge("relative inline-flex overflow-hidden", className)} {...props}>
       {children}
 
       <span aria-hidden className="pointer-events-none absolute inset-0 mix-blend-lighten">
@@ -29,6 +23,6 @@ export function AuroraText({ className, children, as: Component, ...props }: Pro
 
         <span className="animate-aurora-4 bg-aurora-4 pointer-events-none absolute right-0 -bottom-1/2 size-[35vw] mix-blend-overlay blur-lg lg:size-[30vw]" />
       </span>
-    </MotionComponent>
+    </motion.span>
   );
 }

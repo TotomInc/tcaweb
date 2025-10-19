@@ -1,3 +1,4 @@
+/* eslint-disable node/prefer-global/process */
 "use server";
 
 import { cookies } from "next/headers";

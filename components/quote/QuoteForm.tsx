@@ -39,6 +39,7 @@ export function QuoteForm() {
   const [submitted, setSubmitted] = useState(false);
   const [index, setIndex] = useState(0);
 
+  // eslint-disable-next-line react-hooks/incompatible-library
   const websiteType = watch("websiteType");
 
   const steps = useMemo(() => {

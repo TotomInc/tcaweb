@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 const DESKTOP_BREAKPOINT = 1024;
-// Only update if width changes by more than 10px
 const WIDTH_THRESHOLD = 32;
 const DEBOUNCE_TIMEOUT = 250;
 
@@ -10,7 +9,13 @@ export function useIsDesktop() {
   const rafRef = useRef<number | undefined>(undefined);
   const lastWidthRef = useRef<number>(0);
 
-  const [isDesktop, setIsDesktop] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(() => {
+    if (typeof window !== "undefined") {
+      return window.innerWidth >= DESKTOP_BREAKPOINT;
+    }
+
+    return false;
+  });
 
   const checkIsDesktop = useCallback(() => {
     const currentWidth = window.innerWidth;
@@ -24,8 +29,6 @@ export function useIsDesktop() {
   }, []);
 
   useEffect(() => {
-    checkIsDesktop();
-
     const handleResize = () => {
       // Cancel any pending RAF
       if (rafRef.current) {

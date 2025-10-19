@@ -76,10 +76,7 @@ export default async function Page({ params }: Props) {
               <br />
               de votre entreprise
               <br />
-              <AuroraText
-                as="span"
-                className="text-primary rotate-[-2deg] rounded-lg bg-white px-3 py-2 shadow-xl"
-              >
+              <AuroraText className="text-primary rotate-[-2deg] rounded-lg bg-white px-3 py-2 shadow-xl">
                 près {getPreposition(searchRequest.city.name)}
                 {searchRequest.city.name}
               </AuroraText>
@@ -112,10 +109,7 @@ export default async function Page({ params }: Props) {
               <br />
               de votre activité
               <br />
-              <AuroraText
-                as="span"
-                className="text-primary rotate-[-2deg] rounded-lg bg-white px-3 py-2 shadow-xl"
-              >
+              <AuroraText className="text-primary rotate-[-2deg] rounded-lg bg-white px-3 py-2 shadow-xl">
                 {getPreposition(searchRequest.industry.name)}
                 {searchRequest.industry.name}
               </AuroraText>

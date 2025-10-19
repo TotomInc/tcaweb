@@ -26,10 +26,7 @@ export default function Page() {
           <>
             Réservez votre
             <br />
-            <AuroraText
-              as="span"
-              className="text-primary rotate-[-2deg] rounded-lg bg-white px-3 py-2 shadow-xl"
-            >
+            <AuroraText className="text-primary rotate-[-2deg] rounded-lg bg-white px-3 py-2 shadow-xl">
               RDV découverte
             </AuroraText>
           </>
