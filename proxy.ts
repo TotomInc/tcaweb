@@ -1,4 +1,4 @@
-import type { MiddlewareConfig, NextRequest } from "next/server";
+import type { ProxyConfig, NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
 const UNAUTHORIZED_EXTENSIONS = [
@@ -56,7 +56,7 @@ const redirects: Record<string, string> = {
   "/sites-vitrines/melun": "/creation-site-vitrine-pres-de-melun",
 };
 
-export const config: MiddlewareConfig = {
+export const config: ProxyConfig = {
   /*
    * Match all paths except for:
    * 1. /api routes
@@ -68,7 +68,7 @@ export const config: MiddlewareConfig = {
   matcher: ["/((?!api/|_next/|_static/|_vercel|com.chrome.devtools.json|[\\w-]+\\.\\w+).*)"],
 };
 
-export default async function middleware(req: NextRequest) {
+export default async function proxy(req: NextRequest) {
   const path = req.nextUrl.pathname;
 
   // Check for paths that are used by bots scanning for vulnerabilities.
