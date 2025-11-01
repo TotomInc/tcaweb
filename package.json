@@ -11,7 +11,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@calcom/atoms": "1.11.0",
+    "@calcom/atoms": "1.12.1",
     "@heroicons/react": "2.2.0",
     "@hookform/resolvers": "5.2.2",
     "@react-email/components": "0.5.7",
@@ -23,12 +23,12 @@
     "libphonenumber-js": "1.12.25",
     "motion": "12.23.24",
     "next": "16.0.1",
-    "posthog-js": "1.282.0",
+    "posthog-js": "1.283.0",
     "radix-ui": "1.4.3",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "react-hook-form": "7.65.0",
-    "resend": "6.3.0",
+    "react-hook-form": "7.66.0",
+    "resend": "6.4.0",
     "slugify": "1.6.6",
     "tailwind-merge": "3.3.1",
     "zod": "4.1.12"
@@ -40,7 +40,7 @@
     "@types/node": "24.9.2",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
-    "eslint": "9.38.0",
+    "eslint": "9.39.0",
     "postcss": "8.5.6",
     "react-email": "4.3.2",
     "tailwindcss": "4.1.16",
