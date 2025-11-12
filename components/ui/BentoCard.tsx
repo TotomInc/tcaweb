@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import { AnimatePresence, motion, useInView } from "motion/react";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { twMerge } from "tailwind-merge";
