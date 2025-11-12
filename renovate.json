@@ -12,11 +12,13 @@
     {
       "groupName": "all dependencies",
       "groupSlug": "all",
-      "matchPackagePatterns": [
+      "matchPackageNames": [
         "*"
       ]
     }
   ],
-  "ignoreDeps": ["typescript"],
+  "ignoreDeps": [
+    "typescript"
+  ],
   "separateMajorMinor": false
 }
