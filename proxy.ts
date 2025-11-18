@@ -1,4 +1,4 @@
-import type { ProxyConfig, NextRequest } from "next/server";
+import type { NextRequest, ProxyConfig } from "next/server";
 import { NextResponse } from "next/server";
 
 const UNAUTHORIZED_EXTENSIONS = [
