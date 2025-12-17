@@ -11,7 +11,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@calcom/atoms": "1.12.1",
+    "@calcom/atoms": "2.3.0",
     "@heroicons/react": "2.2.0",
     "@hookform/resolvers": "5.2.2",
     "@react-email/components": "1.0.1",
