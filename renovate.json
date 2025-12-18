@@ -18,7 +18,8 @@
     }
   ],
   "ignoreDeps": [
-    "typescript"
+    "typescript",
+    "@calcom/atoms"
   ],
   "separateMajorMinor": false
 }
