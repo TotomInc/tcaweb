@@ -51,18 +51,18 @@ export function Header() {
           </Link>
 
           <Link
-            href="/devis-site-internet-gratuit"
             className="group relative flex cursor-pointer items-center justify-center gap-1.5 rounded-sm bg-blue-600 px-4 py-2 text-sm font-semibold tracking-tight text-white shadow-md ring inset-shadow-sm inset-ring ring-blue-600 inset-shadow-white/30 inset-ring-white/25 transition-colors duration-150 ease-out hover:bg-blue-700 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500"
+            href="/devis-site-internet-gratuit"
           >
             Recevez votre devis
             <ArrowRightCircleIcon className="size-5 transition-transform duration-300 ease-out group-hover:rotate-90" />
             <SparklesParticles
-              particleDensity={256}
               background="transparent"
-              minSize={0.75}
-              maxSize={1.25}
-              particleColor="#9dbbfd"
               className="pointer-events-none absolute inset-0 h-full w-full"
+              maxSize={1.25}
+              minSize={0.75}
+              particleColor="#9dbbfd"
+              particleDensity={256}
             />
           </Link>
         </nav>

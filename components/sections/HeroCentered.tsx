@@ -31,8 +31,8 @@ export function HeroCentered({ badge, title, description, items }: Props) {
       <div className="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-8 px-6 pt-24 pb-32 lg:gap-12 xl:pt-32">
         {badge ? (
           <motion.span
-            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.6 }}
           >
             <Badge className="mb-0">{badge}</Badge>
@@ -40,35 +40,35 @@ export function HeroCentered({ badge, title, description, items }: Props) {
         ) : null}
 
         <motion.h1
+          animate={{ opacity: 1, y: 0 }}
           className="font-heading mx-auto w-fit text-center text-3xl font-bold lg:text-5xl 2xl:text-6xl"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
           {title}
         </motion.h1>
 
         <motion.p
+          animate={{ opacity: 1, y: 0 }}
           className="max-w-4xl text-center text-lg text-balance lg:text-xl"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           {description}
         </motion.p>
 
         <motion.ul
+          animate={{ opacity: 1, y: 0 }}
           className="flex flex-col items-center gap-2"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
           {items.map((item, index) => (
             <motion.li
               key={item}
+              animate={{ opacity: 1, y: 0 }}
               className="flex gap-1.5 text-center text-base leading-6 font-medium lg:text-lg"
               initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.7 + index * 0.1 }}
             >
               <CheckBadgeIcon className="size-6 shrink-0 fill-blue-600 text-blue-200" /> {item}
@@ -77,8 +77,8 @@ export function HeroCentered({ badge, title, description, items }: Props) {
         </motion.ul>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 1 }}
         >
           <HeroCta initialDelay={1} onClick={() => moveToSection("contact")}>

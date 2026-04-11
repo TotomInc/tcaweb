@@ -52,9 +52,9 @@ export function Hero({ className, title, description, items, cta, ctaSection }: 
       <div className="relative mx-auto max-w-7xl pt-24 pb-48 xl:pt-32 xl:pb-56">
         <div className="flex flex-col items-start gap-6 px-6 sm:max-w-md md:max-w-xl lg:max-w-2xl xl:max-w-3xl 2xl:gap-8">
           <motion.h1
+            animate={{ opacity: 1, y: 0 }}
             className="font-heading text-3xl font-bold lg:text-5xl 2xl:text-6xl"
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             {title || (
@@ -68,9 +68,9 @@ export function Hero({ className, title, description, items, cta, ctaSection }: 
           </motion.h1>
 
           <motion.p
+            animate={{ opacity: 1, y: 0 }}
             className="text-base text-balance lg:text-xl"
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             {description || (
@@ -84,13 +84,13 @@ export function Hero({ className, title, description, items, cta, ctaSection }: 
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <HeroCta
-              initialDelay={0.4}
               data-fast-goal="hero-cta-contact"
+              initialDelay={0.4}
               onClick={() => moveToSection("contact")}
             >
               {cta || "Un projet ?"}
@@ -98,17 +98,17 @@ export function Hero({ className, title, description, items, cta, ctaSection }: 
           </motion.div>
 
           <motion.ul
+            animate={{ opacity: 1, y: 0 }}
             className="flex flex-col gap-2"
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
             {defaultItems.map((item, index) => (
               <motion.li
                 key={item}
+                animate={{ opacity: 1, y: 0 }}
                 className="flex gap-1.5 leading-6 font-medium sm:text-sm lg:text-base"
                 initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: 0.7 + index * 0.1 }}
               >
                 <CheckBadgeIcon className="size-6 shrink-0 fill-blue-600 text-blue-200" /> {item}
@@ -119,22 +119,22 @@ export function Hero({ className, title, description, items, cta, ctaSection }: 
 
         <Image
           priority
-          src="/_static/images/hero/hero-mobile.png"
           alt="Site web réalisé pour nos clients"
-          width={2048}
-          height={1598}
           className="pointer-events-none absolute bottom-0 left-1/2 z-1 -mb-10 block h-auto w-68 translate-x-[-50%] sm:hidden"
+          height={1598}
           quality={90}
+          src="/_static/images/hero/hero-mobile.png"
+          width={2048}
         />
 
         <Image
           priority
-          src="/_static/images/hero/hero-desktop.png"
           alt="Site web réalisé pour nos clients"
-          width={2396}
-          height={1925}
           className="pointer-events-none absolute right-0 bottom-0 z-1 hidden h-auto sm:block sm:w-80 md:w-full md:max-w-md lg:block lg:max-w-xl xl:max-w-2xl"
+          height={1925}
           quality={90}
+          src="/_static/images/hero/hero-desktop.png"
+          width={2396}
         />
       </div>
 

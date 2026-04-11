@@ -9,5 +9,5 @@ interface CalcomEmbedProps {
 }
 
 export function CalcomEmbed({ eventType }: CalcomEmbedProps) {
-  return <BookerEmbed eventSlug={eventType} view="MONTH_VIEW" username="tcaweb" userLocale="fr" />;
+  return <BookerEmbed eventSlug={eventType} userLocale="fr" username="tcaweb" view="MONTH_VIEW" />;
 }

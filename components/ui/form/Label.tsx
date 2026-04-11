@@ -8,7 +8,7 @@ interface LabelProps extends LabelHTMLAttributes<HTMLLabelElement> {
 
 export function Label({ children, className, ...props }: LabelProps) {
   return (
-    <label htmlFor={props.id} className={twMerge("text-sm font-medium text-gray-700", className)}>
+    <label className={twMerge("text-sm font-medium text-gray-700", className)} htmlFor={props.id}>
       {children}
     </label>
   );

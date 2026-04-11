@@ -34,15 +34,15 @@ export function RadioCardGroup<TFieldValues extends Record<string, unknown>>({
             return (
               <button
                 key={opt.value}
-                type="button"
                 aria-pressed={selected}
+                type="button"
+                onClick={() => field.onChange(opt.value)}
                 className={twMerge(
                   "w-full cursor-pointer rounded-xl border p-4 text-left transition",
                   selected
                     ? "border-blue-700 bg-blue-700/5 shadow"
                     : "border-gray-200 hover:border-gray-300",
                 )}
-                onClick={() => field.onChange(opt.value)}
               >
                 <div className="flex items-center justify-between">
                   <div>

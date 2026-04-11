@@ -17,6 +17,15 @@ export default function Page() {
       <Hero
         cta="Recevoir mon devis"
         ctaSection="generateur-devis"
+        description={
+          <>
+            Obtenez <span className="font-heading font-bold">rapidement</span> et{" "}
+            <span className="font-heading font-bold">gratuitement</span> un devis pour
+            <br />
+            votre site internet ou e-commerce en{" "}
+            <span className="font-heading font-bold">quelques clics</span>.
+          </>
+        }
         items={[
           "Devis ajusté à vos besoins",
           "Recevez votre devis en 5 minutes",
@@ -31,21 +40,12 @@ export default function Page() {
             </AuroraText>
           </>
         }
-        description={
-          <>
-            Obtenez <span className="font-heading font-bold">rapidement</span> et{" "}
-            <span className="font-heading font-bold">gratuitement</span> un devis pour
-            <br />
-            votre site internet ou e-commerce en{" "}
-            <span className="font-heading font-bold">quelques clics</span>.
-          </>
-        }
       />
 
       <Section.Root id="generateur-devis">
         <Section.Heading
-          label="Votre devis personnalisé instantané"
           description="Recevez en quelques clics dans votre boîte mail un devis sur-mesure adapté à vos besoins."
+          label="Votre devis personnalisé instantané"
         />
 
         <Section.Container className="w-full px-0 sm:px-6">

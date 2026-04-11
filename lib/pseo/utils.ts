@@ -1,3 +1,4 @@
+/* eslint-disable e18e/prefer-static-regex */
 import _slugify from "slugify";
 
 import type { City } from "@/lib/pseo/cities";

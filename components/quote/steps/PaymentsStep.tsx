@@ -21,8 +21,8 @@ export function PaymentsStep({ control, onNext, onBack }: Props) {
   return (
     <Step.Container>
       <Step.Label
-        title="Paiements (e‑commerce)"
         description="Choisissez un ou plusieurs moyens de paiement."
+        title="Paiements (e‑commerce)"
       />
 
       <CheckboxGroup

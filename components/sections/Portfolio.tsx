@@ -47,8 +47,8 @@ export function Portfolio() {
     <Section.Root>
       <Section.Heading
         badge="Portfolio"
-        label="Nos clients nous recommandent."
         description="Découvrez notre portfolio de clients satisfaits par les services de notre agence."
+        label="Nos clients nous recommandent."
       />
 
       <div ref={ref} className="grid gap-6 lg:grid-cols-3">
@@ -74,9 +74,9 @@ export function Portfolio() {
                 {item.tags.map((tag, i) => (
                   <motion.span
                     key={tag}
-                    initial={{ opacity: 0, y: 20 }}
                     animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
                     className="block w-fit rounded-full bg-gradient-to-b from-gray-300 to-gray-200 px-3 py-1.5 font-mono text-sm font-semibold tracking-tight inset-shadow-sm inset-shadow-gray-900/20"
+                    initial={{ opacity: 0, y: 20 }}
                     transition={{
                       duration: 0.5,
                       delay: i * 0.25 + 0.5,

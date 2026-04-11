@@ -19,8 +19,8 @@ export function WebsiteTypeStep({ control, onNext }: Props) {
   return (
     <Step.Container>
       <Step.Label
-        title="Quel type de site souhaitez-vous ?"
         description="Sélectionnez une option."
+        title="Quel type de site souhaitez-vous ?"
       />
 
       <RadioCardGroup

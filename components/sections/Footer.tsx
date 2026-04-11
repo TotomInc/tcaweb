@@ -28,8 +28,8 @@ export function Footer() {
                 <PhoneIcon className="size-4" />
 
                 <a
-                  href="tel:+33642871966"
                   className="cursor-pointer text-sm font-medium hover:underline"
+                  href="tel:+33642871966"
                 >
                   +33 6 42 87 19 66
                 </a>
@@ -39,8 +39,8 @@ export function Footer() {
                 <AtSymbolIcon className="size-4" />
 
                 <a
-                  href="mailto:thomas@tcaweb.fr"
                   className="cursor-pointer text-sm font-medium hover:underline"
+                  href="mailto:thomas@tcaweb.fr"
                 >
                   thomas@tcaweb.fr
                 </a>
@@ -55,8 +55,8 @@ export function Footer() {
               {LINKS.map(({ label, href }) => (
                 <li key={label}>
                   <Link
-                    href={href}
                     className="group flex gap-1.5 text-base font-medium hover:underline"
+                    href={href}
                   >
                     <ChevronRightIcon className="mt-0.5 size-5 transition-transform duration-300 group-hover:translate-x-0.5" />
                     {label}

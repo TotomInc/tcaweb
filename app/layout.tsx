@@ -66,11 +66,11 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   };
 
   return (
-    <html lang="fr" className="scroll-smooth">
+    <html className="scroll-smooth" lang="fr">
       <head>
         <Script
-          data-website-id="dfid_x4sOJfbCO5Zf8v1JrTNcN"
           data-domain="tcaweb.fr"
+          data-website-id="dfid_x4sOJfbCO5Zf8v1JrTNcN"
           src="https://datafa.st/js/script.js"
           strategy="afterInteractive"
         />

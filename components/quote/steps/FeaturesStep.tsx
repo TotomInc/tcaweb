@@ -21,8 +21,8 @@ export function FeaturesStep({ control, onNext, onBack }: Props) {
   return (
     <Step.Container>
       <Step.Label
-        title="Fonctionnalités"
         description="Sélectionnez les options souhaitées (facultatif)."
+        title="Fonctionnalités"
       />
 
       <CheckboxGroup

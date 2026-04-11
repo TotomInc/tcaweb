@@ -20,6 +20,14 @@ export default function Page() {
     <main className="bg-gray-100">
       <HeroCentered
         badge="Sites vitrines"
+        description={
+          <>
+            <span className="font-heading font-bold">Votre site vitrine</span> conçu pour{" "}
+            <span className="font-heading font-bold">renforcer</span> votre image,{" "}
+            <span className="font-heading font-bold">attirer</span> de nouveaux clients et vous{" "}
+            <span className="font-heading font-bold">démarquer</span> de la concurrence.
+          </>
+        }
         items={[
           "Spécialiste des PME",
           "Passez en 1ère page Google",
@@ -35,21 +43,13 @@ export default function Page() {
             </AuroraText>
           </>
         }
-        description={
-          <>
-            <span className="font-heading font-bold">Votre site vitrine</span> conçu pour{" "}
-            <span className="font-heading font-bold">renforcer</span> votre image,{" "}
-            <span className="font-heading font-bold">attirer</span> de nouveaux clients et vous{" "}
-            <span className="font-heading font-bold">démarquer</span> de la concurrence.
-          </>
-        }
       />
 
       <Section.Root>
         <Section.Heading
           badge="Bénéfices"
-          label="Pourquoi un site vitrine est crucial pour votre entreprise ?"
           description="75% des clients recherchent des entreprises en ligne avant de la contacter."
+          label="Pourquoi un site vitrine est crucial pour votre entreprise ?"
         />
 
         <BentoCard
@@ -92,8 +92,8 @@ export default function Page() {
       <Section.Root>
         <Section.Heading
           badge="Services"
-          label="Un développement rapide et efficace"
           description="Libérez-vous des contraintes du digital afin que vous puissiez vous concentrer sur votre activité."
+          label="Un développement rapide et efficace"
         />
 
         <div className="grid gap-6 lg:grid-cols-3">

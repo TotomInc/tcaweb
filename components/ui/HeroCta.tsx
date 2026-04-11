@@ -20,8 +20,8 @@ export function HeroCta({ children, className, initialDelay, ...props }: Props) 
       {...props}
     >
       <motion.span
-        initial={{ opacity: 0, x: -16 }}
         animate={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -16 }}
         transition={{ duration: 0.3, delay: initialDelay + 0.2 }}
       >
         {children}
@@ -29,10 +29,10 @@ export function HeroCta({ children, className, initialDelay, ...props }: Props) 
 
       <motion.span
         aria-hidden
-        initial={{ opacity: 0, x: 16 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: initialDelay + 0.2 }}
         className="relative size-5"
+        initial={{ opacity: 0, x: 16 }}
+        transition={{ duration: 0.3, delay: initialDelay + 0.2 }}
       >
         <ArrowRightIcon className="absolute size-5 duration-150 ease-out group-hover:translate-x-1 group-hover:opacity-0" />
         <EnvelopeOpenIcon className="absolute size-5 -translate-x-1 opacity-0 duration-150 ease-out group-hover:translate-x-0 group-hover:opacity-100 group-hover:delay-150" />

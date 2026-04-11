@@ -17,6 +17,13 @@ export default function Page() {
       <Hero
         cta="Réservez votre RDV"
         ctaSection="reservation-demo"
+        description={
+          <>
+            Réservez un <span className="font-heading font-bold">RDV téléphonique</span> de 15
+            minutes avec un expert afin de faire{" "}
+            <span className="font-heading font-bold">un bilan gratuit</span> de votre projet.
+          </>
+        }
         items={[
           "Sans engagement",
           "Recevez un devis personnalisé",
@@ -31,19 +38,12 @@ export default function Page() {
             </AuroraText>
           </>
         }
-        description={
-          <>
-            Réservez un <span className="font-heading font-bold">RDV téléphonique</span> de 15
-            minutes avec un expert afin de faire{" "}
-            <span className="font-heading font-bold">un bilan gratuit</span> de votre projet.
-          </>
-        }
       />
 
       <Section.Root id="reservation-demo">
         <Section.Heading
-          label="Réservez votre RDV découverte"
           description="Réservez un RDV téléphonique de 15 minutes avec un expert afin de faire un bilan gratuit de votre projet."
+          label="Réservez votre RDV découverte"
         />
 
         <Section.Container>

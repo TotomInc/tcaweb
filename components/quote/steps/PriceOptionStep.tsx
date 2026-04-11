@@ -20,7 +20,7 @@ export function PriceOptionStep({ control, onNext, onBack }: Props) {
 
   return (
     <Step.Container>
-      <Step.Label title="Option tarifaire" description="Sélectionnez votre mode de paiement." />
+      <Step.Label description="Sélectionnez votre mode de paiement." title="Option tarifaire" />
 
       <RadioCardGroup
         control={control}

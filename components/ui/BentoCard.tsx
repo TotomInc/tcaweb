@@ -45,10 +45,10 @@ export function BentoCard({ className, children, content, image, hasGlowingEffec
           glow
           blur={4}
           borderWidth={3}
-          spread={64}
           disabled={false}
-          proximity={64}
           inactiveZone={0.1}
+          proximity={64}
+          spread={64}
         />
       ) : null}
 
@@ -76,22 +76,22 @@ export function BentoCard({ className, children, content, image, hasGlowingEffec
         {image ? (
           <AnimatePresence>
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
               animate={imageLoaded && isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 32 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
               className="relative"
+              initial={{ opacity: 0, y: 24 }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
             >
               <Image
-                src={image.src}
                 alt={image.alt}
-                width={image.width}
                 height={image.height}
                 quality={90}
+                src={image.src}
+                width={image.width}
+                onLoad={() => setImageLoaded(true)}
                 className={twMerge(
                   "relative mx-auto mt-auto block h-auto w-full max-w-sm",
                   image.className,
                 )}
-                onLoad={() => setImageLoaded(true)}
               />
             </motion.div>
           </AnimatePresence>

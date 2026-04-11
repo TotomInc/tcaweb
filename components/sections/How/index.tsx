@@ -17,8 +17,8 @@ export function How() {
     <Section.Root>
       <Section.Heading
         badge="Processus"
-        label="Votre projet web en 3 étapes."
         description="Un accompagnement entièrement personnalisé dès la prise de contact."
+        label="Votre projet web en 3 étapes."
       />
 
       <div className="grid gap-6 lg:grid-cols-3">

@@ -133,9 +133,9 @@ export function WhyUs({ city }: Props) {
           {numbers.map(({ icon: Icon, label, value }, index) => (
             <motion.li
               key={label}
+              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               className="group flex items-center gap-4"
               initial={{ opacity: 0, y: 20 }}
-              animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{
                 duration: 0.4,
                 ease: "easeOut",
@@ -154,22 +154,22 @@ export function WhyUs({ city }: Props) {
           ))}
 
           <SparklesParticles
-            particleDensity={64}
             background="transparent"
-            minSize={0.75}
-            maxSize={1.25}
-            particleColor="#9dbbfd"
             className="pointer-events-none absolute inset-0 h-full w-full"
+            maxSize={1.25}
+            minSize={0.75}
+            particleColor="#9dbbfd"
+            particleDensity={64}
           />
         </ul>
 
         <Accordion.Root
           collapsible
-          type="single"
           className="w-full rounded-lg border border-gray-200 bg-white shadow-xl shadow-gray-900/5 sm:w-1/2 lg:w-2/3"
+          type="single"
         >
           {accordionItems.map(({ id, icon: Icon, name, description }, i) => (
-            <Accordion.Item key={id} value={id} className="group flex w-full flex-col">
+            <Accordion.Item key={id} className="group flex w-full flex-col" value={id}>
               <Accordion.Trigger
                 data-fast-goal={`why-us-${id}`}
                 className={twMerge(

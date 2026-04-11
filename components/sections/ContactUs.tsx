@@ -68,83 +68,83 @@ export function ContactUs() {
     <Section.Root id="contact">
       <Section.Heading
         badge="Un projet ?"
-        label="Travaillons ensemble sur votre projet web."
         description="Créons ensemble un site web qui reflète votre entreprise et attire de nouveaux clients."
+        label="Travaillons ensemble sur votre projet web."
       />
 
       <div className="mx-auto flex w-full max-w-2xl items-center rounded-lg border border-gray-200 bg-white p-6 shadow-xl shadow-gray-900/5 sm:p-8">
         <form className="flex w-full flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
           {/* Honeypot field - hidden from real users but bots will fill it */}
-          <div className="hidden" aria-hidden="true">
-            <Input label="Website (leave empty)" autoComplete="off" {...register("website")} />
+          <div aria-hidden="true" className="hidden">
+            <Input autoComplete="off" label="Website (leave empty)" {...register("website")} />
           </div>
 
           <Input
-            label="Nom de votre entreprise*"
             autoComplete="organization"
             error={errors.organization?.message}
+            label="Nom de votre entreprise*"
             readOnly={isLoading || !!success}
             {...register("organization")}
           />
 
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <Input
-              label="Votre prénom*"
               autoComplete="given-name"
               error={errors.firstName?.message}
+              label="Votre prénom*"
               readOnly={isLoading || !!success}
               {...register("firstName")}
             />
 
             <Input
-              label="Votre nom*"
               autoComplete="family-name"
               error={errors.lastName?.message}
+              label="Votre nom*"
               readOnly={isLoading || !!success}
               {...register("lastName")}
             />
           </div>
 
           <Input
-            label="Votre email*"
             autoComplete="email"
-            type="email"
             error={errors.email?.message}
+            label="Votre email*"
             readOnly={isLoading || !!success}
+            type="email"
             {...register("email")}
           />
 
           <PhoneInput
-            label="Votre numéro de téléphone*"
             autoComplete="tel"
             error={errors.phone?.message}
+            label="Votre numéro de téléphone*"
             readOnly={isLoading || !!success}
             {...register("phone")}
           />
 
           <Textarea
-            label="Votre message*"
-            rows={4}
             autoCapitalize="off"
             error={errors.message?.message}
+            label="Votre message*"
             readOnly={isLoading || !!success}
+            rows={4}
             {...register("message")}
           />
 
           <button
-            type="submit"
             className="flex cursor-pointer items-center justify-center rounded-sm bg-blue-600 px-4 py-2 font-semibold tracking-tight text-white shadow-md ring inset-shadow-sm inset-ring ring-blue-600 inset-shadow-white/30 inset-ring-white/25 transition-colors duration-150 ease-out hover:bg-blue-700 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500 disabled:cursor-not-allowed disabled:opacity-50"
-            disabled={isLoading || !!success}
             data-fast-goal="contact-us-submit"
+            disabled={isLoading || !!success}
+            type="submit"
           >
-            <AnimatePresence mode="wait" initial={false}>
+            <AnimatePresence initial={false} mode="wait">
               {!isLoading && !success ? (
                 <motion.div
                   key="idle"
-                  className="flex items-center"
-                  initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
+                  className="flex items-center"
                   exit={{ opacity: 0, y: -10 }}
+                  initial={{ opacity: 0, y: 10 }}
                   transition={{ duration: 0.2 }}
                 >
                   Envoyer <PaperAirplaneIcon className="ml-2 size-5" />
@@ -154,9 +154,9 @@ export function ContactUs() {
               {isLoading ? (
                 <motion.div
                   key="loading"
-                  initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
+                  initial={{ opacity: 0, y: 10 }}
                   transition={{ duration: 0.2 }}
                 >
                   <Spinner className="size-5" />
@@ -166,10 +166,10 @@ export function ContactUs() {
               {success ? (
                 <motion.div
                   key="success"
-                  className="flex items-center"
-                  initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
+                  className="flex items-center"
                   exit={{ opacity: 0, y: -10 }}
+                  initial={{ opacity: 0, y: 10 }}
                   transition={{ duration: 0.2 }}
                 >
                   Formulaire envoyé
@@ -181,9 +181,9 @@ export function ContactUs() {
 
           {error ? (
             <motion.p
+              animate={{ opacity: 1, y: 0 }}
               className="text-sm font-medium text-red-700"
               initial={{ opacity: 0, y: 5 }}
-              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
             >
               {error}
@@ -192,9 +192,9 @@ export function ContactUs() {
 
           {success ? (
             <motion.p
+              animate={{ opacity: 1, y: 0 }}
               className="text-sm font-medium text-blue-950"
               initial={{ opacity: 0, y: 5 }}
-              animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
             >
               Nous reviendrons vers vous dans les plus brefs délais.

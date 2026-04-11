@@ -1,12 +1,12 @@
 export function NextIcon() {
   return (
     <svg
-      width="800px"
       height="800px"
-      viewBox="0 0 256 256"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMidYMid"
+      version="1.1"
+      viewBox="0 0 256 256"
+      width="800px"
+      xmlns="http://www.w3.org/2000/svg"
     >
       <g>
         <path

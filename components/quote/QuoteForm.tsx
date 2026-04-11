@@ -39,7 +39,6 @@ export function QuoteForm() {
   const [submitted, setSubmitted] = useState(false);
   const [index, setIndex] = useState(0);
 
-  // eslint-disable-next-line react-hooks/incompatible-library
   const websiteType = watch("websiteType");
 
   const steps = useMemo(() => {
@@ -102,26 +101,26 @@ export function QuoteForm() {
       <form className="space-y-6" onSubmit={onSubmit}>
         {steps[index] === "websiteType" && <WebsiteTypeStep control={control} onNext={next} />}
 
-        {steps[index] === "pages" && <PagesStep control={control} onNext={next} onBack={back} />}
+        {steps[index] === "pages" && <PagesStep control={control} onBack={back} onNext={next} />}
 
         {steps[index] === "features" && (
-          <FeaturesStep control={control} onNext={next} onBack={back} />
+          <FeaturesStep control={control} onBack={back} onNext={next} />
         )}
 
         {steps[index] === "payments" && (
-          <PaymentsStep control={control} onNext={next} onBack={back} />
+          <PaymentsStep control={control} onBack={back} onNext={next} />
         )}
 
         {steps[index] === "delivery" && (
-          <DeliveryStep control={control} onNext={next} onBack={back} />
+          <DeliveryStep control={control} onBack={back} onNext={next} />
         )}
 
         {steps[index] === "priceOption" && (
-          <PriceOptionStep control={control} onNext={next} onBack={back} />
+          <PriceOptionStep control={control} onBack={back} onNext={next} />
         )}
 
         {steps[index] === "contact" && (
-          <ContactStep control={control} onSubmit={onSubmit} onBack={back} />
+          <ContactStep control={control} onBack={back} onSubmit={onSubmit} />
         )}
       </form>
     </div>

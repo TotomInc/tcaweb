@@ -11,8 +11,8 @@ export interface SpinnerProps {
 export function Spinner({ className, spinnerColor = "#fff" }: SpinnerProps) {
   return (
     <div
-      style={{ "--spinner-color": spinnerColor } as React.CSSProperties}
       className={twMerge(styles["sk-fading-circle"], "size-[30px]", className)}
+      style={{ "--spinner-color": spinnerColor } as React.CSSProperties}
     >
       {Array.from({ length: 12 }).map((_, index) => (
         <div

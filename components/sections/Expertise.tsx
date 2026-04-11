@@ -6,8 +6,8 @@ export function Expertise() {
     <Section.Root className="pt-24">
       <Section.Heading
         badge="Services"
-        label="Notre expertise du web au service des PME."
         description="Attirez une nouvelle clientèle grâce à une présence web efficace et professionnelle pour votre entreprise."
+        label="Notre expertise du web au service des PME."
       />
 
       <div className="grid gap-6 sm:grid-cols-2">

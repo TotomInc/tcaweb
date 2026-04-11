@@ -21,8 +21,8 @@ export function DeliveryStep({ control, onNext, onBack }: Props) {
   return (
     <Step.Container>
       <Step.Label
-        title="Livraison (e‑commerce)"
         description="Choisissez un ou plusieurs modes de livraison."
+        title="Livraison (e‑commerce)"
       />
 
       <CheckboxGroup

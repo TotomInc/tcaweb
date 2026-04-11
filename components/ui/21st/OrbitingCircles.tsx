@@ -1,5 +1,5 @@
 /* eslint react/no-children-count: "off", react/no-children-map: "off" */
-import React from "react";
+import * as React from "react";
 import { twMerge } from "tailwind-merge";
 
 export interface OrbitingCirclesProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -31,16 +31,21 @@ export function OrbitingCircles({
     <>
       {path && (
         <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
           className="pointer-events-none absolute inset-0 size-full"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <circle className="stroke-black/10 stroke-1" cx="50%" cy="50%" r={radius} fill="none" />
+          <circle className="stroke-black/10 stroke-1" cx="50%" cy="50%" fill="none" r={radius} />
         </svg>
       )}
 
       {React.Children.map(children, (child, index) => (
         <div
+          className={twMerge(
+            `animate-orbit absolute flex size-[var(--icon-size)] transform-gpu items-center justify-center rounded-full`,
+            reverse && "[animation-direction:reverse]",
+            className,
+          )}
           style={
             {
               "--duration": calculatedDuration,
@@ -49,11 +54,6 @@ export function OrbitingCircles({
               "--icon-size": `${iconSize}px`,
             } as React.CSSProperties
           }
-          className={twMerge(
-            `animate-orbit absolute flex size-[var(--icon-size)] transform-gpu items-center justify-center rounded-full`,
-            reverse && "[animation-direction:reverse]",
-            className,
-          )}
           {...props}
         >
           {child}

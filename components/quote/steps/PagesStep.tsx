@@ -21,8 +21,8 @@ export function PagesStep({ control, onNext, onBack }: Props) {
   return (
     <Step.Container>
       <Step.Label
-        title="Combien de pages ?"
         description="Pour l'e-commerce, les pages produits sont illimitées."
+        title="Combien de pages ?"
       />
 
       <RadioCardGroup

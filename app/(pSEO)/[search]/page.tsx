@@ -65,6 +65,15 @@ export default async function Page({ params }: Props) {
         <Hero
           cta="Recevez votre devis"
           ctaSection="generateur-devis"
+          description={
+            <>
+              <span className="font-heading font-bold">Renforcez</span> votre image et{" "}
+              <span className="font-heading font-bold">attirez</span> de nouveaux clients.
+              <br />
+              <span className="font-heading font-bold">Distinguez-vous</span> à{" "}
+              {searchRequest.city.name} et ses alentours.
+            </>
+          }
           items={[
             "Tarifs adaptés à vos besoins",
             `Ciblez vos clients près ${getPreposition(searchRequest.city.name)}${searchRequest.city.name}`,
@@ -82,15 +91,6 @@ export default async function Page({ params }: Props) {
               </AuroraText>
             </>
           }
-          description={
-            <>
-              <span className="font-heading font-bold">Renforcez</span> votre image et{" "}
-              <span className="font-heading font-bold">attirez</span> de nouveaux clients.
-              <br />
-              <span className="font-heading font-bold">Distinguez-vous</span> à{" "}
-              {searchRequest.city.name} et ses alentours.
-            </>
-          }
         />
       ) : null}
 
@@ -98,6 +98,15 @@ export default async function Page({ params }: Props) {
         <Hero
           cta="Recevez votre devis"
           ctaSection="generateur-devis"
+          description={
+            <>
+              <span className="font-heading font-bold">Renforcez</span> votre image et{" "}
+              <span className="font-heading font-bold">attirez</span> de nouveaux clients.
+              <br />
+              <span className="font-heading font-bold">Distinguez-vous</span> des autres{" "}
+              {searchRequest.industry.demonym.plural}.
+            </>
+          }
           items={[
             `Attirez de nouveaux clients`,
             "Tarifs adaptés à vos besoins",
@@ -115,15 +124,6 @@ export default async function Page({ params }: Props) {
               </AuroraText>
             </>
           }
-          description={
-            <>
-              <span className="font-heading font-bold">Renforcez</span> votre image et{" "}
-              <span className="font-heading font-bold">attirez</span> de nouveaux clients.
-              <br />
-              <span className="font-heading font-bold">Distinguez-vous</span> des autres{" "}
-              {searchRequest.industry.demonym.plural}.
-            </>
-          }
         />
       ) : null}
 
@@ -131,16 +131,16 @@ export default async function Page({ params }: Props) {
         {searchRequest.city && searchRequest.intent.forCity ? (
           <Section.Heading
             badge="Présence locale"
-            label={`Pourquoi un site vitrine est-il crucial pour votre entreprise ${searchRequest.city?.demonym.feminine} ?`}
             description={`75% des clients près ${getPreposition(searchRequest.city.name)}${searchRequest.city.name} recherche une entreprise en ligne avant de la contacter.`}
+            label={`Pourquoi un site vitrine est-il crucial pour votre entreprise ${searchRequest.city?.demonym.feminine} ?`}
           />
         ) : null}
 
         {!searchRequest.city && searchRequest.industry && !searchRequest.intent.forCity ? (
           <Section.Heading
             badge="Présence concurrentielle"
-            label={`Pourquoi un site vitrine est-il crucial pour un ${searchRequest.industry.demonym.masculine} ?`}
             description={`75% des clients recherchent des ${searchRequest.industry.demonym.plural} en ligne avant de les contacter.`}
+            label={`Pourquoi un site vitrine est-il crucial pour un ${searchRequest.industry.demonym.masculine} ?`}
           />
         ) : null}
 
@@ -183,8 +183,8 @@ export default async function Page({ params }: Props) {
       <Section.Root>
         <Section.Heading
           badge="Services"
-          label="Un développement rapide et efficace"
           description="Libérez-vous des contraintes du digital afin que vous puissiez vous concentrer sur votre activité."
+          label="Un développement rapide et efficace"
         />
 
         <div className="grid gap-6 lg:grid-cols-3">
@@ -255,8 +255,8 @@ export default async function Page({ params }: Props) {
 
       <Section.Root id="generateur-devis">
         <Section.Heading
-          label="Votre devis personnalisé instantané"
           description="Recevez en quelques clics dans votre boîte mail un devis sur-mesure adapté à vos besoins."
+          label="Votre devis personnalisé instantané"
         />
 
         <Section.Container className="w-full px-0 sm:px-6">

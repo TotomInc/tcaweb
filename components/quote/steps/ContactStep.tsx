@@ -19,7 +19,7 @@ interface Props {
 export function ContactStep({ control, onSubmit, onBack }: Props) {
   return (
     <Step.Container>
-      <Step.Label title="Vos coordonnées" description="Nous enverrons votre devis par email." />
+      <Step.Label description="Nous enverrons votre devis par email." title="Vos coordonnées" />
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <Controller
@@ -27,10 +27,10 @@ export function ContactStep({ control, onSubmit, onBack }: Props) {
           name="contact.firstName"
           render={({ field, fieldState }) => (
             <Input
-              label="Prénom*"
-              placeholder="Jean"
               autoComplete="given-name"
               error={fieldState.error?.message}
+              label="Prénom*"
+              placeholder="Jean"
               {...field}
             />
           )}
@@ -41,10 +41,10 @@ export function ContactStep({ control, onSubmit, onBack }: Props) {
           name="contact.lastName"
           render={({ field, fieldState }) => (
             <Input
-              label="Nom*"
-              placeholder="Dupont"
               autoComplete="family-name"
               error={fieldState.error?.message}
+              label="Nom*"
+              placeholder="Dupont"
               {...field}
             />
           )}
@@ -56,9 +56,9 @@ export function ContactStep({ control, onSubmit, onBack }: Props) {
         name="contact.companyName"
         render={({ field }) => (
           <Input
+            autoComplete="organization"
             label="Entreprise"
             placeholder="Ma société"
-            autoComplete="organization"
             {...field}
           />
         )}
@@ -70,11 +70,11 @@ export function ContactStep({ control, onSubmit, onBack }: Props) {
           name="contact.email"
           render={({ field, fieldState }) => (
             <Input
-              type="email"
-              label="Email*"
-              placeholder="jean@exemple.com"
               autoComplete="email"
               error={fieldState.error?.message}
+              label="Email*"
+              placeholder="jean@exemple.com"
+              type="email"
               {...field}
             />
           )}
@@ -85,10 +85,10 @@ export function ContactStep({ control, onSubmit, onBack }: Props) {
           name="contact.phone"
           render={({ field, fieldState }) => (
             <PhoneInput
-              label="Téléphone*"
-              placeholder="06 12 34 56 78"
               autoComplete="tel"
               error={fieldState.error?.message}
+              label="Téléphone*"
+              placeholder="06 12 34 56 78"
               {...field}
             />
           )}

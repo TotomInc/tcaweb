@@ -4,7 +4,8 @@ import type { Container } from "@tsparticles/engine";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import { motion, useAnimation } from "motion/react";
-import React, { useEffect, useId, useState } from "react";
+import * as React from "react";
+import { useEffect, useId, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
 interface Props {
@@ -51,8 +52,8 @@ export function SparklesParticles({
     <motion.div animate={controls} className={twMerge("opacity-0", className)}>
       {init && (
         <Particles
-          id={id || generatedId}
           className={twMerge("h-full w-full")}
+          id={id || generatedId}
           particlesLoaded={particlesLoaded}
           options={{
             background: { color: { value: background || "#0d47a1" } },

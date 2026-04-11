@@ -53,10 +53,10 @@ export function Item1() {
       {items.map((item, i) => (
         <motion.div
           key={item}
-          variants={itemVariants}
-          initial="hidden"
           animate={controls}
           className="flex items-center gap-2.5"
+          initial="hidden"
+          variants={itemVariants}
           transition={{
             duration: ITEM_DURATION,
             delay: i * ITEM_DELAY,
