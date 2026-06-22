@@ -29,6 +29,7 @@ export const GlowingEffect = memo(
     disabled = true,
   }: Props) => {
     const containerRef = useRef<HTMLDivElement>(null);
+    // eslint-disable-next-line react/naming-convention-ref-name
     const lastPosition = useRef({ x: 0, y: 0 });
     const animationFrameRef = useRef<number>(0);
 

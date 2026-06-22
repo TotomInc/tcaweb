@@ -1,6 +1,7 @@
 import { AtSymbolIcon, ChevronRightIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 
+import { SubFooter } from "@/components/sections/SubFooter";
 import { Logo } from "@/components/ui/Logo";
 
 export function Footer() {
@@ -8,7 +9,7 @@ export function Footer() {
     { label: "Accueil", href: "/" },
     { label: "Sites vitrines", href: "/sites-vitrines" },
     { label: "Recevoir mon devis", href: "/devis-site-internet-gratuit" },
-    { label: "Réserver un RDV", href: "/reservation-demo" },
+    { label: "Réserver un RDV", href: "https://cal.com/tcaweb/rdv-decouverte" },
   ];
 
   return (
@@ -68,13 +69,7 @@ export function Footer() {
         </div>
       </footer>
 
-      <div className="bg-gray-900 py-4">
-        <div className="mx-auto w-full max-w-7xl px-6">
-          <p className="text-sm font-medium text-gray-400">
-            © {new Date().getFullYear()} TCA Web. Tous droits réservés.
-          </p>
-        </div>
-      </div>
+      <SubFooter />
     </>
   );
 }

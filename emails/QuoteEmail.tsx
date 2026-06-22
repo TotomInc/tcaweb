@@ -1,4 +1,4 @@
-import { Button, Container, Head, Html, Preview, Section, Text } from "@react-email/components";
+import { Button, Container, Head, Html, Preview, Section, Text } from "react-email";
 
 import type { QuoteCalculationResult } from "@/lib/quote-pricing";
 import { formatEuro, HOSTING_MAINTENANCE_PRICE } from "@/lib/quote-pricing";

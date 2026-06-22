@@ -67,7 +67,7 @@ export function Item1() {
             <CheckIcon className="size-4" />
           </span>
 
-          <p className="font-heading bg-gradient-to-b from-blue-600 to-blue-900 bg-clip-text text-lg font-medium tracking-tight text-transparent">
+          <p className="bg-gradient-to-b from-blue-600 to-blue-900 bg-clip-text font-heading text-lg font-medium tracking-tight text-transparent">
             {item}
           </p>
         </motion.div>

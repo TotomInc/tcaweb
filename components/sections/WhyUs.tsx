@@ -173,7 +173,7 @@ export function WhyUs({ city }: Props) {
               <Accordion.Trigger
                 data-fast-goal={`why-us-${id}`}
                 className={twMerge(
-                  "group font-heading flex w-full cursor-pointer items-center justify-between gap-4 bg-white px-5 py-4 text-lg font-medium tracking-tight transition-colors duration-150 ease-out hover:bg-gray-50 data-[state=open]:bg-gray-50",
+                  "group flex w-full cursor-pointer items-center justify-between gap-4 bg-white px-5 py-4 font-heading text-lg font-medium tracking-tight transition-colors duration-150 ease-out hover:bg-gray-50 data-[state=open]:bg-gray-50",
                   i > 0 && "border-t border-gray-200",
                   i === 0 && "rounded-t-lg",
                   i === accordionItems.length - 1 && "rounded-b-lg",
@@ -190,9 +190,9 @@ export function WhyUs({ city }: Props) {
                 <ChevronDownIcon className="size-5 transition-transform duration-300 ease-out group-data-[state=open]:rotate-180" />
               </Accordion.Trigger>
 
-              <Accordion.Content className="data-[state=closed]:animate-accordion-slide-up data-[state=open]:animate-accordion-slide-down overflow-hidden">
+              <Accordion.Content className="overflow-hidden data-[state=closed]:animate-accordion-slide-up data-[state=open]:animate-accordion-slide-down">
                 <div className="border-t border-gray-200 px-4 py-5">
-                  <p className="text-secondary text-base/relaxed">{description}</p>
+                  <p className="text-base/relaxed text-secondary">{description}</p>
                 </div>
               </Accordion.Content>
             </Accordion.Item>

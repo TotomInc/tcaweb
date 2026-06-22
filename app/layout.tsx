@@ -6,7 +6,6 @@ import type { Metadata } from "next";
 import { Inter, Spline_Sans } from "next/font/google";
 import Script from "next/script";
 
-import { PostHogProvider } from "@/components/PostHogProvider";
 import { Footer } from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 
@@ -76,25 +75,23 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
       </head>
 
-      <PostHogProvider>
-        <body
-          className={`text-primary font-sans antialiased ${sans.variable} ${heading.variable} ${GeistMono.variable}`}
-        >
-          <Header />
+      <body
+        className={`font-sans text-primary antialiased ${sans.variable} ${heading.variable} ${GeistMono.variable}`}
+      >
+        <Header />
 
-          {children}
+        {children}
 
-          <Analytics />
+        <Analytics />
 
-          <Footer />
+        <Footer />
 
-          <script
-            // eslint-disable-next-line react-dom/no-dangerously-set-innerhtml
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            type="application/ld+json"
-          />
-        </body>
-      </PostHogProvider>
+        <script
+          // eslint-disable-next-line react/dom-no-dangerously-set-innerhtml
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          type="application/ld+json"
+        />
+      </body>
     </html>
   );
 }

@@ -9,7 +9,7 @@ export function Badge({ children, className }: Props) {
   return (
     <div
       className={twMerge(
-        "font-heading mx-auto mb-3 block w-fit rounded-lg border border-blue-200 bg-blue-100 px-3 py-1.5 text-center text-sm leading-tight font-semibold tracking-tight uppercase",
+        "mx-auto mb-3 block w-fit rounded-lg border border-blue-200 bg-blue-100 px-3 py-1.5 text-center font-heading text-sm leading-tight font-semibold tracking-tight uppercase",
         className,
       )}
     >

@@ -85,7 +85,7 @@ export default async function Page({ params }: Props) {
               <br />
               de votre entreprise
               <br />
-              <AuroraText className="text-primary rotate-[-2deg] rounded-lg bg-white px-3 py-2 shadow-xl">
+              <AuroraText className="rotate-[-2deg] rounded-lg bg-white px-3 py-2 text-primary shadow-xl">
                 près {getPreposition(searchRequest.city.name)}
                 {searchRequest.city.name}
               </AuroraText>
@@ -118,7 +118,7 @@ export default async function Page({ params }: Props) {
               <br />
               de votre activité
               <br />
-              <AuroraText className="text-primary rotate-[-2deg] rounded-lg bg-white px-3 py-2 shadow-xl">
+              <AuroraText className="rotate-[-2deg] rounded-lg bg-white px-3 py-2 text-primary shadow-xl">
                 {getPreposition(searchRequest.industry.name)}
                 {searchRequest.industry.name}
               </AuroraText>
@@ -158,7 +158,7 @@ export default async function Page({ params }: Props) {
               Un site à l&apos;image de votre entreprise
             </h3>
 
-            <p className="text-secondary max-w-md text-base/relaxed text-balance">
+            <p className="max-w-md text-base/relaxed text-balance text-secondary">
               Disponible 24h/24, votre site web permet de renforcer la crédibilité de votre
               entreprise et de vous démarquer de la concurrence.
             </p>

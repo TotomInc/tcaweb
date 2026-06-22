@@ -51,7 +51,7 @@ function Heading({
       <h2
         data-content={label}
         className={twMerge(
-          "font-heading mb-2.5 bg-gradient-to-br from-blue-800 via-blue-900 to-blue-950 bg-clip-text text-center text-2xl font-semibold tracking-tight text-balance text-transparent sm:text-3xl",
+          "mb-2.5 bg-gradient-to-br from-blue-800 via-blue-900 to-blue-950 bg-clip-text text-center font-heading text-2xl font-semibold tracking-tight text-balance text-transparent sm:text-3xl",
           labelClassName,
         )}
       >
@@ -60,7 +60,7 @@ function Heading({
 
       <p
         className={twMerge(
-          "text-secondary text-center text-base/relaxed text-balance",
+          "text-center text-base/relaxed text-balance text-secondary",
           descriptionClassName,
         )}
       >

@@ -6,7 +6,7 @@ import { Item2 } from "./Item2";
 
 function BentoCardLabel({ children }: { children: React.ReactNode }) {
   return (
-    <span className="text-secondary inline-block w-fit rounded-sm bg-gradient-to-b from-gray-300 to-gray-200 px-2 py-1 font-mono text-sm font-bold inset-shadow-sm inset-shadow-gray-900/20">
+    <span className="inline-block w-fit rounded-sm bg-gradient-to-b from-gray-300 to-gray-200 px-2 py-1 font-mono text-sm font-bold text-secondary inset-shadow-sm inset-shadow-gray-900/20">
       {children}
     </span>
   );

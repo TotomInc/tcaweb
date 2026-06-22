@@ -42,7 +42,7 @@ export function OrbitingCircles({
       {React.Children.map(children, (child, index) => (
         <div
           className={twMerge(
-            `animate-orbit absolute flex size-[var(--icon-size)] transform-gpu items-center justify-center rounded-full`,
+            `absolute flex size-[var(--icon-size)] transform-gpu animate-orbit items-center justify-center rounded-full`,
             reverse && "[animation-direction:reverse]",
             className,
           )}

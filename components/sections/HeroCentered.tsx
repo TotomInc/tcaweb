@@ -41,7 +41,7 @@ export function HeroCentered({ badge, title, description, items }: Props) {
 
         <motion.h1
           animate={{ opacity: 1, y: 0 }}
-          className="font-heading mx-auto w-fit text-center text-3xl font-bold lg:text-5xl 2xl:text-6xl"
+          className="mx-auto w-fit text-center font-heading text-3xl font-bold lg:text-5xl 2xl:text-6xl"
           initial={{ opacity: 0, y: 20 }}
           transition={{ duration: 0.6 }}
         >

@@ -40,15 +40,15 @@ export function Header() {
         </Link>
 
         <nav className="flex items-center gap-6 lg:gap-8">
-          <Link
-            href="/reservation-demo"
+          <a
+            href="https://cal.com/tcaweb/rdv-decouverte"
             className={twMerge(
               "hidden rounded-sm text-sm font-semibold tracking-tight text-white hover:underline lg:flex",
               hasScrolled ? "text-blue-700" : "text-white",
             )}
           >
             Réservez votre RDV
-          </Link>
+          </a>
 
           <Link
             className="group relative flex cursor-pointer items-center justify-center gap-1.5 rounded-sm bg-blue-600 px-4 py-2 text-sm font-semibold tracking-tight text-white shadow-md ring inset-shadow-sm inset-ring ring-blue-600 inset-shadow-white/30 inset-ring-white/25 transition-colors duration-150 ease-out hover:bg-blue-700 focus:outline-2 focus:outline-offset-2 focus:outline-blue-500"

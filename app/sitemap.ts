@@ -24,12 +24,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: "https://tcaweb.fr/reservation-demo",
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
       url: "https://tcaweb.fr/devis-site-internet-gratuit",
       lastModified: new Date(),
       changeFrequency: "monthly",

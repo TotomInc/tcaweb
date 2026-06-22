@@ -38,7 +38,7 @@ export default function Page() {
             Développez la visibilité
             <br />
             de{" "}
-            <AuroraText className="text-primary rotate-[-2deg] rounded-lg bg-white px-3 py-2 shadow-xl">
+            <AuroraText className="rotate-[-2deg] rounded-lg bg-white px-3 py-2 text-primary shadow-xl">
               votre entreprise
             </AuroraText>
           </>
@@ -66,7 +66,7 @@ export default function Page() {
               Un site à l&apos;image de votre entreprise
             </h3>
 
-            <p className="text-secondary max-w-md text-base/relaxed text-balance">
+            <p className="max-w-md text-base/relaxed text-balance text-secondary">
               Un site vitrine est l&apos;assistant digital idéal afin de promouvoir votre
               entreprise. Disponible 24h/24, il permet de renforcer la crédibilité de votre
               entreprise.

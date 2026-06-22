@@ -68,7 +68,7 @@ export function Portfolio() {
                 {item.companyName}
               </h3>
 
-              <p className="text-secondary text-base/relaxed text-balance">{item.description}</p>
+              <p className="text-base/relaxed text-balance text-secondary">{item.description}</p>
 
               <ul className="flex flex-wrap items-center gap-2.5">
                 {item.tags.map((tag, i) => (

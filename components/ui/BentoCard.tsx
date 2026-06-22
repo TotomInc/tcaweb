@@ -67,7 +67,7 @@ export function BentoCard({ className, children, content, image, hasGlowingEffec
               {content.title}
             </h3>
 
-            <p className="text-secondary text-base/relaxed text-balance">{content.description}</p>
+            <p className="text-base/relaxed text-balance text-secondary">{content.description}</p>
           </div>
         ) : null}
 
